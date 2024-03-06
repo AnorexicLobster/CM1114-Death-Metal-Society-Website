@@ -14,12 +14,17 @@ Secondary Colours: Yellow - rgb(230,150,3).
 /* Webpage Setup Code Block. */
 body{
     background-color: black;
+    padding: 5px;
+    display: flow-root;
+
+
 }
 
 header{
     background-color: black; 
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    padding: 10px;
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -39,7 +44,7 @@ h3{
 }
 
 p{
-    font-size: 10px;
+    font-size: 15px;
 }
 
 hr{
@@ -47,15 +52,16 @@ hr{
 }
 
 main{
+    padding: 10px;
     border-radius: 10px;
 }
 
-aside{
-    border-radius: 10px;
-}
+
 
 footer{
+    padding: 10px;
     border-radius: 10px;
+    margin-top: 20px;
 }
 /* Webpage Setup END.*/
 
@@ -63,11 +69,10 @@ footer{
 /* Code for Logo.*/
 .Logo{
     
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    height: 40%;
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
 }
 /* Logo END. */
 
@@ -81,25 +86,32 @@ footer{
     right: 50;
     display: block;
     
-    width: 90%;
-    height: 70%;
+    width: 100%;
+    height: 450px;
 }
-/* Zombie Background END.*/
+/* Background END.*/
 
 
 /* Navigation Bar Code Block*/
 nav{
     background-color: rgb(22, 22, 22);
-    border: 1px solid rgb(255, 123, 0, 10);
+    border-bottom: 1px solid rgb(255, 123, 0, 10);
     text-align: center;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 nav li{ 
     border: 4px;
     border-color: black;
+    width: 10%;
     background-color: black;
     list-style-type: none; 
-    padding: 0 30px 0 30px 
+    padding: 0 30px 0 30px; 
 }
 
 nav li a{
@@ -161,22 +173,181 @@ Table th{
 .MemberImages{
     border: 4px solid rgb(204, 8, 8);
     outline: 1px solid rgb(230, 150, 3);  
-}
-
-.MemName{
+    height: 250px;
+    width: 175px;
+    
     list-style-type: none;
     font-family: Arial;
     font-size: 10px;
     color:rgb(204, 8, 8);
+    text-align: center;
 }
 
-.MemRole{
+#MemName{
+    padding-top: 7px;
     list-style-type: none;
     font-family: Arial;
-    font-size: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color:rgb(204, 8, 8);
+    text-align: center;
+}
+
+#MemRole{
+    padding-bottom: 12px;
+    list-style-type: none;
+    font-family: Arial;
+    font-size: 13px;
     color: white;
+    text-align: center;
+}
+
+.MemRowOne{
+    display: flex; 
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px;
+}
+
+.MemRowTwo{
+    display: flex; 
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px;
+}
+
+.Members{
+    margin: auto;    
 }
 /* Member Images END. */
+
+
+form{
+    color: rgb(204, 8, 8);
+    font-family: Arial;
+    font-size: 10px;
+    
+}
+
+.PageTitle{
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+#Sepultura{
+    position: relative;
+    z-index: 0;
+    height: 250;
+    width: 400;
+    border: 4px solid rgb(204, 8, 8);
+    outline: 1px solid rgb(230, 150, 3); 
+    margin: 5px;
+    rotate: -10deg;
+}
+
+#Slayer{
+    position: relative;
+    z-index: -1;
+    height: 250;
+    width: 400;
+    border: 4px solid rgb(204, 8, 8);
+    outline: 1px solid rgb(230, 150, 3);
+    margin: 5px;
+    rotate: 15deg;   
+}
+
+#Pantera{   
+    height: 250;
+    width: 400;
+    border: 4px solid rgb(204, 8, 8);
+    outline: 1px solid rgb(230, 150, 3);
+    margin: 5px; 
+    rotate: -15deg;
+}
+
+#Faith{   
+    height: 250;
+    width: 400;
+    border: 4px solid rgb(204, 8, 8);
+    outline: 1px solid rgb(230, 150, 3); 
+    margin: 5px;
+    rotate: 5deg;
+}
+
+
+
+.HmImg{
+    padding: 5px;
+    padding-top: 40px;
+    float: left;
+    width: 70%;
+
+}
+
+.Twitter{
+    /* border-radius: 10px; */
+    width: 25%;
+    height: 600px;
+    overflow: auto;    
+}
+
+.Gallery{
+    background-color: rgb(204, 8, 8);
+    border: 4px solid black;
+    outline: 1px solid rgb(230, 150, 3);
+    padding: 13px;
+}
+
+.RowOne, .RowTwo,.RowThree{
+    display: flex; 
+    justify-content: space-between;
+    margin: auto;
+    padding: 3px;
+}
+
+.RowOne, .RowTwo{
+    padding-bottom: 60px;
+}
+
+.GalImg{
+    width: 300px;
+    height: 225px;
+}
+
+.GalImg:hover{
+    border: 3px solid rgb(230, 150, 3);
+    transform: scale(1.1);  
+}
+
+.ImgDes{
+    position: relative;
+    bottom: 0; 
+    right: 0; 
+    background: black; 
+    color: rgb(204, 8, 8);
+    border:1px solid rgb(230, 150, 3); 
+    margin-bottom: 5px; 
+    font-family: Arial; 
+    font-size: 15; 
+    text-align: center;
+     
+    opacity: 0; 
+    visibility: hidden; 
+    
+}
+
+.TextTrigger:hover .ImgDes{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
 
 
 

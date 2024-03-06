@@ -7,6 +7,7 @@
 
         <link  rel = 'stylesheet' href = 'css/main.css'>
         <type="text/css">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
     </head>
     
 
@@ -46,35 +47,47 @@
 
         <main>
             <!--Welcome Message-->
+        <div class = "row">    
             <div>
-                <h3>Welcome to the RGU  Death Metal Society</h3>
+                <h3 >Welcome to the RGU  Death Metal Society</h3>
                     <p>
                         If yoo want to spend time making
                         music that will make your neighbour's ears bleed, 
                         their children cry and their grandparents drop dead from
-                        heart attacks...
+                        heart attacks... <br>
                         Then what are you waiting for? Come join us at the
                         RGU Death Metal Society!
                     </p>
-            </div>
-
-            <!-- Block for Tweets -->
-            <aside> 
-                <h3>Latest Tweets</h3> 
-            </aside>
-
-            <!-- Homepage Images -->
-            <aside>
-                <img src = 'images/Home Page Images/H1.jpg'
-                    alt = "A picture of Sepultura"/>
+                </div>
+                    
+                    <!-- Homepage Images -->
+                <div class = "HmImg">    
                 <img src = 'images/Home Page Images/H2.png'
-                    alt = "A picture of Slayer"/>
+                    alt = "A picture of Slayer"
+                    id = "Slayer"/>
+                <img src = 'images/Home Page Images/H1.jpg'
+                    alt = "A picture of Sepultura"
+                    id = "Sepultura"/>
                 <img src = 'images/Home Page Images/H3.jpg'
-                    alt = "A picture of Pantera"/>
+                    alt = "A picture of Pantera"
+                    id = "Pantera"/>
                 <img src = 'images/Home Page Images/H4.jpg'
-                    alt = "A picture of Faith No More"/>
-            </aside>    
-                     
+                    alt = "A picture of Faith No More"
+                    id = "Faith"/>
+                </div>
+
+
+                      <!-- Block for Tweets -->
+                <div class = "Twitter"> 
+                    <h3>Latest Tweets</h3>     
+                    <aside> 
+                    <a class="twitter-timeline" href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw">
+                        Tweets by XDevelopers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                    </aside>  
+                </div>  
+        </div>    
+
+          
         </main>
         
 
