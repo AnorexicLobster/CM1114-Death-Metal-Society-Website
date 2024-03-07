@@ -45,35 +45,46 @@
 
       
         <main>
-            <div>
-                <h3 class = "PageTitle">CONTACT US</h3>
-                <p></p>
+            <div class = "MainBody">
+                <div>
+                    <h3 class = "PageTitle">CONTACT US</h3>
+                    <p></p>
 
-                <form>
-                    <fieldset>
+                    <form>
                         <legend> For any further enquiries contact our Social Team:</legend>
+                        <fieldset>
+                            <br>
 
-                        <label for = "name">Name: </label>
-                        <input type = "text" name = "name" value = ""/>
+                            <label for = "name">Name: </label>
+                            <input type = "text" name = "name" value = ""/>
+                            
+                            <label for = "email">Email: </label>
+                            <input type = "text" email = "email" value = ""/>
 
-                        <label for = "email">Email: </label>
-                        <input type = "text" email = "email" value = ""/>
+                            <div>
+                                <br>
+                                <br>
+                            <label for = "comments">Comment: </label> 
+                            <textarea name = "comments" cols = "60" rows = "10"></textarea>
 
-                        <div>
-                        <label for = "comments">Comment: </label> 
-                        <textarea name = "comments" cols = "40" rows = "6"></textarea>
+                            <input type = "submit" value = "Submit"/>
+                            </div>
+                        </fieldset>    
+                    </form>  
+                </div>
 
-                        <input type = "submit" value = "Submit"/>
-                        </div>
-                    </fieldset>    
-                </form>  
+                <!-- Block for Tweets -->
+                <div class = "Twitter1"> 
+                    <h3>Latest Tweets</h3>     
+                    <aside> 
+                    <a class="twitter-timeline" href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw">
+                        Tweets by XDevelopers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                    </aside>  
+                </div> 
             </div>
         </main>
 
-        <div class = "GoogleMap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8664.239013833494!2d-2.137865!3d57.1189422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488410483d2f0941%3A0x5d8969688e77366a!2sRobert%20Gordon%20University!5e0!3m2!1sen!2suk!4v1709136593857!5m2!1sen!2suk" 
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+       
 
 
         <footer>

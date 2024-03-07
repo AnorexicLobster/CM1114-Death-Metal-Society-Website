@@ -92,10 +92,19 @@ footer{
 /* Background END.*/
 
 
+/* Page Title. */
+.PageTitle{
+    text-align: center;
+    text-decoration: underline;
+}
+/* Page Title END. */
+
+
 /* Navigation Bar Code Block*/
 nav{
-    background-color: rgb(22, 22, 22);
-    border-bottom: 1px solid rgb(255, 123, 0, 10);
+    background-color: rgb(46, 46, 46);
+    border-bottom: 1px solid rgb(255, 123, 10);
+    outline: 2px solid black;
     text-align: center;
 }
 
@@ -106,10 +115,10 @@ nav ul{
 }
 
 nav li{ 
-    border: 4px;
-    border-color: black;
+    border: 5px;
     width: 10%;
     background-color: black;
+
     list-style-type: none; 
     padding: 0 30px 0 30px; 
 }
@@ -138,7 +147,7 @@ Nav>li{
 /* Navigation Bar END. */
 
 
-/* Table Code Block. */
+/* Calendar Code Block. */
 table{
     font-family: Arial;
     color: rgb(204, 8, 8);
@@ -166,7 +175,7 @@ Table th{
     background-color: black;
     color: white;
 }
-/* Table END. */
+/* Calendar END. */
 
 
 /* Code Block for Member Images/ Member Image captions. */
@@ -184,7 +193,7 @@ Table th{
 }
 
 #MemName{
-    padding-top: 7px;
+    padding-top: 6px;
     list-style-type: none;
     font-family: Arial;
     font-size: 15px;
@@ -194,10 +203,11 @@ Table th{
 }
 
 #MemRole{
-    padding-bottom: 12px;
+    position: relative;
+    padding-bottom: 25px;
     list-style-type: none;
     font-family: Arial;
-    font-size: 13px;
+    font-size: 12px;
     color: white;
     text-align: center;
 }
@@ -207,6 +217,7 @@ Table th{
     justify-content: space-between;
     margin: auto;
     padding: 10px;
+    padding-top: 25px;
 }
 
 .MemRowTwo{
@@ -219,22 +230,16 @@ Table th{
 .Members{
     margin: auto;    
 }
+
+.RoleDiv{
+    padding: 0.5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 /* Member Images END. */
 
 
-form{
-    color: rgb(204, 8, 8);
-    font-family: Arial;
-    font-size: 10px;
-    
-}
-
-.PageTitle{
-    text-align: center;
-    text-decoration: underline;
-}
-
-
+/* Home Page Images. */
 #Sepultura{
     position: relative;
     z-index: 0;
@@ -275,25 +280,25 @@ form{
     rotate: 5deg;
 }
 
-
-
 .HmImg{
     padding: 5px;
     padding-top: 40px;
     float: left;
-    width: 70%;
+    width: 60%;
 
 }
+/* Home Page Images END. */
+
 
 .Twitter{
-    /* border-radius: 10px; */
     width: 25%;
     height: 600px;
     overflow: auto;    
 }
 
+/* Code Block for the Gallery. */
 .Gallery{
-    background-color: rgb(204, 8, 8);
+    background-color: rgb(143, 7, 7);
     border: 4px solid black;
     outline: 1px solid rgb(230, 150, 3);
     padding: 13px;
@@ -304,15 +309,19 @@ form{
     justify-content: space-between;
     margin: auto;
     padding: 3px;
+    padding-left: 5px;
+    padding-right: 8px;
 }
 
 .RowOne, .RowTwo{
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 
 .GalImg{
     width: 300px;
     height: 225px;
+    border: 4px solid rgb(230, 150, 3);
+    outline: 2px solid black; 
 }
 
 .GalImg:hover{
@@ -331,16 +340,48 @@ form{
     font-family: Arial; 
     font-size: 15; 
     text-align: center;
-     
-    opacity: 0; 
-    visibility: hidden; 
     
+    opacity: 0; 
+    visibility: hidden;   
 }
 
 .TextTrigger:hover .ImgDes{
     visibility: visible;
     opacity: 1;
 }
+
+.divider{
+    position: relative;
+    background: black; 
+    border: 1px solid rgb(230, 150, 3);
+    height: 3px;
+    bottom: 50px;
+}
+/* Gallery End. */
+
+
+form{
+    width: 50%;
+    color: rgb(204, 8, 8);
+    font-family: Arial;
+    font-size: 15px;
+    float: left;  
+    border: 2px rgb(143, 7, 7); 
+    
+}
+
+.Twitter1{
+    width: 25%;
+    height: 600px;
+    overflow: auto; 
+    padding: 10px; 
+    padding-left: 400px;
+}
+
+.fieldset{
+    
+}
+
 
 
 
