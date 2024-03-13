@@ -101,27 +101,65 @@ footer{
 
 
 /* Navigation Bar Code Block*/
+
+
 nav{
-    background-color: rgb(46, 46, 46);
+    background-color: black;
     border-bottom: 1px solid rgb(255, 123, 10);
-    outline: 2px solid black;
     text-align: center;
 }
 
 nav ul{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden;   
 }
 
 nav li{ 
     border: 5px;
-    width: 10%;
+    width: 8%;
     background-color: black;
-
     list-style-type: none; 
-    padding: 0 30px 0 30px; 
+    padding: 0 45px 0 45px; 
 }
+
+li a{
+    display: block;
+    border-right: 2px solid rgb(255, 123, 10);
+    border-left: 2px solid rgb(255, 123, 10);
+    background-color: black;
+ }
+
+ li:last-child {
+    border-right: none;
+ }
+ li:last-child {
+    border-left: none;
+ }
+
+/* .divider{
+    color: rgb(230, 150, 3);
+    font-weight: bold;
+    text-align: center;
+    width: 30px;
+    height: 10px;
+    overflow: hidden;
+
+    background-color: blue;
+ 
+    padding:10px;
+ } */
+
+
+/* .sep{
+    color: rgb(230, 150, 3);
+    content: " | ";
+    padding-right: 40px; 
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
 
 nav li a{
     color: rgb(204, 8, 8);
@@ -129,7 +167,7 @@ nav li a{
     font-family: Arial;
     font-weight: bold;
     font-size: 15;
-    text-decoration: none;
+    text-decoration: none;   
 }
 
 Nav li :hover{
@@ -139,11 +177,13 @@ Nav li :hover{
 
 .active{
     background-color: interactive;
+    padding-bottom: 10px;
 }
 
 Nav>li{
     display: inline-block;
 }
+
 /* Navigation Bar END. */
 
 
@@ -163,7 +203,7 @@ Table tr:nth-child(even){
     background-color: black;  
 }
 Table tr:nth-child(odd){
-    background-color: rgb(46, 46, 46);  
+    background-color: rgb(46, 46, 46,0);  
 }
 
 Table tr:hover{
@@ -284,7 +324,7 @@ Table th{
     padding: 5px;
     padding-top: 40px;
     float: left;
-    width: 60%;
+    width: 65%;
 
 }
 /* Home Page Images END. */
@@ -360,27 +400,85 @@ Table th{
 /* Gallery End. */
 
 
-form{
+/* Contact Us Page */
+/* -- Block for the Columns and Twitter Feed.*/
+.MainBody{
+    padding-top: 20px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.FormBlock{
     width: 50%;
     color: rgb(204, 8, 8);
     font-family: Arial;
     font-size: 15px;
-    float: left;  
-    border: 2px rgb(143, 7, 7); 
-    
+    float: left;   
 }
 
-.Twitter1{
-    width: 25%;
-    height: 600px;
-    overflow: auto; 
-    padding: 10px; 
-    padding-left: 400px;
+.TwitterBlock{
+    width: 50%;
+    padding-right: 20px;
 }
 
-.fieldset{
-    
+#TwitterHeading{
+    text-align: center;
+    text-decoration: underline;
+
 }
+
+.TwitterFeed{
+    height: 800px;
+    width: 400px;
+    overflow: auto;
+    float: right;
+    border: 5px solid black;
+    outline: 2px solid rgb(230, 150, 3);
+}
+/* -- Twitter Block END.*/
+
+/* Block for Styling the Form. */
+input[type=text]{
+    border: 1px solid rgb(204, 8, 8);
+    outline: 1px solid rgb(230, 150, 3);
+}
+
+textarea{
+    border: 2px solid rgb(204, 8, 8);
+    outline: 1px solid rgb(230, 150, 3);
+}
+fieldset{
+    border: 4px solid black;
+    outline: 2px solid rgb(230, 150, 3);
+    background-color: rgb(20, 20, 20);
+}
+
+label{
+    color: white;
+    font-weight: bold;
+}
+
+legend{
+    font-size: 15px;
+    font-weight: bold;
+}
+/* Form Styling END. */
+
+#Frame{
+    padding-top: 40px;
+}
+#Demons{
+    width: 930px;
+    position: relative;
+    border: 4px solid black;
+    outline: 2px solid rgb(230, 150, 3);
+}
+
+
+
+
+
+
 
 
 

@@ -28,13 +28,28 @@
 
         <!--Navigation Bar-->
         <nav>
+            
             <li class = "active"><a href='home_page.html'>HOME</a></li>
+            <div class = "Hi">
+            </div>
+            <div class = "Hi">
             <li class = "active"><a href='event_calendar.html'>EVENTS</a></li>
+            </div>
+            <div class = "Hi">
             <li class = "active"><a href='current_members.html'>MEMBERS</a></li>
+            </div>
+            <div class = "Hi">
             <li class = "active"><a href='projects.html'>PROJECTS</a></li>
+            </div>
+            <div class = "Hi">
             <li class = "active"><a href='albums.html'>ALBUMS</a></li>
+            </div>
+            <div class = "Hi">
             <li class = "active"><a href='img_gallery.html'>GALLERY</a></li>
+            </div>
+            <div class = "Hi">
             <li class = "active"><a href='contact_us.html'>CONTACT US</a></li>
+            </div>
         </nav>
 
 
@@ -45,16 +60,19 @@
 
       
         <main>
+            <div>
+                <h3 class = "PageTitle">CONTACT US</h3>
+                <p></p>
+            </div>
+
             <div class = "MainBody">
-                <div>
-                    <h3 class = "PageTitle">CONTACT US</h3>
-                    <p></p>
-
+                <div class="FormBlock">
+                    <!-- Form. -->
                     <form>
-                        <legend> For any further enquiries contact our Social Team:</legend>
+                        <legend>If you have any enquiries contact our Social Team:</legend>
+                        <br>
                         <fieldset>
-                            <br>
-
+                            
                             <label for = "name">Name: </label>
                             <input type = "text" name = "name" value = ""/>
                             
@@ -64,23 +82,30 @@
                             <div>
                                 <br>
                                 <br>
-                            <label for = "comments">Comment: </label> 
-                            <textarea name = "comments" cols = "60" rows = "10"></textarea>
+                                <label for = "comments">Comment: </label> 
+                                <br>
+                                <textarea name = "comments" cols = "60" rows = "10"></textarea>
 
-                            <input type = "submit" value = "Submit"/>
+                                <input type = "submit" value = "Submit"/>
                             </div>
-                        </fieldset>    
-                    </form>  
+                        </fieldset> 
+
+                        <br>
+                        <div id = "Frame">
+                        <img src = 'images/ContUsImg.png'
+                            alt = "Alternative Background. Zombies Eating each other."
+                            id = "Demons"/>
+                        </div>
+                    </form>   
                 </div>
 
                 <!-- Block for Tweets -->
-                <div class = "Twitter1"> 
-                    <h3>Latest Tweets</h3>     
-                    <aside> 
-                    <a class="twitter-timeline" href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw">
-                        Tweets by XDevelopers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-                    </aside>  
-                </div> 
+                <div class = "TwitterBlock">
+                    <div class = "TwitterFeed"> 
+                        <h3 id = "TwitterHeading">Latest Tweets</h3>  
+                        <a class="twitter-timeline" href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw">
+                            Tweets by XDevelopers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>   
+                    </div> 
             </div>
         </main>
 
