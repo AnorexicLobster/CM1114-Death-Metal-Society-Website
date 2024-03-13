@@ -117,58 +117,28 @@ nav ul{
 
 nav li{ 
     border: 5px;
-    width: 8%;
+    width: 10%;
     background-color: black;
     list-style-type: none; 
-    padding: 0 45px 0 45px; 
+    padding: 0 35px 0 35px; 
 }
 
-li a{
-    display: block;
-    border-right: 2px solid rgb(255, 123, 10);
-    border-left: 2px solid rgb(255, 123, 10);
-    background-color: black;
- }
-
- li:last-child {
-    border-right: none;
- }
- li:last-child {
-    border-left: none;
- }
-
-/* .divider{
-    color: rgb(230, 150, 3);
-    font-weight: bold;
-    text-align: center;
-    width: 30px;
-    height: 10px;
-    overflow: hidden;
-
-    background-color: blue;
- 
-    padding:10px;
- } */
-
-
-/* .sep{
-    color: rgb(230, 150, 3);
-    content: " | ";
-    padding-right: 40px; 
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
-
 nav li a{
+    /* Text styling for each of the nav bar headings. */
     color: rgb(204, 8, 8);
     text-align: center;
     font-family: Arial;
     font-weight: bold;
     font-size: 15;
     text-decoration: none;   
-}
+    
+    /* Block for the dividers between each of the nav bar headings. */
+    /* Controlling the thickness, colour, background colour, etc. */
+    display: block;
+    border-right: 1px solid rgb(255, 123, 10);
+    border-left: 1px solid rgb(255, 123, 10);
+    background-color: black;
+ }
 
 Nav li :hover{
     background-color: black;
@@ -178,7 +148,7 @@ Nav li :hover{
 .active{
     background-color: interactive;
     padding-bottom: 10px;
-}
+} 
 
 Nav>li{
     display: inline-block;
@@ -200,10 +170,10 @@ table td,table th{
 }
 
 Table tr:nth-child(even){
-    background-color: black;  
+    background-color: rgb(14, 14, 14);  
 }
 Table tr:nth-child(odd){
-    background-color: rgb(46, 46, 46,0);  
+    background-color: rgb(46, 46, 46);  
 }
 
 Table tr:hover{
@@ -467,12 +437,150 @@ legend{
 #Frame{
     padding-top: 40px;
 }
+
 #Demons{
     width: 930px;
     position: relative;
     border: 4px solid black;
     outline: 2px solid rgb(230, 150, 3);
 }
+
+
+/* Albums Page */
+
+.albums {
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid black;
+    outline: 1px solid rgb(230, 150, 3);
+    transition: 0.4s;
+  }
+
+  #odd{
+    background-color:rgb(14, 14, 14);
+    color: rgb(204, 8, 8);
+  }
+  #even{
+    background-color:rgb(46, 46, 46);
+    color: rgb(204, 8, 8);
+  }
+
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .toggle, .albums, #even:hover {
+    background-color: rgb(255, 123, 0);
+    color: black;
+  }
+
+  .toggle, .albums, #odd:hover {
+    background-color: rgb(255, 123, 0); 
+    color: black;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    background-color: rgb(143, 7, 7);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+ 
+  .albums:after{
+    content: '\25ba';
+    font-size: 13px;
+    color: rgb(204, 8, 8);
+    float: right;
+    margin-left: 10px; 
+  }
+  
+  .toggle:after {
+    content: '\25bc';
+    color: rgb(204, 8, 8);
+  }
+  
+
+  *{
+    box-sizing: border-box;
+  }
+
+
+  .AlbumContainer{
+    padding: 15px;
+
+  }
+
+  .AlbumRow{
+    background-color: rgb(14, 14, 14);
+    border: 4px solid black;
+    outline: 1px solid rgb(230, 150, 3);
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  
+
+    .AlbumRow:after {
+    content: "";
+    display: table;
+    clear: both
+  } 
+
+    .column-66 {
+    text-align: center;
+    float: left;
+    width: 66%;
+    padding: 5px;
+    margin-left: 10px; 
+    margin-top: 6px; 
+    background-color: black;
+    border: 2px solid rgb(255, 123, 0);
+    outline: 1px solid rgb(204, 8, 8);
+    
+  }
+  
+    .column-33 {
+    float: left;
+    width: 33%;
+    padding: 15px;
+
+  }
+
+  .AlbumCover{
+    display: block;
+    margin:auto;
+    width: 300px;
+    height: 300px; 
+    border: 2px solid rgb(230, 150, 3);
+    outline: 2px solid rgb(204, 8, 8);
+  }
+
+  .FontSet{
+    color: rgb(255, 123, 0);
+  }
+
+  .AlbumDiv{
+    margin-left: 450px;
+    margin-right: 450px;
+  }
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
 
 
 

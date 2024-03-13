@@ -6,6 +6,8 @@
         <link rel="icon" type = "image/jpg" href = "images/Favicon.png">
 
         <link  rel = 'stylesheet' href = 'css/main.css'>
+        <script type="text/javascript" src="albums.js"></script> 
+        
         <type="text/css">
     </head>
     
@@ -46,14 +48,152 @@
         <main>
             <div>
                 <h3 class = "PageTitle">UPCOMING ALBUMS</h3>
-                <p></p>  
+                <p></p>
+                
+                <button class = "albums" id = "odd">80's Thrash Metal Albums:</button>
+
+                <div class = "panel">
+                  <div class="AlbumContainer">
+                    <div class="AlbumRow">
+
+                      <!-- Div container for Text and Description -->
+                      <div class="column-66">
+                        <h2>Master of Puppets (1986)<h2>
+                        <h3>Metallica<h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem dolor suscipit sint facere magnam, culpa recusandae ducimus laborum qui inventore asperiores rerum nobis optio debitis esse, reprehenderit dolorum fugiat.<p>
+                      </div>
+
+                      <!-- Div container for Album Cover -->
+                      <div class="column-33">
+                        <img src = 'images/Album Covers/Master-of-Puppets.jpg'
+                            class = "AlbumCover"/>
+                      </div>
+
+                    </div>
+                  </div>
+                      
+                  <div class="AlbumContainer">
+                    <div class="AlbumRow">
+
+                      <!-- Div container for Album Cover -->
+                      <div class="column-33">
+                        <img src = 'images/Album Covers/Reign-in-Blood.jpg'
+                          class = "AlbumCover"/>
+                          </div>
+
+                      <!-- Div container for Text and Description -->
+                      <div class="column-66">
+                        <h2>Reign in Blood (1986)<h2>
+                        <h3>Slayer<h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem dolor suscipit sint facere magnam, culpa recusandae ducimus laborum qui inventore asperiores rerum nobis optio debitis esse, reprehenderit dolorum fugiat.<p>
+                      </div>
+
+                    </div>
+                  </div> 
+
+                  <div class="AlbumContainer">
+                    <div class="AlbumRow">
+
+                      <!-- Div container for Text and Description -->
+                      <div class="column-66">
+                        <h2>Master of Puppets<h2>
+                          <hr class = AlbumDiv>
+                          <br>
+                        <h3>Metallica<h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem dolor suscipit sint facere magnam, culpa recusandae ducimus laborum qui inventore asperiores rerum nobis optio debitis esse, reprehenderit dolorum fugiat.<p>
+                      </div>
+
+                      <!-- Div container for Album Cover -->
+                      <div class="column-33">
+                        <img src = 'images/Album Covers/Master-of-Puppets.jpg'
+                            class = "AlbumCover"/>
+                      </div>
+
+                    </div>
+                  </div>
+                      
+                  <div class="AlbumContainer">
+                    <div class="AlbumRow">
+
+                      <!-- Div container for Album Cover -->
+                      <div class="column-33">
+                        <img src = 'images/Album Covers/Master-of-Puppets.jpg'
+                          class = "AlbumCover"/>
+                          </div>
+                          
+                      <!-- Div container for Text and Description -->
+                      <div class="column-66">
+                        <h2 class = "FontSet">Master of Puppets<h2>
+                        <h3 class = "FontSet">Metallica<h3>
+                        <p class = "FontSet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem dolor suscipit sint facere magnam, culpa recusandae ducimus laborum qui inventore asperiores rerum nobis optio debitis esse, reprehenderit dolorum fugiat.<p>
+                      </div>
+
+                    </div>
+                  </div> 
+
+                      
+
+
+                </div>
+                   
+                <button class="albums" id = "even">Death Metal Albums:</button>
+                <div class = "panel">
+                  <p>Lorem ipsum...</p>
+                </div>
+                
+                <button class="albums" id = "odd">Progressive Rock:</button>
+                <div class = "panel">
+                  <p>Lorem ipsum...</p>
+                </div> 
+
+                <button class="albums" id = "even">Nu Metal:</button>
+                <div class = "panel">
+                  <p>Lorem ipsum...</p>
+                </div>
+                
+                <button class="albums" id = "odd">Industrial Metal:</button>
+                <div class = "panel">
+                  <p>Lorem ipsum...</p>
+                </div>
+                
+                <button class="albums" id = "even">Upcoming Albums: </button>
+                <div class = "panel">
+                   <div>
+                    <div> 
+                        <img src = 'images/Album Covers/Master-of-Puppets.jpg'/>  
+                    </div>                        
+                   </div> 
+                  <p>Lorem ipsum...</p>
+                </div> 
+
+                <script>
+                    var acc = document.getElementsByClassName("albums");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        this.classList.toggle("toggle");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight) {
+                            panel.style.maxHeight = null;
+                        } else {
+                            panel.style.maxHeight = panel.scrollHeight + "px";
+                        }
+                    });
+                    }
+                </script>
+
+                
+                    </div>
+                </div> 
+                <a>   
             </div>
         </main>
-
 
         <footer>
             <hr>
             <p>Copyright: Jakub Sykes</p>
         </footer>
+         
     </body>    
 </html>
