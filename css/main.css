@@ -562,6 +562,20 @@ legend{
     margin-left: 450px;
     margin-right: 450px;
   }
+
+  #AlbumHeading{
+    text-align: center;
+  }
+
+  #HeadingCont{
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+
+  #AlbumSep{
+    margin-left: 200px;
+    margin-right: 200px;
+  }
   
 
 
