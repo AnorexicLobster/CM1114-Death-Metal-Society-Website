@@ -533,7 +533,8 @@ legend{
     float: left;
     width: 66%;
     padding: 5px;
-    margin-left: 10px; 
+    margin-left: 5px; 
+    margin-right: 5px;
     margin-top: 6px; 
     background-color: black;
     border: 2px solid rgb(255, 123, 0);
@@ -555,10 +556,6 @@ legend{
     height: 300px; 
     border: 2px solid rgb(230, 150, 3);
     outline: 2px solid rgb(204, 8, 8);
-  }
-
-  .FontSet{
-    color: rgb(255, 123, 0);
   }
 
   .AlbumDiv{
