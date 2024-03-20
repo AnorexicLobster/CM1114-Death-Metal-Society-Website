@@ -27,7 +27,8 @@
 
 
         <!--Navigation Bar-->
-        <nav>
+        <div class = navBar>
+        <nav >
             <li class = "active"><a href='home_page.html'>HOME</a></li>
             <li class = "active"><a href='event_calendar.html'>EVENTS</a></li>           
             <li class = "active"><a href='current_members.html'>MEMBERS</a></li>           
@@ -36,13 +37,34 @@
             <li class = "active"><a href='img_gallery.html'>GALLERY</a></li>           
             <li class = "active"><a href='contact_us.html'>CONTACT US</a></li>
         </nav>
+        </div>
 
 
-        <!--Music-->
-        <audio controls>
-            <source src = "audio/Rip & Tear Doom.mp3" type = "audio/mpeg">
-        </audio>
-        
+        <!--Music and Log In Form.-->
+        <div class = "loginBar">
+            <div id = "musicSection">
+                <audio controls>
+                    <source src = "audio/Rip & Tear Doom.mp3" type = "audio/mpeg">
+                </audio>
+            </div>
+  
+            <div id = "loginForm">
+                <form>
+                    <label for = "email"></label>
+                    <input type = "text" email = "email" value = "" placeholder = "Email:"/>
+  
+                    <label for = "password"></label>
+                    <input type = "text" email = "email" value = "" placeholder = "Password:"/>
+                  
+                    <button type = "button" onclick = 'login()'>Login</button>
+                    <hr>
+                <form>
+                  
+            <!-- Script for Logging in and Logging out. -->
+            <script src="Javascript/main.js"></script>
+            </div>    
+        </div>
+    
 
         <main>
             <!--Welcome Message-->

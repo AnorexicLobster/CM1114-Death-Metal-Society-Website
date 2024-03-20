@@ -5,6 +5,7 @@
         <!-- Link to Favicon. -->
         <link rel="icon" type = "image/jpg" href = "images/Favicon.png">
 
+        
         <link  rel = 'stylesheet' href = 'css/main.css'>
         <type="text/css">            
     </head>
@@ -27,7 +28,7 @@
         
 
         <!--Navigation Bar-->
-        <nav>  
+        <nav class = navBar>  
             <li class = "active"><a href='home_page.html'>HOME</a></li>
             <li class = "active"><a href='event_calendar.html'>EVENTS</a></li>
             <li class = "active"><a href='current_members.html'>MEMBERS</a></li>
@@ -42,8 +43,8 @@
         <audio controls>
             <source src = "audio/Rip & Tear Doom.mp3" type = "audio/mpeg">
         </audio>
-
       
+
         <main>
             <div>
                 <h3 class = "PageTitle">CONTACT US</h3>
@@ -71,17 +72,21 @@
                                 <br>
                                 <textarea name = "comments" cols = "60" rows = "10"></textarea>
 
-                                <input type = "submit" value = "Submit"/>
+                                <button type = "button" onclick='document.getElementById("form_outcome").innerHTML="The Form has been Successfully Sent!"'>Submit</button>
                             </div>
+                            <div><p id = "form_outcome"></p></div>
                         </fieldset> 
-
+                        
+                        
                         <br>
-                        <div id = "Frame">
+                      
+                    </form> 
+                    <div id = "Frame">
                         <img src = 'images/ContUsImg.png'
-                            alt = "Alternative Background. Zombies Eating each other."
+                            alt = "Demons in Fire."
                             id = "Demons"/>
                         </div>
-                    </form>   
+                  
                 </div>
 
                 <!-- Block for Tweets -->
