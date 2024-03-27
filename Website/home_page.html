@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>RGU DEATH METAL SOCIETY</title>
+        <!-- Link to Favicon. -->
+        <link rel = "icon" type = "image/jpg" href = "images/Favicon.png">
+
+        <!-- CSS Style Sheet Link -->
+        <link  rel = 'stylesheet' href = 'css/main.css'>
+
+        <!-- Linking Social Media Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <type="text/css">
+    </head>
+    
+
+    <body>
+        <header>
+            <!--Society Logo-->
+            <img src = 'images/Home Page Images/Logo.png' class = "Logo"
+                alt = "Society Logo. A pentagram."/>
+            <h1>
+                RGU DEATH METAL SOCIETY
+                <hr>
+            </h1>
+
+            <!--Background Image (Above the Nav Bar)-->
+            <img src = 'images/Home Page Images/Bands Background.png' class = "background_img"
+                alt = "A background picture of Death Metal Bands."/>
+        </header>
+
+
+        <!--Navigation Bar-->
+        <nav class = navBar>
+            <li class = "active"><a href='home_page.html'>HOME</a></li>
+            <li><a href='event_calendar.html'>EVENTS</a></li>           
+            <li><a href='current_members.html'>MEMBERS</a></li>           
+            <li><a href='projects.html'>PROJECTS</a></li>            
+            <li><a href='albums.html'>ALBUMS</a></li>           
+            <li><a href='img_gallery.html'>GALLERY</a></li>           
+            <li><a href='contact_us.html'>CONTACT US</a></li>
+        </nav>
+
+
+        <!--Music and Log In Form.-->
+        <div class = "loginBar">
+            <!-- Section for Music. -->
+            <div id = "musicSection">
+                <p>Play Music:</p>
+                <audio controls>
+                    <source src = "audio/Rip & Tear Doom.mp3" type = "audio/mpeg">
+                </audio> 
+            </div>
+            <!-- Section for Login Form. -->
+            <div id = "loginForm">
+                <form>
+                    <label for = "email"></label>
+                    <input type = "text" email = "email" value = "" placeholder = "Email:"/>
+  
+                    <label for = "password"></label>
+                    <input type = "text" email = "email" value = "" placeholder = "Password:"/>
+                  
+                    <button type = "button" onclick = 'login()'>Login</button>
+                    <hr id = "loginDiv">
+                <form>
+                  
+                <!-- Script for Logging in and Logging out. -->
+                <script src="Javascript/main.js"></script>
+            </div>    
+        </div>
+    
+
+        <main>
+            <!--Page Title/ Welcome Message-->
+            <h3 class = "PageTitle">Welcome to the RGU  Death Metal Society</h3>
+            <div class = "MessageCont">
+                <div class = "PageMessage">
+                    <hr class = "MsgDiv">
+                    <h4>Do you want to spend time making music that will make your neighbour’s ears bleed? Their children cry and their grandparents drop dead from a heart attack. 
+                        Then what are you waiting for? Come join us at the RGU Death Metal Society!!<br><br>
+                        Our Mission:<br>
+                        Our Mission is to explore the world of metal and share it with one another. 
+                        Here we also have a passion for creating our own music - which emphasises experimental and innovative sounds that will push the boundaries of the genre.</h4>
+                    <hr class = "MsgDiv">
+                </div>
+            </div>
+
+            <div class = "row">        
+                <!-- Homepage Images -->
+                <div class = "HmImg">    
+                    <img src = 'images/Home Page Images/H2.png'
+                        alt = "A picture of Slayer"
+                        id = "Slayer"/>
+                    <img src = 'images/Home Page Images/H1.jpg'
+                        alt = "A picture of Sepultura"
+                        id = "Sepultura"/>
+                    <img src = 'images/Home Page Images/H3.jpg'
+                        alt = "A picture of Pantera"
+                        id = "Pantera"/>
+                    <img src = 'images/Home Page Images/H4.jpg'
+                        alt = "A picture of Faith No More"
+                        id = "Faith"/>
+                </div>
+
+                <!-- Block for Tweets -->
+                <div class = "Twitter"> 
+                    <h3>Latest Tweets</h3>     
+                    <aside> 
+                    <a class="twitter-timeline" href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw">
+                        Tweets by XDevelopers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                    </aside>  
+                </div>  
+            </div>    
+        </main>
+        
+
+        <footer>
+            <hr>
+            <div class = "footerContainer">
+                <div class = copyRight>
+                    <p><span>&#169</span> 2024 Jakub Sykes - RGU Death Metal Society</p>
+                </div>
+                <div class = SocialLinks>
+                    <p>Follow Us On: </p>
+                    <!-- Link to Facebook -->
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <!-- Link to Twitter -->
+                    <a href="https://twitter.com/i/flow/login" class="fa fa-twitter"></a>
+                    <!-- Link to Instagram -->
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </footer>
+    </body>    
+</html>

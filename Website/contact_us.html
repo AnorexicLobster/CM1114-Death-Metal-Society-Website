@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>RGU DEATH METAL SOCIETY</title>
+        <!-- Link to Favicon. -->
+        <link rel="icon" type = "image/jpg" href = "images/Favicon.png">
+
+        <!-- CSS Style Sheet Link -->
+        <link  rel = 'stylesheet' href = 'css/main.css'>
+
+        <!-- Linking Social Media Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <type="text/css">            
+    </head>
+    
+
+    <body>
+        <header>
+            <!--Society Logo-->
+            <img src = 'images/Home Page Images/Logo.png' class = "Logo"
+                alt = "Society Logo. A pentagram."/>
+            <h1>
+                RGU DEATH METAL SOCIETY
+                <hr>
+            </h1>
+
+            <!--Background Image (Above the Nav Bar)-->
+            <img src = 'images/Home Page Images/Zombie Background.png' class = "background_img"
+                alt = "Alternative Background. Zombies Eating each other."/>
+        </header>
+        
+
+        <!--Navigation Bar-->
+        <nav class = navBar>  
+            <li><a href='home_page.html'>HOME</a></li>
+            <li><a href='event_calendar.html'>EVENTS</a></li>
+            <li><a href='current_members.html'>MEMBERS</a></li>
+            <li><a href='projects.html'>PROJECTS</a></li>
+            <li><a href='albums.html'>ALBUMS</a></li>
+            <li><a href='img_gallery.html'>GALLERY</a></li>
+            <li class = "active"><a href='contact_us.html'>CONTACT US</a></li>
+        </nav>
+
+
+        <!--Music-->
+        <p>Play Music:</p>
+        <audio controls>
+            <source src = "audio/Rip & Tear Doom.mp3" type = "audio/mpeg">
+        </audio>
+      
+
+        <main>
+            <!-- Page Title. -->
+            <div>
+                <h3 class = "PageTitle">CONTACT US</h3>
+                <br> 
+            </div>
+
+            <div class = "MainBody">
+                <div class="FormBlock">
+                    <!-- Form. -->
+                    <form>
+                        <legend>If you have any enquiries contact our Social Team:</legend>
+                        <br>
+                        <fieldset>
+                            <label for = "name">Name: </label>
+                            <input type = "text" name = "name" value = ""/>
+                            
+                            <label for = "email">Email: </label>
+                            <input type = "text" email = "email" value = ""/>
+
+                            <div>
+                                <br>
+                                <br>
+                                <label for = "comments">Comment: </label> 
+                                <br>
+                                <textarea name = "comments" cols = "60" rows = "10"></textarea>
+
+                                <button type = "button" onclick='document.getElementById("form_outcome").innerHTML="The Form has been Successfully Sent!"'>Submit</button>
+                            </div>
+                            <div><p id = "form_outcome"></p></div>
+                        </fieldset> 
+                        
+                        <br>
+                    </form> 
+
+                    <!-- Block for Image below the Form. -->
+                    <div id = "Frame">
+                        <img src = 'images/ContUsImg.png'
+                            alt = "Demons in Fire."
+                            id = "Demons"/>
+                    </div>
+                </div>
+
+                <!-- Block for Tweets -->
+                <div class = "TwitterBlock">
+                    <div class = "TwitterFeed"> 
+                        <h3 id = "TwitterHeading">Latest Tweets</h3>  
+                        <a class="twitter-timeline" href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw">
+                            Tweets by XDevelopers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>   
+                    </div> 
+                </div>
+            </div>
+        </main>
+
+       
+        <footer>
+            <hr>
+            <div class = "footerContainer">
+                <div class = copyRight>
+                    <p><span>&#169</span> 2024 Jakub Sykes - RGU Death Metal Society</p>
+                </div>
+                <div class = SocialLinks>
+                    <p>Follow Us On: </p>
+                    <!-- Link to Facebook -->
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <!-- Link to Twitter -->
+                    <a href="https://twitter.com/i/flow/login" class="fa fa-twitter"></a>
+                    <!-- Link to Instagram -->
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </footer>
+    </body>    
+</html>
