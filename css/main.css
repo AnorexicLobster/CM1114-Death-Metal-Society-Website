@@ -142,8 +142,8 @@ footer{
 /* Setting the Margins,etc for the Gallery Page message. */
 .BootMsgDiv{
     opacity: 1;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 .BootPageMessage{
@@ -284,14 +284,14 @@ Nav>li{
 
 /* Internal Message Containers. */
 .MessageDec{
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
     background-color: rgb(95, 1, 1);
     border: 4px solid black;
     outline: 1px solid rgb(230, 150, 3);
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .PageMessage{
@@ -307,8 +307,8 @@ Nav>li{
 
 /* Aesthetics. */
 .MsgDiv{
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 /* Page Heading END. */
 
@@ -872,11 +872,13 @@ input[type=date]{
     width: 64%;
     height: 100%;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     background-color: black;
     border: 2px solid rgb(20, 20, 20);
     outline: 1px solid rgb(46, 46, 46); 
-    padding: 20px;    
+    padding: 20px; 
+    padding-bottom: 30px; 
+      
 }
 
 /* Adjusting the Margin for 'odd' Projects.*/
