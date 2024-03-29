@@ -213,7 +213,7 @@ nav li{
     border: 5px;
     padding-left: 20px;
     background-color: black;
-    padding: -5px 35px 0 200px; 
+    padding: -5px 35px 0 35px; 
     display: inline;
     float:left;
 }
