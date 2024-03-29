@@ -65,3 +65,29 @@ https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in
 Note: The only thing I used this link for was the regex code, 
       which I used to validate that an email address was entered. 
       Used on the Contact Us page and Homepage.
+
+-----------------------------------------------------------------------------------------------
+
+Image Slide Overlay</br>
+Reference:</br>
+https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp
+
+Note: This is the reference I used to create the slide Overlay over the Members Images. 
+
+-----------------------------------------------------------------------------------------------
+
+Lightbox Gallery</br>
+Reference:</br>
+https://www.youtube.com/watch?v=QghhoJBdw7A&t=415s
+
+Note: This is the reference I used to create the Lightbox Gallery
+      - Displaying an enlarged image over the top of the page, when the image is clicked. 
+
+-----------------------------------------------------------------------------------------------
+
+Favicon</br>
+Reference:
+https://www.youtube.com/watch?v=HGTJBPNC-Gw&t=7198s
+
+Note: At the beginning I used this reference, to learn a little more about HTML and CSS. 
+      I also used it for the Favicon. Timestamp: 31Mins 20Secs. 
