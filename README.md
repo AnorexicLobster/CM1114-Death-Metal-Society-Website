@@ -2,15 +2,15 @@ References:
 
 -----------------------------------------------------------------------------------------------
 
-Card Flip Animation
+Card Flip Animation__
 To get the Flip card Animation working, I used two references.
-First Reference:
+First Reference:__
 https://www.youtube.com/watch?v=QGVXmoZWZuw&list=PLR8vUZDE6IePk_KvVxrFwesjz8qspsIhd
 
 Note: I used this reference for the CSS and HTML. However, the Javascript for this reference 
       wasn't doing what I was looking for. 
       
-Second Reference:
+Second Reference:__
 https://stackoverflow.com/questions/66095959/flip-animation-for-multiple-cards
 
 Note: I used this reference for the Javascript, the main reason for using this, was so that I could, 
