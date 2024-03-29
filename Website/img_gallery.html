@@ -37,47 +37,62 @@
 
         <!--Navigation Bar-->
         <nav class = "BootProtection">
-            <li><a href='home_page.html'>HOME</a></li>
-            <li><a href='event_calendar.html'>EVENTS</a></li>
-            <li><a href='current_members.html'>MEMBERS</a></li>
-            <li><a href='projects.html'>PROJECTS</a></li>
-            <li><a href='albums.html'>ALBUMS</a></li>
-            <li class = "active"><a href='img_gallery.html'>GALLERY</a></li>
-            <li><a href='contact_us.html'>CONTACT US</a></li>
+            <li class = "BootNavProtMarg"><a href='home_page.html'>HOME</a></li>
+            <li class = "BootNavProtMarg"><a href='event_calendar.html'>EVENTS</a></li>
+            <li class = "BootNavProtMarg"><a href='current_members.html'>MEMBERS</a></li>
+            <li class = "BootNavProtMarg"><a href='projects.html'>PROJECTS</a></li>
+            <li class = "BootNavProtMarg"><a href='albums.html'>ALBUMS</a></li>
+            <li class = "BootNavProt"><a href='img_gallery.html'>GALLERY</a></li>
+            <li class = "BootNavProtMarg"><a href='contact_us.html'>CONTACT US</a></li>
         </nav>  
         
         
         <!--Music-->
-        <p>Play Music:</p>
+        <p class = "BootMusicProt">Play Music:</p>
         <audio controls>
             <source src = "audio/Rip & Tear Doom.mp3" type = "audio/mpeg">
         </audio>
 
 
         <main>
+
             <!-- Page Title. -->
-            <div>
-                <h2 class = "BootProtText">GALLERY</h2>
-                <br> 
+            <h2 class = "BootProtText">GALLERY</h2>
+            <!-- Page Intro Text. -->
+            <div class = "MessageCont">
+                <div class = "MessageDec">
+                    <div class = "BootPageMessage">
+                        <hr class = "BootMsgDiv">
+                        <h4> Welcome to our Gallery!<br>
+                            Here you can explore some past events,<br>
+                            and get to know our Society members better, primarily through the crazy shenanigans they get up to.<br>
+                            If you're not deterred from our Society after this page, then you truly belong here!
+                            </h4>
+                        <hr class = "BootMsgDiv">
+                    </div>
+                </div>
             </div>
+        
 
             <!-- Image Carousel -->
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/Gallery Images/concertImgOne.jpg" class="d-block w-100" 
-                        alt="Concert Image One">
-                  </div>
+                <div class = "CarouselCont">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Gallery Images/concertImgOne.jpg" class="d-block w-100" 
+                                alt="Concert Image One">
+                        </div>
 
-                  <div class="carousel-item">
-                    <img src="images/Gallery Images/concertImgTwo.jpg" class="d-block w-100" 
-                        alt="Concert Image Two">
-                  </div>
+                        <div class="carousel-item">
+                            <img src="images/Gallery Images/concertImgTwo.jpg" class="d-block w-100" 
+                                alt="Concert Image Two">
+                        </div>
 
-                  <div class="carousel-item">
-                    <img src="images/Gallery Images/concertImgThree.jpg" class="d-block w-100" 
-                        alt="Concert Image Three">
-                  </div>
+                        <div class="carousel-item">
+                            <img src="images/Gallery Images/concertImgThree.jpg" class="d-block w-100" 
+                                alt="Concert Image Three">
+                        </div>
+                    </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -88,7 +103,8 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <br>
+            <br><br><br><br>
+
 
 
             <!--Images for the Gallery-->
@@ -100,11 +116,12 @@
                             <img src = 'images/Gallery Images/1.png'
                                 alt = "Image of a performance by Maynard and His band."
                                 class = "GalImg"
-                                onmouseover = "imgEnlarge(this)"
-                                onmouseout = "imgSmall(this)"
+                                onmouseover = "imgEnlarge(this,'ImgDes1')"
+                                onmouseout = "imgSmall(this, 'ImgDes1')"
                                 />
                             <hr class = "ImgDec">
-                            <div class="ImgDes">Maynard and his band <br> performing live.</div>     
+                            <!-- Img Description. -->
+                            <div id="ImgDes1" class="ImgDes">Maynard and his band <br> performing live.</div>     
                         </div>
                     </div>
                     <div class = "GalImgBorder">
@@ -113,11 +130,12 @@
                             <img src = 'images/Gallery Images/2.png'
                                 alt = "Les playing the Bass."
                                 class = "GalImg"
-                                onmouseover = "imgEnlarge(this)"
-                                onmouseout = "imgSmall(this)"
+                                onmouseover = "imgEnlarge(this, 'ImgDes2')"
+                                onmouseout = "imgSmall(this, 'ImgDes2')"
                                />
                             <hr class = "ImgDec">
-                            <div class="ImgDes">Les playing the Bass.</div>
+                            <!-- Img Description. -->
+                            <div id = "ImgDes2" class="ImgDes">Les playing the Bass.</div>
                         </div>
                     </div> 
                     <div class = "GalImgBorder">
@@ -126,10 +144,12 @@
                             <img src = 'images/Gallery Images/3.png'
                                 alt = "Maynard Looking angry at a Performance."
                                 class = "GalImg"
-                                onmouseover = "imgEnlarge(this)"
-                                onmouseout = "imgSmall(this)"/>
+                                onmouseover = "imgEnlarge(this,'ImgDes3')"
+                                onmouseout = "imgSmall(this, 'ImgDes3')"
+                                />
                             <hr class = "ImgDec">
-                            <div class="ImgDes">Maynard (as always) looking angry <br> at a Performance.</div>
+                            <!-- Img Description. -->
+                            <div id = "ImgDes3" class="ImgDes">Maynard (as always) looking angry <br> at a Performance.</div>
                         </div>
                     </div>
                     <div class = "GalImgBorder">
@@ -138,10 +158,12 @@
                             <img src = 'images/Gallery Images/4.jpg'
                                 alt = "Image of members from one our bands, bullying a bald man."
                                 class = "GalImg"
-                                onmouseover = "imgEnlarge(this)"
-                                onmouseout = "imgSmall(this)"/>
+                                onmouseover = "imgEnlarge(this,'ImgDes4')"
+                                onmouseout = "imgSmall(this, 'ImgDes4')"
+                                />
                             <hr class = "ImgDec">
-                            <div class="ImgDes">Members from one of our bands <br> bullying a bald man..</div>
+                            <!-- Img Description. -->
+                            <div id = "ImgDes4" class="ImgDes">Members from one of our bands <br> bullying a bald man..</div>
                         </div>
                     </div>  
                 </div>
@@ -155,10 +177,12 @@
                             <img src = 'images/Gallery Images/5.png'
                                 alt = "Image of one of our members looking angry while playing a guitar."
                                 class = "GalImg"
-                                onmouseover = "imgEnlarge(this)"
-                                onmouseout = "imgSmall(this)"/>
+                                onmouseover = "imgEnlarge(this,'ImgDes5')"
+                                onmouseout = "imgSmall(this, 'ImgDes5')"
+                                />
                             <hr class = "ImgDec">
-                            <div class="ImgDes">Dave looking angry at <br> a performance.</div>
+                            <!-- Img Description. -->
+                            <div id = "ImgDes5" class="ImgDes">Dave looking angry at <br> a performance.</div>
                         </div>
                     </div>
                     <div class = "GalImgBorder">
@@ -167,10 +191,12 @@
                             <img src = 'images/Gallery Images/6.png'
                                 alt = "Image of Patton and His band: Faith No More."
                                 class = "GalImg"
-                                onmouseover = "imgEnlarge(this)"
-                                onmouseout = "imgSmall(this)"/>
+                                onmouseover = "imgEnlarge(this,'ImgDes6')"
+                                onmouseout = "imgSmall(this, 'ImgDes6')"
+                                />
                             <hr class = "ImgDec">
-                            <div class="ImgDes">Image of Patton and His band: <br> Faith No More.</div>
+                            <!-- Img Description. -->
+                            <div id = "ImgDes6" class="ImgDes">Image of Patton and His band: <br> Faith No More.</div>
                         </div>
                     </div>
                     <div class = "GalImgBorder">
@@ -179,10 +205,12 @@
                             <img src = 'images/Gallery Images/7.jpg'
                                 alt = "Image of Some of members at a performance."
                                 class = "GalImg"
-                                onmouseover = "imgEnlarge(this)"
-                                onmouseout = "imgSmall(this)"/>
+                                onmouseover = "imgEnlarge(this,'ImgDes7')"
+                                onmouseout = "imgSmall(this, 'ImgDes7')"
+                                />
                             <hr class = "ImgDec">
-                            <div class="ImgDes">Some of our members performing live.</div>
+                            <!-- Img Description. -->
+                            <div id = "ImgDes7" class="ImgDes">Some of our members performing live.</div>
                         </div>
                     </div>
                     <div class = "GalImgBorder">
@@ -191,10 +219,12 @@
                             <img src = 'images/Gallery Images/8.png'
                                 alt = "Image of our members relaxing after a jam session."
                                 class = "GalImg"
-                                onmouseover = "imgEnlarge(this)"
-                                onmouseout = "imgSmall(this)"/>
+                                onmouseover = "imgEnlarge(this,'ImgDes8')"
+                                onmouseout = "imgSmall(this, 'ImgDes8')"
+                                />
                             <hr class = "ImgDec">
-                            <div class="ImgDes">Our members "relaxing" <br> after a jam session.</div>
+                            <!-- Img Description. -->
+                            <div id = "ImgDes8" class="ImgDes">Our members "relaxing" <br> after a jam session.</div>
                         </div>
                     </div>    
                 </div>
@@ -208,10 +238,12 @@
                             <img src = 'images/Gallery Images/9.jpg'
                                 alt = "Image of of Odadjian and his band looking like they were all possesed by aliens."
                                 class = "GalImg"
-                                onmouseover = "imgEnlarge(this)"
-                                onmouseout = "imgSmall(this)"/>
+                                onmouseover = "imgEnlarge(this,'ImgDes9')"
+                                onmouseout = "imgSmall(this, 'ImgDes9')"
+                                />
                             <hr class = "ImgDec">
-                            <div class="ImgDes">Our members after they were <br> returned by the aliens.</div>
+                            <!-- Img Description. -->
+                            <div id = "ImgDes9" class="ImgDes">Our members after they were <br> returned by the aliens.</div>
                         </div>
                     </div>
                     <div class = "GalImgBorder">
@@ -220,10 +252,12 @@
                             <img src = 'images/Gallery Images/10.png'
                                 alt = "Image of Foss playing at a Show"
                                 class = "GalImg"
-                                onmouseover = "imgEnlarge(this)"
-                                onmouseout = "imgSmall(this)"/>
+                                onmouseover = "imgEnlarge(this,'ImgDes10')"
+                                onmouseout = "imgSmall(this, 'ImgDes10')"
+                                />
                             <hr class = "ImgDec">
-                            <div class="ImgDes">Foss playing at a Show.</div>
+                            <!-- Img Description. -->
+                            <div id = "ImgDes10" class="ImgDes">Foss playing at a Show.</div>
                         </div>
                     </div>
                     <div class = "GalImgBorder">
@@ -232,10 +266,12 @@
                             <img src = 'images/Gallery Images/11.png'
                                 alt = "Image of Araya and his band members."
                                 class = "GalImg"
-                                onmouseover = "imgEnlarge(this)"
-                                onmouseout = "imgSmall(this)"/>
+                                onmouseover = "imgEnlarge(this,'ImgDes11')"
+                                onmouseout = "imgSmall(this, 'ImgDes11')"
+                                />
                             <hr class = "ImgDec">
-                            <div class="ImgDes">Araya and His band.</div>
+                            <!-- Img Description. -->
+                            <div id = "ImgDes11" class="ImgDes">Araya and His band.</div>
                         </div>
                     </div>
                     <div class = "GalImgBorder">
@@ -244,10 +280,12 @@
                             <img src = 'images/Gallery Images/12.png'
                                 alt = "Image of Some of our other members acting like Apes."
                                 class = "GalImg"
-                                onmouseover = "imgEnlarge(this)"
-                                onmouseout = "imgSmall(this)"/>
+                                onmouseover = "imgEnlarge(this,'ImgDes12')"
+                                onmouseout = "imgSmall(this, 'ImgDes12')"
+                                />
                             <hr class = "ImgDec">
-                            <div class="ImgDes">Some more of our members acting <br> like apes.</div>
+                            <!-- Img Description. -->
+                            <div id = "ImgDes12" class="ImgDes">Some more of our members acting <br> like apes.</div>
                         </div>
                         
                     </div>
@@ -264,7 +302,7 @@
 
             <!-- JavaScript for the Gallery. -->
             <script>
-                // Section for the Lightbox.
+                // Section for the Lightbox - Enlarging Image on click.
                 document.querySelectorAll('.ImgFunc img').forEach(ImgFunc =>{
                     ImgFunc.onclick = () =>{
                         document.querySelector('.pop-up-img').style.display = 'block';
@@ -277,16 +315,17 @@
                 }
 
 
-                // Section for changing image scale on hover.
-                function imgEnlarge(size){
-                    size.style.scale = "1.2";
-                    document.querySelector('.ImgDes').style.visibility = 'visible';
-                    document.querySelector('.ImgDes').style.opacity = '1';
+                // Section for changing image scale on hover, and triggering image text.
+                function imgEnlarge(img, descid){
+                    img.style.scale = "1.2";
+                    document.getElementById(descid).style.visibility = 'visible';
+                    document.getElementById(descid).style.opacity = '1';
                 }
-                function imgSmall(size){
-                    size.style.scale = "1";
-                    document.querySelector('.ImgDes').style.visibility = 'hidden';
-                    document.querySelector('.ImgDes').style.opacity = '0';
+
+                function imgSmall(img, descid){
+                    img.style.scale = "1";
+                    document.getElementById(descid).style.visibility = 'hidden';
+                    document.getElementById(descid).style.opacity = '0';
                 }
             </script> 
         </main>
@@ -296,7 +335,7 @@
             <hr id = "BootHr">
             <div class = "footerContainer">
                 <div class = copyRight>
-                    <p><span>&#169</span> 2024 Jakub Sykes - RGU Death Metal Society</p>
+                    <p><span>&#169</span> 2024 Jakub Sykes <br> RGU Death Metal Society</p>
                 </div>
                 <div class = SocialLinks>
                     <p>Follow Us On: </p>

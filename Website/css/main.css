@@ -2,16 +2,17 @@
 Colour Reference:
 
 Background Colour and Reading Background Colour: Black.
-Secondary Background Colour: Gray - rgb(46,46,46).
+Secondary Background Colours (and Border Colours): Gray - rgb(14, 14, 14), rgb(20, 20, 20) and rgb(46, 46, 46).
+                              Red - rgb(95, 1, 1).
 Main Text Colour: Red - rgb(204,8,8).
 Secondary Text Colour - White. 
-Interaction and Selection Colour: Orange - rgb(255,150,0).
-Secondary Colours: Yellow - rgb(230,150,3).
+Interaction, Detail and Selection Colour: Orange - rgb(255, 123, 0).
+Secondary Detail Colour: Yellow - rgb(230, 150, 3).
 */
 
 
 
-/* Webpage Setup Code Block. */
+/* Main Webpage Setup Block. */
 body{
     background-color: black;
     padding: 4px;
@@ -35,19 +36,19 @@ h1{
     text-align: center;
     font-weight: bold;
     color: rgb(204, 8, 8);
-    font-size: 36px;
+    font-size: 25pt;
 }
 
 h3{
-    font-size: 22px;
+    font-size: 18pt;
 }
 
 p{
-    font-size: 15px;
+    font-size: 11pt;
 }
 
 hr{
-    color: rgb(255, 123, 10);
+    color: rgb(255, 123, 0);
 }
 
 main{
@@ -60,36 +61,32 @@ footer{
     border-radius: 10px;
     margin-top: 20px;
 }
-
-/* @media screen and (max-width: 1200px){
-    .HmImg{
-        width: 100%;
-    }
-
-    .active{
-        width: 100%;
-    }
-  } */
 /* Webpage Setup END.*/
 
 /* --------------------------------------------------------------- */
 
-/* Block for Bootstrap Fixes */
+/* Block for Bootstrap Fixes (Gallery). */
+/* Adjusting Margins, Fonts, Size, etc. */
+
+/* Page Body. */
 #BootAdjust{
     margin: auto;
     opacity: 1;
 }
 
-#BootFont{
-    color: rgb(204, 8, 8);
-    font-family: Arial;
-}
-
+/* Title. */
 #BootHeading{
-    margin-top: 24px;
+    margin-top: 21px;
     margin-bottom: 18px;
 }
 
+/* Hr below Title. */
+#BootHr{
+    border-width: 1.9px;
+    opacity: 1;
+}
+
+/* Main Page Image. */
 #BootImg{
     width: 100%;
     margin-left: auto;
@@ -98,23 +95,69 @@ footer{
     height: 450px;
 }
 
-#BootHr{
-    border-width: 2px;
-    opacity: 1;
-}
-
-.BootProtText{
-    font-size: 25px;
-    font-weight: bold;
-    font-family: Arial;
-    text-align: center;
-    text-decoration: underline;
-}
-
+/* Navigation Bar. */
 .BootProtection{
     position: sticky;
     top: 0px;
     z-index: 1;
+    margin-bottom: 12px;
+}
+
+.BootNavProtMarg{
+    padding-bottom: 10px;
+    margin-right: -0.5px;
+}
+
+.BootNavProt{
+    background-color: interactive;
+    padding-bottom: 10px;
+    margin-right: -1px;
+}
+
+.BootNavProt a{
+    -webkit-text-stroke: 1px rgb(143, 7, 7);
+    color: rgb(230, 150, 3);
+}
+
+/* Music Section. */
+.BootMusicProt{
+    margin-bottom: 14px;
+}
+
+/* Page Heading. */
+.BootProtText{
+    font-size: 18pt;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 24px;
+    margin-top: 20px;
+}
+
+/* Setting the Margins,etc for the Gallery Page message. */
+.BootMsgDiv{
+    opacity: 1;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+.BootPageMessage{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    text-align: center;    
+    background-color: rgb(14, 14, 14);
+    border: 4px solid black;
+    outline: 1px solid rgb(230, 150, 3); 
+}
+
+/* Text Adjustments for the Page Message. */
+.BootPageMessage h4{
+    font-size: 12pt;
+    font-family: Arial;
+    font-weight: bold;   
 }
 /* Bootstrap END. */
 
@@ -131,25 +174,13 @@ footer{
 .background_img{
     margin-left: auto;
     margin-right: auto;
-
     bottom: -50;
     right: 50;
     display: block;
-    
     width: 100%;
     height: 450px;
 }
 /* Logo and Background END.*/
-
-
-/* Page Title. */
-.PageTitle{
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: underline;
-}
-/* Page Title END. */
 
 /* --------------------------------------------------------------- */
 
@@ -206,29 +237,369 @@ Nav li :hover{
     color: white;
 }
 
-
 .active{
     background-color: interactive;
     padding-bottom: 10px;
 } 
 
+/* Changing the Colour of the Active page. */
 .active a{
     -webkit-text-stroke: 1px rgb(143, 7, 7);
     color: rgb(230, 150, 3);
 }
 
-
 Nav>li{
     display: inline-block;
 }
-
-
 /* Navigation Bar END. */
 
 /* --------------------------------------------------------------- */
 
+/* Section for Shared Elements. */
+/* Page Heading and Page Message - All Pages. */
+.PageTitle{
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Main Container for the Page Message. */
+.MessageCont{
+    height: 100px;
+    width:100%;
+    background-color: black;
+    margin-bottom: 250px;
+}
+
+/* Internal Message Containers. */
+.MessageDec{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: rgb(95, 1, 1);
+    border: 4px solid black;
+    outline: 1px solid rgb(230, 150, 3);
+    margin-bottom: 50px;
+}
+
+.PageMessage{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    text-align: center;    
+    background-color: rgb(14, 14, 14);
+    border: 4px solid black;
+    outline: 1px solid rgb(230, 150, 3);  
+}
+
+/* Aesthetics. */
+.MsgDiv{
+    margin-left: 350px;
+    margin-right: 350px;
+}
+/* Page Heading END. */
+
+
+/* Social Media Link Styling.*/
+.fa{
+    background-color: rgb(46, 46, 46); 
+    border: 2px solid black;
+    outline: 1px solid rgb(230, 150, 3); 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25pt;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    color: rgb(143, 7, 7);
+}
+
+.fa:hover{
+    opacity: 0.7;
+    color: rgb(230, 150, 3);
+}
+/* Social Links END. */
+
+
+/* Styling the Footer. */
+/* Main Footer Container. */
+.footerContainer{
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    display: inline-block;
+    border: 2px solid black;
+    outline: 1px solid rgb(255, 123, 10);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.SocialLinks{
+    padding: 10px;
+    width: 80%;
+    float: right;
+    text-align: right;
+}
+
+.copyRight{
+    padding: 10px;
+    width: 20%;
+    float: left;
+}
+/* Footer END. */
+
+/* --------------------------------------------------------------- */
+
+/* Home Page */
+/* Login and Music Section. */
+
+/* Main  container for Music and Login.*/
+.loginBar{
+    padding-top: 10px;
+    display: inline-block;
+    width: 100%; 
+}
+
+/* Positioning the Specific Sections. */
+#loginForm{
+    float: right;
+    text-align: right;
+    width: 30%;
+    padding-bottom: 10px;
+}
+
+#musicSection{
+    float: left;
+    width: 70%;
+    margin-top: -10px;
+}
+
+/* Login Aesthetics. */
+input[type ='password']{
+    border: 1px solid rgb(204, 8, 8);
+    outline: 1px solid rgb(230, 150, 3);
+}
+
+#loginDiv{
+    margin-left: 35%;
+}
+
+
+/*Images and Article. */
+/* Container for the Homepage. */
+.HomeRow{
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+}
+
+/* Containers for the Home Page Images - Aesthetics. */
+.HmImgContOne{
+    padding: 10px;
+    margin-right: 50px;
+    float: left;
+    width: 70%;
+    background-color: rgb(95, 1, 1);
+    border: 4px solid black;
+    outline: 1px solid rgb(230, 150, 3);
+}
+
+.HmImgContTwo{
+    text-align: center;
+    padding: 25px;
+    float: left;
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    background-color: black;
+    border: 2px solid rgb(20, 20, 20);
+    outline: 2px solid rgb(46, 46, 46);
+    z-index: -2;
+}
+
+.HmImgContThree{
+    text-align: center;
+    background-color: rgb(14, 14, 14);
+    padding-bottom: 60px;
+    padding-top: 60px;
+    border: 4px solid black;
+    outline: 1px solid rgb(230, 150, 3);
+}
+
+/* Seperate ID for each image so they can be rotated and overlapped. */
+#Sepultura{
+    position: relative;
+    z-index: 1;
+    height: 250;
+    width: 400;
+    border: 4px solid rgb(95, 1, 1);
+    outline: 1px solid rgb(230, 150, 3); 
+    margin: 5px;
+    rotate: -10deg;
+}
+
+#Slayer{
+    position: relative;
+    z-index: 2;
+    height: 250;
+    width: 400;
+    border: 4px solid rgb(95, 1, 1);
+    outline: 1px solid rgb(230, 150, 3);
+    margin: 5px;
+    rotate: 15deg;   
+}
+
+#Pantera{  
+    position: relative; 
+    z-index: 3;
+    height: 250;
+    width: 400;
+    border: 4px solid rgb(95, 1, 1);
+    outline: 1px solid rgb(230, 150, 3);
+    margin: 5px; 
+    rotate: -15deg;
+}
+
+#Faith{  
+    position: relative; 
+    z-index: 2; 
+    height: 250;
+    width: 400;
+    border: 4px solid rgb(95, 1, 1);
+    outline: 1px solid rgb(230, 150, 3); 
+    margin: 5px;
+    rotate: 5deg;
+}
+/* Home Page Images END. */
+
+
+/* Article. */
+/* Main Article Container. */
+.ArtCont{
+    width: 30%;
+    height: 750px;
+    padding: 10px;
+    margin-right: 15px;
+    background-color: rgb(14, 14, 14);
+    border: 2px solid black;
+    outline: 1px solid rgb(230, 150, 3);    
+}
+
+/* Adjustments for the Aside Title. */
+.ArtCont h3{
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* Article - Aside Title. */
+#ArtTitle{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(95, 1, 1);
+    border: 2px solid black;
+    outline: 1px solid rgb(230, 150, 3); 
+}
+
+/* Main Internal Container for the Articles. */
+.ArticleList{
+    overflow: auto;
+    height: 600px;
+    background-color: rgb(14, 14, 14);
+}
+
+/* Aesthetics for Aside tag. */
+aside{
+    background-color: black;
+    border: 2px solid rgb(20, 20, 20);
+    outline: 1px solid rgb(46, 46, 46); 
+}
+
+/* Img Container. */
+.ImgCont{
+    width: 40%;
+    float: left;
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 5px;
+    background-color: rgb(14, 14, 14);
+    border: 2px solid rgb(20, 20, 20);
+    outline: 1px solid rgb(46, 46, 46); 
+    padding: 10px;
+}
+
+.ImgCont figcaption {
+    color: rgb(143, 7, 7);
+}
+
+.ArtImg{
+    position: relative;
+    margin: 10px;
+    width: 95%;
+    height: 160px;
+    border: 2px solid black;
+    outline: 1px solid rgb(230, 150, 3); 
+    margin: auto;
+    margin-bottom: 10px;  
+}
+
+/* Text Container. */
+.TextCont{
+    width: 95%;
+    padding: 3px;
+    margin: 10px;
+}
+
+.TextCont h4{
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+/* Aesthetics. */
+.ArtDiv{
+    margin-left: 75px;
+    margin-right: 75px;
+}
+/* HomePage END */
+
+/* --------------------------------------------------------------- */
+
 /* Calendar Code Block. */
+/* Event Calendar Section. */
+
+/* Main Containers for the Calendar - Mainly Aesthetics.*/
+.EventCont{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(95, 1, 1);
+    border: 2px solid black;
+    outline: 1px solid rgb(230, 150, 3);
+}
+
+.EventDec{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    border: 2px solid rgb(20, 20, 20);
+    outline: 3px solid rgb(46, 46, 46);
+}
+
+/* Calendar Layout and Design. */
 table{
+    font-size: 11pt;
     font-family: Arial;
     color: rgb(204, 8, 8);
     font-weight: bold;
@@ -237,6 +608,9 @@ table{
 
 table td,table th{
     border: 2px solid rgb(230, 150, 3);
+    padding: 5px;
+    width: 250px;
+    height: 50px;
 }
 
 Table tr:nth-child(even){
@@ -255,13 +629,48 @@ Table th{
     background-color: black;
     color: white;
 }
+
+
+/* Section for the Form - Mainly Aesthetics.*/
+.EvFormCont{
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.FormDec{
+    margin-top: 50px;
+    width: 50%;
+    background-color: rgb(95, 1, 1);
+    border: 2px solid black;
+    outline: 1px solid rgb(230, 150, 3);
+}
+
+.EventForm{
+    width: 98%;
+    color: rgb(204, 8, 8);
+    font-family: Arial;
+    font-size: 11pt;
+    float: left; 
+    margin: 10px;
+    padding: 20px;
+    background-color: black;
+    border: 2px solid rgb(20, 20, 20);
+    outline: 3px solid rgb(46, 46, 46);
+}
+
+input[type=date]{
+    border: 1px solid rgb(204, 8, 8);
+    outline: 1px solid rgb(230, 150, 3);
+    padding: 5px;
+    margin-top: 15px;
+}
 /* Calendar END. */
 
 /* --------------------------------------------------------------- */
 
-/* Code Block for Member Images/ Member Roles, etc. */
-
-/* Cenetering the Members Container. */
+/* Code Block for Members Page. */
+/* Main Container for the Members. */
 .Members{
     margin: auto;  
     background-color: rgb(95, 1, 1);  
@@ -269,7 +678,6 @@ Table th{
     padding-right: 20px;
     border: 4px solid black ;
     outline: 1px solid rgb(230, 150, 3);
-
 }
 
 /* Top Row of the Members. */
@@ -284,8 +692,7 @@ Table th{
     padding-bottom: 15px;
     background-color: rgb(14, 14, 14); 
     border: 4px solid black;
-    outline: 1px solid rgb(230, 150, 3); 
-    
+    outline: 1px solid rgb(230, 150, 3);  
 }
 
 /* Bottom Row of the Members. */
@@ -303,7 +710,15 @@ Table th{
     outline: 1px solid rgb(230, 150, 3); 
 }
 
-/* Setting the Css for all the Images so they're the same size, etc. */
+/* Img Container. */
+.ImgBorder{
+    position: relative;
+    background-color: black;  
+    border: 2px solid rgb(14, 14, 14);
+    outline: 1px solid rgb(46, 46, 46);
+}
+
+/* Img Layout and Design. */
 .MemberImages{
     border: 4px solid rgb(95, 1, 1);
     outline: 1px solid rgb(230, 150, 3);  
@@ -311,7 +726,7 @@ Table th{
     width: 200px;
     list-style-type: none;
     font-family: Arial;
-    font-size: 10px;
+    font-size: 8pt;
     color:rgb(204, 8, 8);
     text-align: center;   
     margin-left: 10px;
@@ -319,20 +734,12 @@ Table th{
     margin-top: 10px
 }
 
-.ImgBorder{
-    position: relative;
-    background-color: black;  
-    border: 2px solid rgb(14, 14, 14);
-    outline: 1px solid rgb(46, 46, 46);
-
-}
-
 /* CSS for the Member Name. */
 #MemName{
     padding-top: 6px;
     list-style-type: none;
     font-family: Arial;
-    font-size: 15px;
+    font-size: 12pt;
     font-weight: bold;
     color:rgb(204, 8, 8);
     text-align: center;
@@ -341,8 +748,8 @@ Table th{
 /* Divider between the Name and Member Role. */
 .RoleDiv{
     padding: 0.5px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* CSS for the Member Role Description. */
@@ -351,11 +758,13 @@ Table th{
     padding-bottom: 25px;
     list-style-type: none;
     font-family: Arial;
-    font-size: 12px;
+    font-size: 10pt;
     color: white;
     text-align: center;
 }
 
+
+/* Section for the Overlay Effect. */
 .overlay {
     position: absolute;
     bottom: 100%;
@@ -381,8 +790,9 @@ Table th{
     padding: 30%;
     padding-top: 25%;
 }
+
 .MemText p{
-    font-size: 13px;
+    font-size: 10pt;
     color: white;
 }
 
@@ -393,131 +803,471 @@ Table th{
     opacity: 0.8;
 }
 
-  .ImgBorder:hover .overlay {
+.ImgBorder:hover .overlay {
     bottom: 0;
     height: 100%;
-  }
-/* Member Images END. */
+}
+
+#MemFontAd{
+    font-size: 9pt;
+}
+/* Members Page END. */
 
 /* --------------------------------------------------------------- */
 
-/* Home Page */
-/* Home Page Images. */
-
-/* Container for the Images. */
-.HmImg{
-    padding: 20px;
-    padding-left: 100px;
-    float: left;
-    width: 65%;
-}
-
-/* Seperate ID for each image so they can be rotated and overlapped. */
-#Sepultura{
-    position: relative;
-    z-index: 0;
-    height: 250;
-    width: 400;
-    border: 4px solid rgb(204, 8, 8);
-    outline: 1px solid rgb(230, 150, 3); 
-    margin: 5px;
-    rotate: -10deg;
-}
-
-#Slayer{
-    position: relative;
-    z-index: -1;
-    height: 250;
-    width: 400;
-    border: 4px solid rgb(204, 8, 8);
-    outline: 1px solid rgb(230, 150, 3);
-    margin: 5px;
-    rotate: 15deg;   
-}
-
-#Pantera{   
-    height: 250;
-    width: 400;
-    border: 4px solid rgb(204, 8, 8);
-    outline: 1px solid rgb(230, 150, 3);
-    margin: 5px; 
-    rotate: -15deg;
-}
-
-#Faith{   
-    height: 250;
-    width: 400;
-    border: 4px solid rgb(204, 8, 8);
-    outline: 1px solid rgb(230, 150, 3); 
-    margin: 5px;
-    rotate: 5deg;
-}
-/* Home Page Images END. */
-
-.Twitter{
-    width: 25%;
-    height: 600px;
-    overflow: auto;    
-}
-
-.loginBar{
-    padding-top: 10px;
-    display: inline-block;
-    width: 100%;
-   
-}
-  
-#loginForm{
-    float: right;
-    text-align: right;
-    width: 30%;
-    padding-bottom: 10px;
-}
-
-#musicSection{
-    float: left;
-    width: 70%;
-    margin-top: -10px;
-}
-
-#loginDiv{
-    margin-left: 35%;
-}
-
-.MsgDiv{
-    opacity: 20%;
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
-.MessageCont{
-    height: 100px;
-    width:100%;
-    background-color: black;
-    margin-bottom: 170px;
-}
-
-.PageMessage{
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-    text-align: center;    
+/* Projects Page */
+/* Project Body */
+/* Main Project Container. */
+#ProjectCards{
     background-color: rgb(95, 1, 1);
     border: 4px solid black;
     outline: 1px solid rgb(230, 150, 3);
 }
 
-.PageMessage h4 {
-    color: black;
+/* Individual Project Containers - mainly Aesthetics. */
+.ProjectContainer{
+    padding: 10px;
+}
+
+.ProjectRow{
+    background-color: rgb(14, 14, 14);
+    border: 4px solid black;
+    outline: 1px solid rgb(230, 150, 3);
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+/* ---Section 60--- */
+/* Main Container for the card and Social Links.*/
+.column-60{
+    text-align: center;
+    float: left;
+    width: 64%;
+    height: 100%;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    background-color: black;
+    border: 2px solid rgb(20, 20, 20);
+    outline: 1px solid rgb(46, 46, 46); 
+    padding: 20px;    
+}
+
+/* Adjusting the Margin for 'odd' Projects.*/
+#MarginAdjust{
+    margin-left: 30px;
+}
+
+/*Card Styling and Function.*/  
+.card__inner {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 80%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+.card__inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+/* Main Card Body for Faces. */
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+/* Front of the Card. */
+.card__face--front {
+    background-color: rgb(20, 20, 20);
+    border: 2px solid black;
+    outline: 1px solid rgb(230, 150, 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Font Adjustments for Card Front. */
+.card__face--front h2 {
+    color: rgb(204, 8, 8);
+    font-size: 25pt;
+}
+
+/* Main Container for band Img. */
+.BandImg{
+    width: 85%;
+    padding: 20px;
+    margin: 30px;
+}
+
+/* Style and Layout for the Img. */
+.ProjImg{
+    width: 70%;
+    border: 2px solid black;
+    outline: 2px solid rgb(230, 150, 3);
+}
+
+ 
+/* Back of the Card. */
+.card__face--back {
+    background-color: rgb(20, 20, 20);
+    transform: rotateY(180deg);
+    border: 2px solid black;
+    outline: 1px solid rgb(230, 150, 3);
+}
+
+/* Main Body for the content on the back of the card. */
+.card__content {
+    width: 100%;
+    height: 100%;
+}
+  
+/* Header Style and Layout for the Header. */
+.card__header {
+    position: relative;
+    padding: 30px 30px 40px;
+    border-bottom: 1px solid rgb(230, 150, 3);
+    outline: 5px solid rgb(143, 7, 7);   
+}
+  
+.card__header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(46, 46, 46);
+    z-index: -1;
+}
+
+/* Style and Layout for Image on Header. */
+.BandLogo {
+    display: block;
+    width: 200px;
+    height: 128px;
+    margin: 0 auto 30px;
+    border-radius: 25%;
+    border: 5px solid black;
+    outline: 1px solid rgb(230, 150, 3);
+    object-fit: cover;
+}
+
+/* Main Body on the Back of the Card - Text (Band Description). */
+.card__body {
+    height: 100%;
+    margin-top: 12px;
+    padding: 30px;
+    border-top: 1px solid rgb(230, 150, 3);
+    outline: 5px solid rgb(143, 7, 7);   
+}
+  
+.card__body h3 {
+    color: rgb(204, 8, 8);
+    font-size: 14pt;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Inner Containter for the Text. */
+.BandText{
+    width: 55%;
+    float: left;
+    background-color: black;
+    border: 2px solid rgb(20, 20, 20);
+    outline: 1px solid rgb(46, 46, 46); 
+}
+
+/* Aesthetics for the Subheadings. */
+.BandTitle{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Info about band - Members/ Genre, etc. */
+.BandInfo{
+    float: right;
+    width: 40%;
+    background-color: black;
+    border: 2px solid rgb(20, 20, 20);
+    outline: 1px solid rgb(46, 46, 46); 
+}
+
+/* Main Container for Social Links, under the Card. */
+.ProjSupport{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    background-color: black;
+    border: 2px solid black;
+    outline: 1px solid rgb(230, 150, 3); 
+}
+
+/* ---Section 40--- */
+/* Main Container for Facebook Feed and Smaple Track. */
+.column-40{
+    float: left;
+    width: 33%;
+    padding: 10px;
+    text-align: center;
+    padding-left: 40px;
+}
+
+/* Main Container for Facebook feed. */
+.SocialMedia{
+    background-color: black;
+    border: 2px solid rgb(20, 20, 20);
+    outline: 1px solid rgb(46, 46, 46); 
+    margin-bottom: 15px;
+    overflow: auto;
+}
+
+/* Adjustments for Facebook feed. */
+.fb-page{
+    width: 100%;
+    height: 400px;  
+}
+
+/* Adjusting the Padding for 'even' Projects.*/
+#PadAdj{
+    padding-right: 40px;
+}
+
+/* Div between FB feed and Sample track. */
+.ProjDiv{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+/* Main Container for Sample Track. */
+.CurrProj{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    background-color: black;
+    border: 2px solid rgb(20, 20, 20);
+    outline: 1px solid rgb(46, 46, 46); 
+}
+
+/* Album Covers */
+.ProjAlbums{
+    width: 190px;
+    height: 190px;
+    border: 2px solid black;
+    outline: 1px solid rgb(230, 150, 3);
+}
+
+/* Audio Section. */
+.audio{
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    border: 2px solid black;
+    outline: 1px solid rgb(230, 150, 3); 
 }
 
 
-/* HomePage END */
+/* Flipping the Next Row.*/
+.ProjectRow:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+/* --------------------------------------------------------------- */
+
+/* Albums Page */
+*{
+    box-sizing: border-box;  
+}
+
+/* Main Container. */
+.albums{
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 16pt;
+    font-weight: bold;
+    border: 3px solid black;
+    outline: 1px solid rgb(230, 150, 3);
+    transition: 0.4s;
+}
+
+/* Button Position and Aesthetics. */
+.albums:after{
+    content: '\25ba';
+    font-size: 10pt;
+    color: rgb(204, 8, 8);
+    float: right;
+    margin-left: 10px; 
+}
+  
+/* After Pannel is opened. */
+.toggle:after{
+    content: '\25bc';
+    color: rgb(204, 8, 8);
+}
+
+/* Aesthetics - Alternating Pannel colour and Text Colour. */
+#odd{
+    background-color:rgb(14, 14, 14);
+    color: rgb(204, 8, 8);
+}
+
+#even{
+    background-color:rgb(46, 46, 46);
+    color: rgb(204, 8, 8);
+}
+  
+/* Changing Pannel and Text Colour on hover. */
+.toggle, .albums, #even:hover{
+    background-color: rgb(255, 123, 0);
+    color: black;
+}
+
+.toggle, .albums, #odd:hover{
+    background-color: rgb(255, 123, 0); 
+    color: black;
+}
+
+/* Styling and Layout for pannel once it's opened.*/
+.panel{
+    background-color: rgb(95, 1, 1);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+  
+
+/* Main Containter for each Album. */
+.AlbumContainer{
+    padding: 15px;
+}
+
+/* Internal  Container for the two Columns.*/
+.AlbumRow{
+    background-color: rgb(14, 14, 14);
+    border: 4px solid black;
+    outline: 1px solid rgb(230, 150, 3);
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+  
+
+/* Text Column. */
+.column-66{
+    text-align: center;
+    float: left;
+    width: 65%;
+    padding: 10px;
+    margin-left: 10px; 
+    margin-right: 5px;
+    margin-top: 6px;
+    margin-bottom: 6px; 
+    background-color: rgb(14, 14, 14);
+    border: 2px solid rgb(20, 20, 20);
+    outline: 2px solid rgb(46, 46, 46);  
+}
+
+/* Aexthetics. */
+.AlbumTxtDec{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    border: 3px solid rgb(14, 14, 14);
+    outline: 2px solid rgb(255, 123, 0); 
+}
+
+#AlbumSep{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+  
+/* Album Column. */
+.column-33{
+    float: left;
+    width: 32%;
+    padding: 15px;
+    margin: auto;
+    margin-top: 23px;
+}
+
+/* Aexthetics. */
+.CoverDec{
+    margin: auto;
+    margin-top: 23px;
+    width: 75%;
+    padding: 10px;
+    background-color: rgb(14, 14, 14);
+    border: 2px solid rgb(20, 20, 20);
+    outline: 2px solid rgb(46, 46, 46); 
+}
+
+/* Album Img - Layout and Style. */
+.AlbumCover{
+    display: block;
+    margin:auto;
+    width: 300px;
+    height: 300px; 
+    border: 3px solid rgb(95, 1, 1);
+    outline: 1px solid rgb(230, 150, 3);   
+}
+
+.AlbumCover:hover{
+    transform: scale(1.2);  
+}
+
+/* Flipping the Next Row.*/
+.AlbumRow:after{
+    content: "";
+    display: table;
+    clear: both
+} 
 
 /* --------------------------------------------------------------- */
 
 /* Code Block for the Gallery. */
+/* Carousel Styling and Layout adjustments.  */
+#carouselExampleAutoplaying{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 15px;
+    background-color: rgb(95, 1, 1);
+    border: 4px solid black;
+    outline: 1px solid rgb(230, 150, 3);
+}
+
+.CarouselCont{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(14, 14, 14);
+    border: 2px solid rgb(20, 20, 20);
+    outline: 3px solid rgb(46, 46, 46);
+}
+
+.carousel-inner{
+    width: 75%;
+    height: 90%;
+    margin: auto;
+    border: 4px solid rgb(95, 1, 1);
+    outline: 1px solid rgb(230, 150, 3);
+}
+
+/* Main Gallery Container. */
 .Gallery{
     background-color: rgb(95, 1, 1);
     border: 4px solid black;
@@ -525,6 +1275,7 @@ Table th{
     padding: 13px;
 }
 
+/* Styling and Layout for the 3 main inner Gallery Containers. */
 .RowOne, .RowTwo,.RowThree{
     display: flex; 
     justify-content: space-between;
@@ -533,11 +1284,19 @@ Table th{
     padding-left: 20px;
     padding-right: 20px;
     background-color: rgb(14, 14, 14);
-    /* border: 2px solid black;
-    outline: 1px solid rgb(255, 123, 0); */
     border: 4px solid black;
     outline: 1px solid rgb(230, 150, 3);
     margin-bottom: 55px;
+}
+
+/* Individual Img Styling and Layout. */
+.GalImgBorder{
+    background-color: black; 
+    border: 4px solid rgb(20, 20, 20);
+    outline: 1px solid rgb(46, 46, 46);
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;   
 }
 
 .ImgFunc{
@@ -545,21 +1304,11 @@ Table th{
 }
 
 .ImgDec{
-    color: rgb(95, 1, 1);
+    color: rgb(14, 14, 14);
     margin-left: 50px;
     margin-right: 50px;
     border-width: 2px;
-    opacity: 0.5;
-}
-
-.GalImgBorder{
-    background-color: black; 
-    border: 4px solid rgb(20, 20, 20);
-    outline: 1px solid rgb(46, 46, 46);
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
+    opacity: 0.9;
 }
 
 .GalImg{
@@ -570,11 +1319,7 @@ Table th{
     cursor: pointer;
 }
 
-/* .GalImg:hover{
-    border: 3px solid rgb(230, 150, 3);
-    transform: scale(1.1);  
-} */
-
+/* Container for the Img Description. */
 .ImgDes{
     position: relative;
     bottom: 0; 
@@ -584,18 +1329,13 @@ Table th{
     border:1px solid rgb(230, 150, 3); 
     margin-bottom: 5px; 
     font-family: Arial; 
-    font-size: 15; 
+    font-size: 12pt; 
     text-align: center;
-    
     opacity: 0; 
     visibility: hidden;   
 }
 
-/* .ImgFunc:hover .ImgDes{
-    visibility: visible;
-    opacity: 1;
-} */
-
+/* Divider between each Gallery Row - Mainly Aesthetics. */
 .divider{
     position: relative;
     background: black; 
@@ -606,6 +1346,7 @@ Table th{
     margin-right: 200px;
 }
 
+/* Styling and Layout for the Lightbox Gallery Images. */
 .Gallery .pop-up-img{
     position: fixed;
     top: 0;
@@ -621,7 +1362,7 @@ Table th{
     position: absolute;
     top: 0;
     right: 10px;
-    font-size: 60px;
+    font-size: 40pt;
     font-weight: bold;
     color: rgb(143, 7, 7);
     cursor: pointer;
@@ -637,52 +1378,42 @@ Table th{
     border: 2px solid black;
     outline: 1px solid rgb(230, 150, 3);
 }
-
-#carouselExampleAutoplaying{
-    margin-left: 5px;
-    margin-right: 5px;
-}
 /* Gallery END. */
 
 /* --------------------------------------------------------------- */
 
 /* Contact Us Page */
-/* -- Block for the Columns and Twitter Feed.*/
+/* Main Body and the Two Columns - Social and Form.*/
 .MainBody{
-    padding-top: 20px;
     display: flex; 
     justify-content: space-between;
+    background-color: rgb(95, 1, 1);
+    padding: 10px;
+    border: 4px solid black;
+    outline: 1px solid rgb(230, 150, 3);
 }
 
 .FormBlock{
     width: 50%;
     color: rgb(204, 8, 8);
     font-family: Arial;
-    font-size: 15px;
-    float: left;   
+    font-size: 11pt;
+    float: left; 
+    background-color: black;
+    border: 2px solid rgb(20, 20, 20);
+    outline: 3px solid rgb(46, 46, 46);
+    padding: 20px;
 }
 
-.TwitterBlock{
+.SocialBlock{
     width: 50%;
     padding-right: 20px;
-    margin-top: 40px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: black;
+    border: 2px solid rgb(20, 20, 20);
+    outline: 3px solid rgb(46, 46, 46);
 }
-
-#TwitterHeading{
-    text-align: center;
-    text-decoration: underline;
-
-}
-
-.TwitterFeed{
-    height: 850px;
-    width: 400px;
-    overflow: auto;
-    float: right;
-    border: 5px solid black;
-    outline: 2px solid rgb(230, 150, 3);
-}
-/* -- Twitter Block END.*/
 
 /* Block for Styling the Form. */
 input[type=text]{
@@ -711,15 +1442,15 @@ legend{
     font-size: 15px;
     font-weight: bold;
 }
-/* Form Styling END. */
-
-#Frame{
-    padding-top: 40px;
-}
 
 #form_outcome{
     float: right;
     margin-bottom: 10px;
+}
+
+/* Styling for the Img under the Form. */
+#Frame{
+    padding-top: 40px;
 }
 
 #Demons{
@@ -728,435 +1459,33 @@ legend{
     border: 4px solid black;
     outline: 2px solid rgb(230, 150, 3);
 }
-/* Contact Us END. */
 
-/* --------------------------------------------------------------- */
-
-/* Albums Page */
-.albums{
-    cursor: pointer;
-    padding: 15px;
-    width: 100%;
-    text-align: left;
-    font-size: 20px;
-    font-weight: bold;
-    border: 3px solid black;
-    outline: 1px solid rgb(230, 150, 3);
-    transition: 0.4s;
-}
-
-#odd{
-    background-color:rgb(14, 14, 14);
-    color: rgb(204, 8, 8);
-}
-
-#even{
-    background-color:rgb(46, 46, 46);
-    color: rgb(204, 8, 8);
-}
-
-  
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.toggle, .albums, #even:hover{
-    background-color: rgb(255, 123, 0);
-    color: black;
-}
-
-.toggle, .albums, #odd:hover{
-    background-color: rgb(255, 123, 0); 
-    color: black;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel{
-    background-color: rgb(95, 1, 1);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
- 
-.albums:after{
-    content: '\25ba';
-    font-size: 13px;
-    color: rgb(204, 8, 8);
+/* Two columns within the Social Column.  */
+.TwitterFeed{
+    height: 900px;
+    width: 45%;
+    overflow: auto;
     float: right;
-    margin-left: 10px; 
-}
-  
-.toggle:after{
-    content: '\25bc';
-    color: rgb(204, 8, 8);
-}
-  
-
-*{
-    box-sizing: border-box;  
-}
-
-.AlbumContainer{
-    padding: 15px;
-}
-
-.AlbumRow{
-    background-color: rgb(14, 14, 14);
-    border: 4px solid black;
-    outline: 1px solid rgb(230, 150, 3);
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-  
-.AlbumRow:after{
-    content: "";
-    display: table;
-    clear: both
-} 
-
-.column-66{
-    text-align: center;
-    float: left;
-    width: 66%;
-    padding: 5px;
-    margin-left: 10px; 
-    margin-right: 5px;
-    margin-top: 6px;
-    margin-bottom: 6px; 
-    background-color: black;
-    border: 2px solid black;
-    outline: 1px solid rgb(230, 150, 3);   
-}
-  
-.column-33{
-    float: left;
-    width: 33%;
-    padding: 15px;
-
-}
-
-.AlbumCover{
-    display: block;
-    margin:auto;
-    width: 300px;
-    height: 300px; 
-    margin-top: 23px;
-    border: 2px solid black;
-    outline: 1px solid rgb(230, 150, 3);   
-}
-
-.AlbumDiv{
-    margin-left: 450px;
-    margin-right: 450px;
-}
-
-#AlbumSep{
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-/* --------------------------------------------------------------- */
-
-/* Footer Styling and Social Media */
-.fa{
-    background-color: rgb(46, 46, 46); 
-    border: 2px solid black;
-    outline: 1px solid rgb(230, 150, 3); 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px;
-    color: rgb(143, 7, 7);
-}
-
-.fa:hover{
-    opacity: 0.7;
-    color: rgb(230, 150, 3);
-}
-
-.SocialLinks{
-    padding: 10px;
-    width: 80%;
-    float: right;
-    text-align: right;
-}
-
-.copyRight{
-    padding: 10px;
-    width: 20%;
-    float: left;
-}
-
-.footerContainer{
-    background-color: rgb(20, 20, 20);
-    width: 100%;
-    display: inline-block;
-    border: 2px solid black;
-    outline: 1px solid rgb(255, 123, 10);
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding-right: 20px;
-}
-
-/* Footer Styling END. */
-
-/* --------------------------------------------------------------- */
-
-/* Projects Page */
-
-/* Project Body */
-#ProjectCards{
-    background-color: rgb(95, 1, 1);
-    border: 4px solid black;
-    outline: 1px solid rgb(230, 150, 3);
-}
-
-.ProjectContainer{
-    padding: 10px;
-}
-
-.ProjectRow{
-    background-color: rgb(14, 14, 14);
-    border: 4px solid black;
-    outline: 1px solid rgb(230, 150, 3);
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-
-.column-60{
-    text-align: center;
-    float: left;
-    width: 64%;
-    height: 90%;
-    margin-top: 90px;
-    margin-bottom: 10px;
-    background-color: black;
-    border: 2px solid rgb(20, 20, 20);
-    outline: 1px solid rgb(46, 46, 46); 
-    padding: 20px;    
-}
-
-#MarginAdjust{
-    margin-left: 30px;
-}
-
-
-.column-40{
-    float: left;
-    width: 33%;
-    padding: 10px;
-    text-align: center;
-    padding-left: 40px;
-}
-
-#PadAdj{
-    padding-right: 40px;
-}
-
-
-.ProjectInfo{
-    display: block;
-    margin:auto;
-    width: 300px;
-    height: 300px; 
-    border: 2px solid rgb(230, 150, 3);
-    outline: 2px solid rgb(204, 8, 8);
-}
-
-.ProjectRow:after {
-    content: "";
-    display: table;
-    clear: both
-} 
-/* Project Body END*/
-
-/*Card Styling*/  
-.card__inner {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    height: 80%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-  
-.card__inner.is-flipped {
-    transform: rotateY(180deg);
-}
-  
-.card__face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    overflow: hidden;
-    border-radius: 16px;
-}
-  
-.card__face--front {
-    background-color: rgb(20, 20, 20);
-    border: 2px solid black;
-    outline: 1px solid rgb(230, 150, 3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-  
-.card__face--front h2 {
-    color: rgb(204, 8, 8);
-    font-size: 32px;
-}
-  
-.card__face--back {
-    background-color: rgb(20, 20, 20);
-    transform: rotateY(180deg);
-    border: 2px solid black;
-    outline: 1px solid rgb(230, 150, 3);
-}
-  
-.card__content {
-    width: 100%;
-    height: 100%;
-}
-  
-.card__header {
-    position: relative;
-    padding: 30px 30px 40px;
-    border-bottom: 1px solid rgb(230, 150, 3);
-    outline: 5px solid rgb(143, 7, 7);
-}
-  
-.card__header:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(46, 46, 46);
-    z-index: -1;
-}
-  
-.BandLogo {
-    display: block;
-    width: 200px;
-    height: 128px;
-    margin: 0 auto 30px;
-    border-radius: 25%;
     border: 5px solid black;
-    outline: 1px solid rgb(230, 150, 3);
-    object-fit: cover;
-}
-  
-.card__body {
-    height: 100%;
-    margin-top: 12px;
-    padding: 30px;
-    border-top: 1px solid rgb(230, 150, 3);
-    outline: 5px solid rgb(143, 7, 7);
-    
-}
-  
-.card__body h3 {
-    color: rgb(204, 8, 8);
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.BandImg{
-    width: 85%;
-    padding: 20px;
-    margin: 30px;
-}
-
-.ProjImg{
-    width: 70%;
-    border: 2px solid black;
     outline: 2px solid rgb(230, 150, 3);
 }
 
-.ProjAlbums{
-    width: 190px;
-    height: 190px;
-    border: 2px solid black;
-    outline: 1px solid rgb(230, 150, 3);
-}
-
-.BandInfo{
-    float: right;
-    width: 40%;
-    background-color: black;
-    border: 2px solid rgb(20, 20, 20);
-    outline: 1px solid rgb(46, 46, 46); 
-}
-
-.CurrProj{
-    margin-top: 15px;
-    margin-bottom: 5px;
-    padding-bottom: 10px;
-    background-color: black;
-    border: 2px solid rgb(20, 20, 20);
-    outline: 1px solid rgb(46, 46, 46); 
-}
-
-.ProjSupport{
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 10px;
-    background-color: black;
-    border: 2px solid black;
-    outline: 1px solid rgb(230, 150, 3); 
-}
-
-.audio{
-    margin-right: auto;
-    margin-left: auto;
-    width: 300px;
-    border: 2px solid black;
-    outline: 1px solid rgb(230, 150, 3); 
-}
-
-.ProjDiv{
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-.TextDiv{
-    margin-right: 300px;
-    margin-left: 300px;
-}
-
-.BandText{
-    width: 55%;
-    float: left;
-    background-color: black;
-    border: 2px solid rgb(20, 20, 20);
-    outline: 1px solid rgb(46, 46, 46); 
-}
-
-.fb-page{
-    width: 100%;
-    height: 400px;  
-}
-
-.BandTitle{
-    font-weight: bold;
+#TwitterHeading{
+    text-align: center;
     text-decoration: underline;
 }
 
-.SocialMedia{
-    background-color: black;
-    border: 2px solid rgb(20, 20, 20);
-    outline: 1px solid rgb(46, 46, 46); 
-    margin-bottom: 15px;
+.FacebookFeed{
+    text-align: center;
+    height: 900px;
+    width: 45%;
     overflow: auto;
+    float: left;
+    border: 5px solid black;
+    outline: 2px solid rgb(230, 150, 3);
 }
+
+.FacebookFeed h3{
+    text-decoration: underline;
+}
+/* Contact Us END. */

@@ -14,6 +14,10 @@
     
 
     <body>
+        <!-- Script for Facebook Feed. -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0" nonce="bYmyzhL2"></script>
+ 
         <header>
             <!--Society Logo-->
             <img src = 'images/Home Page Images/Logo.png' class = "Logo"
@@ -50,23 +54,35 @@
 
         <main>
             <!-- Page Title. -->
-            <div>
-                <h3 class = "PageTitle">CONTACT US</h3>
-                <br> 
+            <h3 class = "PageTitle">CONTACT US</h3>
+            <!-- Page Intro Text. -->
+            <div class = "MessageCont">
+                <div class = "MessageDec">
+                    <div class = "PageMessage">
+                        <hr class = "MsgDiv">
+                        <h4>If you have any queries, then this is where you can tell us about them.<br>
+                            On this page you can also stay up to date with our latest Society updates.<br>
+                            As well as any news within the Metal World... and enjoy some art.</h4>
+                        <hr class = "MsgDiv">
+                    </div>
+                </div>
             </div>
+        
+
+
 
             <div class = "MainBody">
                 <div class="FormBlock">
                     <!-- Form. -->
-                    <form>
+                    <form name = "enquiry_form">
                         <legend>If you have any enquiries contact our Social Team:</legend>
                         <br>
                         <fieldset>
-                            <label for = "name">Name: </label>
+                            <label for = "name">Name:</label>
                             <input type = "text" name = "name" value = ""/>
                             
-                            <label for = "email">Email: </label>
-                            <input type = "text" email = "email" value = ""/>
+                            <label for = "email">Email:</label>
+                            <input type = "text" name = "email" email = "email" value = ""/>
 
                             <div>
                                 <br>
@@ -75,13 +91,40 @@
                                 <br>
                                 <textarea name = "comments" cols = "60" rows = "10"></textarea>
 
-                                <button type = "button" onclick='document.getElementById("form_outcome").innerHTML="The Form has been Successfully Sent!"'>Submit</button>
+                                <button type = "button" onclick = 'enquiry_form_submit()'>Submit</button>
                             </div>
                             <div><p id = "form_outcome"></p></div>
                         </fieldset> 
-                        
                         <br>
                     </form> 
+
+
+                    <!-- Script to Check the Details in the enquiry form. -->
+                    <script>
+                        function enquiry_form_submit() {
+                            let name = document.forms["enquiry_form"]["name"].value;
+                            let email = document.forms["enquiry_form"]["email"].value;
+                            let comments = document.forms["enquiry_form"]["comments"].value;
+
+                            var validCheck = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+                            if (name == "") {
+                                alert("Please Enter a Name.");
+                                
+                            } else {
+                                if (!(email.match(validCheck))) {
+                                    alert("Please Enter a Valid Email.");
+
+                                } else if (comments == ""){
+                                    alert("Please tells us about your Query.");
+                                    
+                                } else {
+                                    document.getElementById("form_outcome").innerHTML="The Form has been Successfully Sent!";
+                                    enquiry_form.reset();
+                                }
+                            }
+                        }
+                    </script>
 
                     <!-- Block for Image below the Form. -->
                     <div id = "Frame">
@@ -91,12 +134,21 @@
                     </div>
                 </div>
 
-                <!-- Block for Tweets -->
-                <div class = "TwitterBlock">
+                <!-- Block for Social Media Feeds. -->
+                <div class = "SocialBlock">
                     <div class = "TwitterFeed"> 
                         <h3 id = "TwitterHeading">Latest Tweets</h3>  
                         <a class="twitter-timeline" href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw">
                             Tweets by XDevelopers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>   
+                    </div>
+                    <div class = "FacebookFeed">
+                        <h3>Metal News</h3>
+                        <div class="fb-page" 
+                        data-tabs="timeline,events,messages"
+                        data-href="https://www.facebook.com/metalinjection/"
+                        data-width="400"
+                        data-height="900" 
+                        data-hide-cover="false"></div>
                     </div> 
                 </div>
             </div>
@@ -107,7 +159,7 @@
             <hr>
             <div class = "footerContainer">
                 <div class = copyRight>
-                    <p><span>&#169</span> 2024 Jakub Sykes - RGU Death Metal Society</p>
+                    <p><span>&#169</span> 2024 Jakub Sykes <br> RGU Death Metal Society</p>
                 </div>
                 <div class = SocialLinks>
                     <p>Follow Us On: </p>
