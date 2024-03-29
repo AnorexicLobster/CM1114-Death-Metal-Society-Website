@@ -77,11 +77,13 @@ footer{
 /* Title. */
 #BootHeading{
     margin-top: 21px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 /* Hr below Title. */
 #BootHr{
+    margin-top: 25px;
+    margin-bottom: 8px;
     border-width: 1.9px;
     opacity: 1;
 }
@@ -91,12 +93,12 @@ footer{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 24px;
     height: 450px;
 }
 
 /* Navigation Bar. */
 .BootProtection{
+    margin-top: 16px;
     position: sticky;
     top: 0px;
     z-index: 1;
@@ -106,12 +108,14 @@ footer{
 .BootNavProtMarg{
     padding-bottom: 10px;
     margin-right: -0.5px;
+    
 }
 
 .BootNavProt{
     background-color: interactive;
     padding-bottom: 10px;
     margin-right: -1px;
+    border-right: 1px solid rgb(255, 123, 0);
 }
 
 .BootNavProt a{
@@ -196,21 +200,22 @@ footer{
 nav{
     background-color: black;
     border-bottom: 1px solid rgb(255, 123, 10);
-    text-align: center;
+    text-align: center;   
 }
 
 nav ul{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;   
+    overflow: hidden;  
+    display: inline-block;
+    list-style-type: none;
 }
 
 nav li{ 
     border: 5px;
-    width: 10%;
+    padding-left: 20px;
     background-color: black;
-    list-style-type: none; 
-    padding: -5px 35px 0 35px; 
+    padding: -5px 35px 0 200px; 
+    display: inline;
+    float:left;
 }
 
 nav li a{
@@ -223,6 +228,11 @@ nav li a{
     font-size: 13pt;
     text-decoration: none; 
     line-height: 20pt;
+    list-style-type: none; 
+    padding-left: 20px;
+    padding-right: 20px; 
+    width: 100%;
+    
     
     /* Block for the dividers between each of the nav bar headings. */
     /* Controlling the thickness, colour, background colour, etc. */
@@ -269,7 +279,7 @@ Nav>li{
     height: 100px;
     width:100%;
     background-color: black;
-    margin-bottom: 250px;
+    margin-bottom: 220px;
 }
 
 /* Internal Message Containers. */
@@ -305,7 +315,7 @@ Nav>li{
 
 /* Social Media Link Styling.*/
 .fa{
-    background-color: rgb(46, 46, 46); 
+    background-color: rgb(14, 14, 14); 
     border: 2px solid black;
     outline: 1px solid rgb(230, 150, 3); 
     padding-top: 10px;
@@ -321,6 +331,8 @@ Nav>li{
 .fa:hover{
     opacity: 0.7;
     color: rgb(230, 150, 3);
+    background-color: black;
+
 }
 /* Social Links END. */
 
@@ -343,14 +355,21 @@ Nav>li{
     width: 80%;
     float: right;
     text-align: right;
+    font-weight: bold;
 }
 
 .copyRight{
     padding: 10px;
     width: 20%;
     float: left;
+    font-weight: bold;
 }
 /* Footer END. */
+
+/* Audio */
+audio{
+    cursor: pointer;
+}
 
 /* --------------------------------------------------------------- */
 
@@ -431,7 +450,7 @@ input[type ='password']{
 }
 
 /* Seperate ID for each image so they can be rotated and overlapped. */
-#Sepultura{
+.Sepultura{
     position: relative;
     z-index: 1;
     height: 250;
@@ -440,20 +459,22 @@ input[type ='password']{
     outline: 1px solid rgb(230, 150, 3); 
     margin: 5px;
     rotate: -10deg;
+    width: 35%;
 }
 
-#Slayer{
+.Slayer{
     position: relative;
     z-index: 2;
-    height: 250;
-    width: 400;
+    height: 5%;
+    width: 1;
     border: 4px solid rgb(95, 1, 1);
     outline: 1px solid rgb(230, 150, 3);
     margin: 5px;
     rotate: 15deg;   
+    width: 35%;
 }
 
-#Pantera{  
+.Pantera{  
     position: relative; 
     z-index: 3;
     height: 250;
@@ -462,9 +483,10 @@ input[type ='password']{
     outline: 1px solid rgb(230, 150, 3);
     margin: 5px; 
     rotate: -15deg;
+    width: 35%;
 }
 
-#Faith{  
+.Faith{  
     position: relative; 
     z-index: 2; 
     height: 250;
@@ -473,12 +495,17 @@ input[type ='password']{
     outline: 1px solid rgb(230, 150, 3); 
     margin: 5px;
     rotate: 5deg;
+    width: 35%;
 }
 /* Home Page Images END. */
 
 
 /* Article. */
 /* Main Article Container. */
+.ArticleAside{
+    width: 30px;
+
+}
 .ArtCont{
     width: 30%;
     height: 750px;
@@ -792,7 +819,7 @@ input[type=date]{
 }
 
 .MemText p{
-    font-size: 10pt;
+    font-size: 9pt;
     color: white;
 }
 
@@ -844,8 +871,8 @@ input[type=date]{
     float: left;
     width: 64%;
     height: 100%;
-    margin-top: 60px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     background-color: black;
     border: 2px solid rgb(20, 20, 20);
     outline: 1px solid rgb(46, 46, 46); 
@@ -1010,6 +1037,7 @@ input[type=date]{
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 10px;
+    padding-bottom: 10px;
     background-color: black;
     border: 2px solid black;
     outline: 1px solid rgb(230, 150, 3); 
@@ -1204,15 +1232,17 @@ input[type=date]{
     padding: 15px;
     margin: auto;
     margin-top: 23px;
+    padding-left: 20px;
 }
 
 /* Aexthetics. */
 .CoverDec{
     margin: auto;
     margin-top: 23px;
-    width: 75%;
+    width: 325px;
+    height: 325px;
     padding: 10px;
-    background-color: rgb(14, 14, 14);
+    background-color: black;
     border: 2px solid rgb(20, 20, 20);
     outline: 2px solid rgb(46, 46, 46); 
 }
@@ -1385,7 +1415,7 @@ input[type=date]{
 /* Contact Us Page */
 /* Main Body and the Two Columns - Social and Form.*/
 .MainBody{
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     background-color: rgb(95, 1, 1);
     padding: 10px;

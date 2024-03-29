@@ -15,7 +15,31 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <type="text/css">        
     </head>
-    
+
+    <!-- Threat Model -->
+    <!--
+    Threat Source: External
+    Threat Agent: Human
+    Threat Intention: Intentional
+    Threat Motivation: Defacing/Embarrasing the Society or Members by changing the images in the Gallery.
+                        - Potentially using the Gallery to gain acess to sensitive member 
+                        or Society information.
+
+    Threat Impact: Members leaving the Society as a result of the loss of reputation, leading to the 
+                    collapse of the Society. 
+                    - Identity theft: Using the Member's or Societies' details to send graphic messages or 
+                    images to other students or lecturers, or making it easier to access other member accounts.
+                    - Gaining access to Society Social Media and doing similar things. 
+
+                        
+    Threat Mitigation: Ensure that no sensitive information is present in the gallery images. 
+                        - Emails, Passwords, Addresses, etc. 
+                        As mentioned before again ensuring that the Gallery content can only be changed
+                        with verification, or that alerts are sent upon change. 
+                        - Check all images before uploading them. 
+                        - Create some kind of 2nd password verification which is specific to
+                        the action of uploading content to the website.
+    -->
 
     <body id = "BootAdjust">
         <header>
@@ -24,7 +48,6 @@
                 alt = "Society Logo. A pentagram."/>
             <h1 id = "BootHeading">   
                 RGU DEATH METAL SOCIETY
-                <br>  
             </h1>
             <hr id = "BootHr">
             
@@ -37,6 +60,7 @@
 
         <!--Navigation Bar-->
         <nav class = "BootProtection">
+            <ul class = "UlBoot">
             <li class = "BootNavProtMarg"><a href='home_page.html'>HOME</a></li>
             <li class = "BootNavProtMarg"><a href='event_calendar.html'>EVENTS</a></li>
             <li class = "BootNavProtMarg"><a href='current_members.html'>MEMBERS</a></li>
@@ -44,6 +68,7 @@
             <li class = "BootNavProtMarg"><a href='albums.html'>ALBUMS</a></li>
             <li class = "BootNavProt"><a href='img_gallery.html'>GALLERY</a></li>
             <li class = "BootNavProtMarg"><a href='contact_us.html'>CONTACT US</a></li>
+            </ul>
         </nav>  
         
         
@@ -64,10 +89,9 @@
                     <div class = "BootPageMessage">
                         <hr class = "BootMsgDiv">
                         <h4> Welcome to our Gallery!<br>
-                            Here you can explore some past events,<br>
-                            and get to know our Society members better, primarily through the crazy shenanigans they get up to.<br>
-                            If you're not deterred from our Society after this page, then you truly belong here!
-                            </h4>
+                            Here you can delve into the cacophony of images which capture the intensity, passion 
+                            and creativity of the genre we love. You can explore everything from past events to live performances,
+                            and most importantly the personalities which made all this possible.</h4>
                         <hr class = "BootMsgDiv">
                     </div>
                 </div>

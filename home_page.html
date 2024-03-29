@@ -1,43 +1,72 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+
         <title>RGU DEATH METAL SOCIETY</title>
+
         <!-- Link to Favicon. -->
         <link rel = "icon" type = "image/jpg" href = "images/Favicon.png">
 
         <!-- CSS Style Sheet Link -->
-        <link  rel = 'stylesheet' href = 'css/main.css'>
-
+        <link  rel = 'stylesheet' href = "css/main.css">
+    
         <!-- Linking Social Media Icon Library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <type="text/css">
+        <div class="text.css"></div> 
     </head>
-    
+
+    <!-- Threat Model -->
+    <!--
+    Threat Source: External
+    Threat Agent: Human
+    Threat Intention: Intentional
+    Threat Motivation: Using someone's login details to gain access to the rest of the site. 
+                        - As a result defaming Members or the Society as a whole, 
+                        or using that information to gain access to other accounts.
+
+    Threat Impact: Damage to the rest of the website, access to a member's or 
+                    the Societies more personal details, 
+                    defacement of Society members by altering the content of the website,
+                    or by publishing/ using any sensitive information. 
+
+    Threat Mitigation: Login validation, email/text authentication upon login, 
+                        ensuring that the password is hidden when being typed.
+                        - Recommend that members use complex passwords which are difficult to remember. 
+                        - Regularly change passwords.
+                        - Create unconventional Security Questions.
+                        - Only give specific Society departments to make changes to specific pages. 
+                        That way even if someone with malicious intentions gains access to the website, 
+                        they're scope would be limited.
+    -->
 
     <body>
         <header>
             <!--Society Logo-->
-            <img src = 'images/Home Page Images/Logo.png' class = "Logo"
-                alt = "Society Logo. A pentagram."/>
+            <img src='images/Home%20Page%20Images/Logo.png' class="Logo"
+                alt="Society Logo. A pentagram.">
             <h1>
                 RGU DEATH METAL SOCIETY
-                <hr>
             </h1>
+            <hr>
 
             <!--Background Image (Above the Nav Bar)-->
-            <img src = 'images/Home Page Images/Bands Background.png' class = "background_img"
-                alt = "A background picture of Death Metal Bands."/>
+            <img src='images/Home%20Page%20Images/Bands%20Background.png' class="background_img"
+                alt="A background picture of Death Metal Bands.">
         </header>
 
 
         <!--Navigation Bar-->
         <nav class = navBar>
-            <li class = "active"><a href='home_page.html'>HOME</a></li>
-            <li><a href='event_calendar.html'>EVENTS</a></li>           
-            <li><a href='current_members.html'>MEMBERS</a></li>           
-            <li><a href='projects.html'>PROJECTS</a></li>            
-            <li><a href='albums.html'>ALBUMS</a></li>           
-            <li><a href='img_gallery.html'>GALLERY</a></li>           
-            <li><a href='contact_us.html'>CONTACT US</a></li>
+            <ul>
+                <li class = "active"><a href='home_page.html'>HOME</a></li>
+                <li><a href='event_calendar.html'>EVENTS</a></li>           
+                <li><a href='current_members.html'>MEMBERS</a></li>           
+                <li><a href='projects.html'>PROJECTS</a></li>            
+                <li><a href='albums.html'>ALBUMS</a></li>           
+                <li><a href='img_gallery.html'>GALLERY</a></li>           
+                <li><a href='contact_us.html'>CONTACT US</a></li>
+            </ul>
         </nav>
 
 
@@ -47,64 +76,62 @@
             <div id = "musicSection">
                 <p>Play Music:</p>
                 <audio controls>
-                    <source src = "audio/Rip & Tear Doom.mp3" type = "audio/mpeg">
+                    <source src = "audio/Rip%20&%20Tear%20Doom.mp3" type = "audio/mpeg">
                 </audio> 
             </div>
             <!-- Section for Login Form. -->
             <div id = "loginForm">
                 <form name = "login_form">
                     <label for = "email"></label>
-                    <input type = "text" name = "email" email = "email" value = "" placeholder = "Email:"/>
+                    <input type = "text" name = "email" id = "email" value = "" placeholder = "Email:">
   
                     <label for = "password"></label>
-                    <input type = "password" name ="password" password = "password" value = "" placeholder = "Password:"/>
+                    <input type = "password" name ="password" id = "password" value = "" placeholder = "Password:">
                   
                     <button type = "button" onclick = 'login()'>Login</button>
                     <hr id = "loginDiv">
                 </form>
-                  
-                    
+            </div>  
                 <!-- Script for Logging in and Logging out. -->
-                <script>
-                    // Code for Login Function.
-                    var counter = 2;
+            <script>
+                // Code for Login Function.
+                var counter = 2;
 
-                    function login(){
-                        let email = document.forms["login_form"]["email"].value;
-                        let password = document.forms["login_form"]["password"].value;
+                function login(){
+                    let email = document.forms["login_form"]["email"].value;
+                    let password = document.forms["login_form"]["password"].value;
 
-                        // Storing Email Check.
-                        var validPassCheck = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-                        
-                        // Checking to see if a valid email is entered. 
-                        if(counter % 2 == 0){
-                        // Login Successful.
-                        if(email.match(validPassCheck) && password !== ""){
-                            alert('You Have Successfully Logged In!');
-                            counter +=1;
-                            login_form.reset();
-                        
-                        // Valid Email, but no Password.
-                        } else if (email.match(validPassCheck) && password == "") {
-                            alert('Please Enter a Password');
+                    // Storing Email Check.
+                    var validPassCheck = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                    
+                    // Checking to see if a valid email is entered. 
+                    if(counter % 2 == 0){
+                    // Login Successful.
+                    if(email.match(validPassCheck) && password !== ""){
+                        alert('You Have Successfully Logged In!');
+                        counter +=1;
+                        login_form.reset();
+                    
+                    // Valid Email, but no Password.
+                    } else if (email.match(validPassCheck) && password == "") {
+                        alert('Please Enter a Password');
 
-                        // Valid Password, but invalid Email.
-                        } else if (email !== email.match(validPassCheck) && password !== ""){
-                            alert('Please Enter a Valid Email Address.');
+                    // Valid Password, but invalid Email.
+                    } else if (email !== email.match(validPassCheck) && password !== ""){
+                        alert('Please Enter a Valid Email Address.');
 
-                        // Invalid Email and Password.
-                        } else if (email !== email.match(validPassCheck) && password == ""){
-                            alert('Please Enter a Valid Email Address and Password.');
-                        } 
+                    // Invalid Email and Password.
+                    } else if (email !== email.match(validPassCheck) && password == ""){
+                        alert('Please Enter a Valid Email Address and Password.');
+                    } 
 
-                        // Logout Section.
-                        } else {
-                            alert('You have been logged out!');
-                            counter = 2;
-                        }        
-                    }
-                </script>
-            </div>    
+                    // Logout Section.
+                    } else {
+                        alert('You have been logged out!');
+                        counter = 2;
+                    }        
+                }
+            </script>
         </div>
     
 
@@ -115,11 +142,13 @@
                 <div class = "MessageDec">
                     <div class = "PageMessage">
                         <hr class = "MsgDiv">
-                        <h4>Do you want to spend time making music that will make your neighbour’s ears bleed? Their children cry and their grandparents drop dead from a heart attack. 
-                            Then what are you waiting for? Come join us at the RGU Death Metal Society!!<br><br>
+                        <h4>Do you want to spend time making music that will make your neighbour’s ears bleed? Their children cry and their invaluable china shatter?<br>
+                            ...Then what are you waiting for? Come join us at the RGU Death Metal Society!!<br><br>
                             Our Mission:<br>
-                            Our Mission is to explore the world of metal and share it with one another. 
-                            Here we also have a passion for creating our own music - which emphasises experimental and innovative sounds that will push the boundaries of the genre.</h4>
+                            Our Mission is exploring our common passion for Metal and sharing it with one another. This includes everything from Death Metal to Classic Rock, Blues,
+                            Blues, Progressive, Thrash and everything in between. 
+                            Our passion for Metal extends to creating our own, with many of our members 
+                            emphasising  experimental and innovative sounds that will push the boundaries of the genre.</h4>
                         <hr class = "MsgDiv">
                     </div>
                 </div>
@@ -130,18 +159,18 @@
                 <div class = "HmImgContOne">
                     <div class = "HmImgContTwo"> 
                         <div class = "HmImgContThree"> 
-                            <img src = 'images/Home Page Images/H2.png'
-                                alt = "A picture of Slayer"
-                                id = "Slayer"/>
-                            <img src = 'images/Home Page Images/H1.jpg'
-                                alt = "A picture of Sepultura"
-                                id = "Sepultura"/>
-                            <img src = 'images/Home Page Images/H3.jpg'
-                                alt = "A picture of Pantera"
-                                id = "Pantera"/>
-                            <img src = 'images/Home Page Images/H4.jpg'
-                                alt = "A picture of Faith No More"
-                                id = "Faith"/>
+                            <img src="images/Home%20Page%20Images/H2.png" 
+                                alt="A picture of Slayer" 
+                                class="Slayer">
+                            <img src='images/Home%20Page%20Images/H1.jpg' 
+                                alt="A picture of Sepultura" 
+                                class="Sepultura">
+                            <img src='images/Home%20Page%20Images/H3.jpg' 
+                                alt="A picture of Pantera" 
+                                class="Pantera">
+                            <img src='images/Home%20Page%20Images/H4.jpg' 
+                                alt="A picture of Faith No More" 
+                                class="Faith">
                         </div>
                     </div>
                 </div>
@@ -159,10 +188,10 @@
                         <aside> 
                             <!-- Image Section. -->
                             <div class = "ImgCont">
-                                <img src = "images/Project Images/GetSomeCover.jpg"
-                                    class = "ArtImg"
-                                    alt = "Get Some album Cover"/>
-                                <figcaption>Get Some Cover</figcaption>
+                                <img src="images/Project%20Images/GetSomeCover.jpg" 
+                                    class="ArtImg" 
+                                    alt="Get Some album Cover">
+                                <p>Get Some Cover</p>
                             </div>
                             <!-- Text Section. -->
                             <div class = "TextCont">
@@ -182,11 +211,11 @@
                         <!-- Article Two. -->
                         <aside> 
                             <!-- Image Section. -->
-                            <div class = "ImgCont">
-                                <img src = "images/Home Page Images/Article Images/DillingerArt.jpg"
-                                    class = "ArtImg"
-                                    alt = "Picture of Dillinger Escape Plan"/>
-                                <figcaption>Dillinger Escape Plan</figcaption>
+                            <div class="ImgCont">
+                                <img src="images/Home%20Page%20Images/Article%20Images/DillingerArt.jpg" 
+                                    class="ArtImg" 
+                                    alt="Picture of Dillinger Escape Plan">
+                                <p>Dillinger Escape Plan</p>
                             </div>
                             <!-- Text Section. -->
                             <div class = "TextCont">
@@ -209,10 +238,10 @@
                         <aside> 
                             <!-- Image Section. -->
                             <div class = "ImgCont">
-                                <img src = "images/Home Page Images/Article Images/Studio.jpg"
-                                    class = "ArtImg"
-                                    alt = "Image of Basement Music Studio"/>
-                                <figcaption>Current Club House</figcaption>
+                                <img src="images/Home%20Page%20Images/Article%20Images/Studio.jpg" 
+                                    class="ArtImg" 
+                                    alt="Image of Basement Music Studio">
+                                <p>Current Club House</p>
                             </div>
                             <!-- Text Section. -->
                             <div class = "TextCont">
@@ -235,10 +264,10 @@
                         <aside> 
                             <!-- Image Section. -->
                             <div class = "ImgCont">
-                                <img src = "images/Home Page Images/Article Images/Guitars.jpg"
-                                    class = "ArtImg"
-                                    alt = "Image of Guitars."/>
-                                <figcaption>Guitars</figcaption>
+                                <img src="images/Home%20Page%20Images/Article%20Images/Guitars.jpg" 
+                                    class="ArtImg" 
+                                    alt="Image of Guitars.">
+                                <p>Guitars</p>
                             </div>
                             <!-- Text Section. -->
                             <div class = "TextCont">
@@ -257,7 +286,7 @@
                         </aside> 
                     </div>
                 </div>  
-            </div>    
+            </div>  
         </main>
         
 
@@ -265,7 +294,7 @@
             <hr>
             <div class = "footerContainer">
                 <div class = copyRight>
-                    <p><span>&#169</span> 2024 Jakub Sykes <br> RGU Death Metal Society</p>
+                    <p><span>&#169;</span> 2024 Jakub Sykes <br> RGU Death Metal Society</p>
                 </div>
                 <div class = SocialLinks>
                     <p>Follow Us On: </p>
@@ -278,5 +307,6 @@
                 </div>
             </div>
         </footer>
+
     </body>    
 </html>

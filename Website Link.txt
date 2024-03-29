@@ -1,2 +1,12 @@
 Link to Website:
 https://anorexiclobster.github.io/CM1114-Death-Metal-Society-Website/img_gallery.html
+
+
+References: 
+
+Card Flip Animation:
+Note: I had to Mix and Match the two examples.
+ - I got a lot of info and I liked the animation from the first link.
+ - But I used the info in the second link to use the effect on multiple cards.
+https://www.youtube.com/watch?v=QGVXmoZWZuw&list=PLR8vUZDE6IePk_KvVxrFwesjz8qspsIhd
+https://stackoverflow.com/questions/66095959/flip-animation-for-multiple-cards

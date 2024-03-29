@@ -11,7 +11,25 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <type="text/css">         
     </head>
-    
+
+    <!-- Threat Model -->
+    <!--
+    Threat Source: External
+    Threat Agent: Human
+    Threat Intention: Intentional
+    Threat Motivation: Embarrassment/Defamation of the society and it's members.
+
+    Threat Impact: Defacement of society website, changing of members
+                    images, possible identify theft of members.
+
+    Threat Mitigation: Login validation, 2FA in place before member images
+                        can be changed, email updates to members whose images have been changed.
+                        - Ensure that no sensitive information is visible in the member images, 
+                        which could result in these Threats.
+                        - Check all images before uploading them. 
+                        - Only allow the member to change their own image. Again this would limit 
+                        the scope if someone with malicious intentions gains access to the website.
+    -->
 
     <body> 
         <header>
@@ -20,8 +38,8 @@
                 alt = "Society Logo. A pentagram."/>
             <h1>
                 RGU DEATH METAL SOCIETY
-                <hr>
             </h1>
+            <hr>
 
             <!--Background Image (Above the Nav Bar)-->
             <img src = 'images/Home Page Images/Zombie Background.png' class = "background_img"
@@ -31,13 +49,15 @@
 
         <!--Navigation Bar-->
         <nav class = navBar>
-            <li><a href='home_page.html'>HOME</a></li>
-            <li><a href='event_calendar.html'>EVENTS</a></li>
-            <li class = "active"><a href='current_members.html'>MEMBERS</a></li>
-            <li><a href='projects.html'>PROJECTS</a></li>
-            <li><a href='albums.html'>ALBUMS</a></li>
-            <li><a href='img_gallery.html'>GALLERY</a></li>
-            <li><a href='contact_us.html'>CONTACT US</a></li>
+            <ul>
+                <li><a href='home_page.html'>HOME</a></li>
+                <li><a href='event_calendar.html'>EVENTS</a></li>
+                <li class = "active"><a href='current_members.html'>MEMBERS</a></li>
+                <li><a href='projects.html'>PROJECTS</a></li>
+                <li><a href='albums.html'>ALBUMS</a></li>
+                <li><a href='img_gallery.html'>GALLERY</a></li>
+                <li><a href='contact_us.html'>CONTACT US</a></li>
+            </ul>
         </nav>
 
 
@@ -56,9 +76,9 @@
                 <div class = "MessageDec">
                     <div class = "PageMessage">
                         <hr class = "MsgDiv">
-                        <h4>On this page you will meet some of our lead society members<br>
-                            and get a better idea of some of the dynamic personalities behind our Society.<br>
-                            As well as their role within the Society, their current projects and their role within those projects..</h4>
+                        <h4>This page celebrates the dynamic personalities behind our Society,
+                            Each of whom keep the relentless energy of our Society alive with unwavering passion.
+                            Here we explore their roles within the Society, their current projects and more!</h4>
                         <hr class = "MsgDiv">
                     </div>
                 </div>
