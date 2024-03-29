@@ -2,9 +2,9 @@ References:
 
 -----------------------------------------------------------------------------------------------
 
-Card Flip Animation__
+Card Flip Animation</br>
 To get the Flip card Animation working, I used two references.
-First Reference:__
+First Reference:</br>
 https://www.youtube.com/watch?v=QGVXmoZWZuw&list=PLR8vUZDE6IePk_KvVxrFwesjz8qspsIhd
 
 Note: I used this reference for the CSS and HTML. However, the Javascript for this reference 
