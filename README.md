@@ -86,8 +86,9 @@ Note: This is the reference I used to create the Lightbox Gallery
 -----------------------------------------------------------------------------------------------
 
 Favicon</br>
-Reference:
+Reference:</br>
 https://www.youtube.com/watch?v=HGTJBPNC-Gw&t=7198s
 
 Note: At the beginning I used this reference, to learn a little more about HTML and CSS. 
-      I also used it for the Favicon. Timestamp: 31Mins 20Secs. 
+      I also used it for the Favicon.</br>
+      Timestamp: 31Mins 20Secs. 
