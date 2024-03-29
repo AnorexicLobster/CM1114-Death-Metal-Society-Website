@@ -92,3 +92,12 @@ https://www.youtube.com/watch?v=HGTJBPNC-Gw&t=7198s
 Note: At the beginning I used this reference, to learn a little more about HTML and CSS. 
       I also used it for the Favicon.</br>
       Timestamp: 31Mins 20Secs. 
+
+-----------------------------------------------------------------------------------------------
+
+Font Stroke</br>
+Reference:</br>
+https://stackoverflow.com/questions/2570972/css-font-border
+
+Note: I used this to learn how to change the stroke colour of a font. 
+      Used on the active Nav page.
