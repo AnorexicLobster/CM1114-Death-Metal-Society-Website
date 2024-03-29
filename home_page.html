@@ -4,9 +4,12 @@
         <!-- Link to Favicon. -->
         <link rel = "icon" type = "image/jpg" href = "images/Favicon.png">
 
+        <!-- CSS Style Sheet Link -->
         <link  rel = 'stylesheet' href = 'css/main.css'>
+
+        <!-- Linking Social Media Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <type="text/css">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1">
     </head>
     
 
@@ -20,101 +23,260 @@
                 <hr>
             </h1>
 
-             <!--Background Image (Above the Nav Bar)-->
+            <!--Background Image (Above the Nav Bar)-->
             <img src = 'images/Home Page Images/Bands Background.png' class = "background_img"
                 alt = "A background picture of Death Metal Bands."/>
         </header>
 
 
         <!--Navigation Bar-->
-        <div class = navBar>
-        <nav >
+        <nav class = navBar>
             <li class = "active"><a href='home_page.html'>HOME</a></li>
-            <li class = "active"><a href='event_calendar.html'>EVENTS</a></li>           
-            <li class = "active"><a href='current_members.html'>MEMBERS</a></li>           
-            <li class = "active"><a href='projects.html'>PROJECTS</a></li>            
-            <li class = "active"><a href='albums.html'>ALBUMS</a></li>           
-            <li class = "active"><a href='img_gallery.html'>GALLERY</a></li>           
-            <li class = "active"><a href='contact_us.html'>CONTACT US</a></li>
+            <li><a href='event_calendar.html'>EVENTS</a></li>           
+            <li><a href='current_members.html'>MEMBERS</a></li>           
+            <li><a href='projects.html'>PROJECTS</a></li>            
+            <li><a href='albums.html'>ALBUMS</a></li>           
+            <li><a href='img_gallery.html'>GALLERY</a></li>           
+            <li><a href='contact_us.html'>CONTACT US</a></li>
         </nav>
-        </div>
 
 
         <!--Music and Log In Form.-->
         <div class = "loginBar">
+            <!-- Section for Music. -->
             <div id = "musicSection">
+                <p>Play Music:</p>
                 <audio controls>
                     <source src = "audio/Rip & Tear Doom.mp3" type = "audio/mpeg">
-                </audio>
+                </audio> 
             </div>
-  
+            <!-- Section for Login Form. -->
             <div id = "loginForm">
-                <form>
+                <form name = "login_form">
                     <label for = "email"></label>
-                    <input type = "text" email = "email" value = "" placeholder = "Email:"/>
+                    <input type = "text" name = "email" email = "email" value = "" placeholder = "Email:"/>
   
                     <label for = "password"></label>
-                    <input type = "text" email = "email" value = "" placeholder = "Password:"/>
+                    <input type = "password" name ="password" password = "password" value = "" placeholder = "Password:"/>
                   
                     <button type = "button" onclick = 'login()'>Login</button>
-                    <hr>
-                <form>
+                    <hr id = "loginDiv">
+                </form>
                   
-            <!-- Script for Logging in and Logging out. -->
-            <script src="Javascript/main.js"></script>
+                    
+                <!-- Script for Logging in and Logging out. -->
+                <script>
+                    // Code for Login Function.
+                    var counter = 2;
+
+                    function login(){
+                        let email = document.forms["login_form"]["email"].value;
+                        let password = document.forms["login_form"]["password"].value;
+
+                        // Storing Email Check.
+                        var validPassCheck = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                        
+                        // Checking to see if a valid email is entered. 
+                        if(counter % 2 == 0){
+                        // Login Successful.
+                        if(email.match(validPassCheck) && password !== ""){
+                            alert('You Have Successfully Logged In!');
+                            counter +=1;
+                            login_form.reset();
+                        
+                        // Valid Email, but no Password.
+                        } else if (email.match(validPassCheck) && password == "") {
+                            alert('Please Enter a Password');
+
+                        // Valid Password, but invalid Email.
+                        } else if (email !== email.match(validPassCheck) && password !== ""){
+                            alert('Please Enter a Valid Email Address.');
+
+                        // Invalid Email and Password.
+                        } else if (email !== email.match(validPassCheck) && password == ""){
+                            alert('Please Enter a Valid Email Address and Password.');
+                        } 
+
+                        // Logout Section.
+                        } else {
+                            alert('You have been logged out!');
+                            counter = 2;
+                        }        
+                    }
+                </script>
             </div>    
         </div>
     
 
         <main>
-            <!--Welcome Message-->
-        <div class = "row">  
-            <div>
-                <h3 >Welcome to the RGU  Death Metal Society</h3>
-                    <p>
-                        If yoo want to spend time making
-                        music that will make your neighbour's ears bleed, 
-                        their children cry and their grandparents drop dead from
-                        heart attacks... <br>
-                        Then what are you waiting for? Come join us at the
-                        RGU Death Metal Society!
-                    </p>
+            <!--Page Title/ Welcome Message-->
+            <h3 class = "PageTitle">Welcome to the RGU  Death Metal Society</h3>
+            <div class = "MessageCont">
+                <div class = "MessageDec">
+                    <div class = "PageMessage">
+                        <hr class = "MsgDiv">
+                        <h4>Do you want to spend time making music that will make your neighbour’s ears bleed? Their children cry and their grandparents drop dead from a heart attack. 
+                            Then what are you waiting for? Come join us at the RGU Death Metal Society!!<br><br>
+                            Our Mission:<br>
+                            Our Mission is to explore the world of metal and share it with one another. 
+                            Here we also have a passion for creating our own music - which emphasises experimental and innovative sounds that will push the boundaries of the genre.</h4>
+                        <hr class = "MsgDiv">
+                    </div>
                 </div>
+            </div>
+
+            <div class = "HomeRow">        
+                <!-- Homepage Images -->
+                <div class = "HmImgContOne">
+                    <div class = "HmImgContTwo"> 
+                        <div class = "HmImgContThree"> 
+                            <img src = 'images/Home Page Images/H2.png'
+                                alt = "A picture of Slayer"
+                                id = "Slayer"/>
+                            <img src = 'images/Home Page Images/H1.jpg'
+                                alt = "A picture of Sepultura"
+                                id = "Sepultura"/>
+                            <img src = 'images/Home Page Images/H3.jpg'
+                                alt = "A picture of Pantera"
+                                id = "Pantera"/>
+                            <img src = 'images/Home Page Images/H4.jpg'
+                                alt = "A picture of Faith No More"
+                                id = "Faith"/>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block for Article. -->
+                <div class = "ArtCont"> 
+                    <div id = "ArtTitle">
+                        <h3>Latest Society News</h3>
+                    </div>
+                      
+                    <hr>
+                    <!-- Section for Articles. -->
+                    <div class = "ArticleList">
+                        <!-- Article One. -->
+                        <aside> 
+                            <!-- Image Section. -->
+                            <div class = "ImgCont">
+                                <img src = "images/Project Images/GetSomeCover.jpg"
+                                    class = "ArtImg"
+                                    alt = "Get Some album Cover"/>
+                                <figcaption>Get Some Cover</figcaption>
+                            </div>
+                            <!-- Text Section. -->
+                            <div class = "TextCont">
+                                <h4>Snot's New Album!</h4>
+                                <p>Snot, one of our oldest ongoing projects is excited to anounce that 
+                                    they're first album, 'Get Some' is in the final stages of production.
+                                    Snot are setting the release date at late this year, early next year.
+                                    For a sample track visit our projects page, which will also provide you
+                                    with information on how to support Snot. 
+                                    The album is not available for preorder yet, however, the band will 
+                                    inform the Society as soon as they have a date for that too!</p>
+                            </div>
+                        </aside>
+
+                        <hr class = "ArtDiv">
+
+                        <!-- Article Two. -->
+                        <aside> 
+                            <!-- Image Section. -->
+                            <div class = "ImgCont">
+                                <img src = "images/Home Page Images/Article Images/DillingerArt.jpg"
+                                    class = "ArtImg"
+                                    alt = "Picture of Dillinger Escape Plan"/>
+                                <figcaption>Dillinger Escape Plan</figcaption>
+                            </div>
+                            <!-- Text Section. -->
+                            <div class = "TextCont">
+                                <h4>Dillinger Live Shows!</h4>
+                                <p>Dillinger Escape Plan, another of the Societies major projects,
+                                    also have big news. The band recently started working on their first album, 
+                                    'Calculating Infinity', no release date has been announced yet - 
+                                    It's expected that the album won't be ready for a couple of years.
+                                    However, in the meantime Dillinger announced that they'll be performing Live
+                                    at a variety of different locations across Scotland. 
+                                    A location  and date for Aberdeen have been set - visit our Events page for
+                                    more info. 
+                                    If you want more information on Dillinger, visit our Projects page.</p>
+                            </div>
+                        </aside>
+
+                        <hr class = "ArtDiv"> 
+
+                        <!-- Article Three. -->
+                        <aside> 
+                            <!-- Image Section. -->
+                            <div class = "ImgCont">
+                                <img src = "images/Home Page Images/Article Images/Studio.jpg"
+                                    class = "ArtImg"
+                                    alt = "Image of Basement Music Studio"/>
+                                <figcaption>Current Club House</figcaption>
+                            </div>
+                            <!-- Text Section. -->
+                            <div class = "TextCont">
+                                <h4>Donations for New Club House</h4>
+                                <p>With an increasing amount of our Society members looking to start their own projects,
+                                    or just looking for a place to jam with friends. We've decided to invest into a new Club House. 
+                                    Although our current one has served us well, space and equipment are limited. 
+                                    We're looking to collect donations to place down a deposit for a new one. 
+                                    Our plan is to invest into new equipment and editing software along with the club house, 
+                                    making it easier for all memebers to create their own music. 
+                                    We're considering keeping both club houses, making it easier for members to rent time in them.
+                                    However, that will depend on the amount collected. 
+                                    To place donation or for any further enquires, contact Dave Lombardo.</p>
+                            </div>
+                        </aside>
+
+                        <hr class = "ArtDiv">
                     
-                    <!-- Homepage Images -->
-                <div class = "HmImg">    
-                <img src = 'images/Home Page Images/H2.png'
-                    alt = "A picture of Slayer"
-                    id = "Slayer"/>
-                <img src = 'images/Home Page Images/H1.jpg'
-                    alt = "A picture of Sepultura"
-                    id = "Sepultura"/>
-                <img src = 'images/Home Page Images/H3.jpg'
-                    alt = "A picture of Pantera"
-                    id = "Pantera"/>
-                <img src = 'images/Home Page Images/H4.jpg'
-                    alt = "A picture of Faith No More"
-                    id = "Faith"/>
-                </div>
-
-
-                      <!-- Block for Tweets -->
-                <div class = "Twitter"> 
-                    <h3>Latest Tweets</h3>     
-                    <aside> 
-                    <a class="twitter-timeline" href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw">
-                        Tweets by XDevelopers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-                    </aside>  
+                        <!-- Article Four. -->
+                        <aside> 
+                            <!-- Image Section. -->
+                            <div class = "ImgCont">
+                                <img src = "images/Home Page Images/Article Images/Guitars.jpg"
+                                    class = "ArtImg"
+                                    alt = "Image of Guitars."/>
+                                <figcaption>Guitars</figcaption>
+                            </div>
+                            <!-- Text Section. -->
+                            <div class = "TextCont">
+                                <h4>Guitars for Sale</h4>
+                                <p>Darrell Dimebag is looking to sell some of his old guitars. All Guitars are used
+                                    but still in great condition. Half of all money made from the purchases
+                                    will go towards funding the new club house.
+                                    Guitars include: <br>
+                                    - Bonnlo 39" for £50. <br>
+                                    - Ibanez Transparent for £110. <br>
+                                    - Jackson Js Series Dinky Arch Top JS22 DKA for £130. <br>
+                                    The last Guitar has already been sold. 
+                                    If you're interested contact Darrell. 
+                                    He's got no issues with testing them before purchase.</p>
+                            </div>
+                        </aside> 
+                    </div>
                 </div>  
-        </div>    
-
-          
+            </div>    
         </main>
         
 
         <footer>
             <hr>
-            <p>Copyright: Jakub Sykes</p>
+            <div class = "footerContainer">
+                <div class = copyRight>
+                    <p><span>&#169</span> 2024 Jakub Sykes <br> RGU Death Metal Society</p>
+                </div>
+                <div class = SocialLinks>
+                    <p>Follow Us On: </p>
+                    <!-- Link to Facebook -->
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <!-- Link to Twitter -->
+                    <a href="https://twitter.com/i/flow/login" class="fa fa-twitter"></a>
+                    <!-- Link to Instagram -->
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                </div>
+            </div>
         </footer>
     </body>    
 </html>

@@ -6,11 +6,17 @@
         <link rel="icon" type = "image/jpg" href = "images/Favicon.png">
 
         <link  rel = 'stylesheet' href = 'css/main.css'>
+        <!-- Linking Social Media Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <type="text/css">       
     </head>
     
 
     <body>
+        <!-- Script for Facebook Feed. -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0" nonce="bYmyzhL2"></script>
+
         <header>
             <!--Society Logo-->
             <img src = 'images/Home Page Images/Logo.png' class="Logo"
@@ -20,43 +26,455 @@
                 <hr>
             </h1>
             
-             <!--Background Image (Above the Nav Bar)-->
+            <!--Background Image (Above the Nav Bar)-->
             <img src = 'images/Home Page Images/Zombie Background.png' class="background_img"
                 alt = "Alternative Background. Zombies Eating each other."/>
         </header>
         
 
         <!--Navigation Bar-->
-
-        <nav>
-            <li class = "active"><a href='home_page.html'>HOME</a></li>
-            <li class = "active"><a href='event_calendar.html'>EVENTS</a></li>
-            <li class = "active"><a href='current_members.html'>MEMBERS</a></li>
+        <nav class = navBar>
+            <li><a href='home_page.html'>HOME</a></li>
+            <li><a href='event_calendar.html'>EVENTS</a></li>
+            <li><a href='current_members.html'>MEMBERS</a></li>
             <li class = "active"><a href='projects.html'>PROJECTS</a></li>
-            <li class = "active"><a href='albums.html'>ALBUMS</a></li>
-            <li class = "active"><a href='img_gallery.html'>GALLERY</a></li>
-            <li class = "active"><a href='contact_us.html'>CONTACT US</a></li>
+            <li><a href='albums.html'>ALBUMS</a></li>
+            <li><a href='img_gallery.html'>GALLERY</a></li>
+            <li><a href='contact_us.html'>CONTACT US</a></li>
         </nav>
 
         
         <!--Music-->
+        <p>Play Music:</p>
         <audio controls>
             <source src = "audio/Rip & Tear Doom.mp3" type = "audio/mpeg">
         </audio>
 
 
         <main>
-            <div>
-                <h2 class = "PageTitle"> CURRENT PROJECTS</h2>
-                <p></p>
+            <!-- Page Title. -->
+            <h2 class = "PageTitle"> SOCIETY PROJECTS </h2>
+            <!-- Page Intro Text. -->
+            <div class = "MessageCont">
+                <div class = "MessageDec">
+                    <div class = "PageMessage">
+                        <hr class = "MsgDiv">
+                        <h4> Welcome to Our Projects Page!<br>
+                            Here you can explore some of our Society bands and get an insight into our current projects. <br>
+                            As well as information about where to support and follow them. <br>
+                            Each of these bands embody the core philosophy of our Society, they're all working on albums, so be sure to check them out!</h4>
+                        <hr class = "MsgDiv">
+                    </div>
+                </div>
+            </div>
+        
+           
+            <!-- Section for the Society Projects. -->
+            <div id = "ProjectCards">
+                <!-- Container for Snot. -->
+                <div class="ProjectContainer">
+                    <div class="ProjectRow">
+
+                        <!-- Column for the Card. -->
+                        <div class="column-60"
+                            id = "MarginAdjust">
+                            <!-- Section for the Card. -->
+                            <div class="card__inner">
+                                <!-- Section for the Front of the Card. -->
+                                <div class="card__face card__face--front">
+                                    <div class = "BandImg">
+                                        <h2>SNOT</h2>
+                                        <hr id = "AlbumSep">
+                                        <br>
+                                        <img src = 'images/Project Images/SnotBand.png'
+                                            class = "ProjImg"
+                                            alt = "Image of Band: Snot."/>  
+                                    </div>
+                                </div>
+                                <!-- Section for the Back of the Card. -->
+                                <div class="card__face card__face--back">
+                                    <div class="card__content">
+                                        <div class="card__header">
+                                            <img src="images/Project Images/SnotLogo.jpg" 
+                                                class="BandLogo" 
+                                                alt="Snot Logo"/>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class = "BandText">
+                                                <p class = "BandTitle">About the Band</p>
+                                                <p>Snot's music is a potent fusion of raw aggression, infectious energy, 
+                                                    and unapologetic attitude which epitomises the rebellious spirit of 90s Nu Metal. 
+                                                    Emerging in the late 1990s, they epitomized the spirit of nu metal with their uncompromising sound and rebellious lyrics. 
+                                                    Led by the charismatic Lynn Strait, their songs are driven by relentless guitar riffs, thunderous bass lines, and explosive percussion, 
+                                                    creating a visceral sonic experience that grabs listeners by the throat. Strait's vocals range from fierce screams to melodic hooks, 
+                                                    delivering lyrics that reflect the frustration and defiance of a generation. Tracks like "Stoopid" and "My Balls" 
+                                                    showcase their signature blend of groove-heavy instrumentation and punk-inspired ferocity.
+                                                    Their debut album "Get Some" stands as a testament to their raw talent and uncompromising attitude.</p>
+                                            </div>
+                                            <!-- Band Info. -->
+                                            <div class = "BandInfo">
+                                                <h3>Members</h3>
+                                                <p>Lynn Strait (Vocals), Sonny Mayo (Guitar), Mike Doling (Guitar), 
+                                                    <br> John Fahnestock (Bass), Jamie Miller (Drums)</p>
+                                                <h3> Genres</h3>
+                                                <p>Nu Metal, Funk Metal and Hardcore Punk</p>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Section for Social Media Links. -->
+                             <div class = "ProjSupport">
+                                <h3>Support Snot on:</h3>
+                                <a href="https://www.youtube.com/channel/UCSsDs_5sIVRKyDR_iec1Ucw" class="fa fa-youtube"></a>
+                                <a href="https://soundcloud.com/snot-official" class="fa fa-soundcloud"></a>
+                            </div>
+                        </div>
+                    
+                        <!-- Section for Other Band Info. -->
+                        <div class="column-40">
+                            <div class = "SocialMedia">
+                                <h3>Latest Updates: </h3>
+                                <div class="fb-page" 
+                                data-tabs="timeline,events,messages"
+                                data-href="https://www.facebook.com/SnotOfficial/?locale=en_GB"
+                                data-width="400" 
+                                data-hide-cover="false"></div>
+                            </div>
+                            <hr class = "ProjDiv">
+                            <!-- Album Description and Sample Track. -->
+                            <div class = "CurrProj">
+                                <h3>Current Project:</h3>
+                                <p>Get Some</p>
+                                <img src="images/Project Images/GetSomeCover.jpg"
+                                    class = "ProjAlbums"
+                                    alt = "Get Some Album Cover"/>
+                                <h3>Sample Track: Deadfall</h3>
+                                <div class = "audio">
+                                    <audio controls>
+                                        <source src = "audio/Deadfall.mp3" type = "audio/mpeg">
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
+                <br><br>
+
+                <!-- Container for Pantera. -->
+                <div class="ProjectContainer">
+                    <div class="ProjectRow">
+
+                        <!-- Section for Other Band Info. -->
+                        <div class="column-40"
+                            id = "PadAdj">
+                            <div class = "SocialMedia">
+                                <h3>Latest Updates: </h3>
+                                <div class="fb-page" 
+                                data-tabs="timeline,events,messages"
+                                data-href="https://www.facebook.com/Pantera/?locale=en_GB"
+                                data-width="400" 
+                                data-hide-cover="false"></div>
+                            </div>
+                            <hr class = "ProjDiv">
+                            <!-- Album Description and Sample Track. -->
+                            <div class = "CurrProj">
+                                <h3>Current Project:</h3>
+                                <p>Far Beyond Driven</p>
+                                <img src="images/Project Images/FarBeyondDrivenCover.jpg"
+                                    class = "ProjAlbums"
+                                    alt = "Far Beyond Driven Cover"/>
+                                <h3>Sample Track: Becoming</h3>
+                                <div class = "audio">
+                                    <audio controls>
+                                        <source src = "audio/Becoming.mp3" type = "audio/mpeg">
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Column for the Card. -->
+                        <div class="column-60"
+                            id = "MargOpp">
+                            <!-- Section for the Card. -->
+                            <div class="card__inner">
+                                <!-- Section for the Front of the Card. -->
+                                <div class="card__face card__face--front">
+                                    <div class = "BandImg">
+                                        <h2>PANTERA</h2>
+                                        <hr id = "AlbumSep">
+                                        <br>
+                                        <img src = 'images/Project Images/PanteraBand.jpg'
+                                            class = "ProjImg"
+                                            alt = "Image of Band: Pantera."/>  
+                                    </div>
+                                </div>
+                                <!-- Section for the Back of the Card. -->
+                                <div class="card__face card__face--back">
+                                    <div class="card__content">
+                                        <div class="card__header">
+                                            <img src="images/Project Images/PanteraLogo.jpg"
+                                                class="BandLogo"
+                                                alt="Pantera Logo"/>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class = "BandText">
+                                                <p class = "BandTitle">About the Band</p>
+                                                <p>Pantera's music is a visceral, primal force that transcends the confines of 
+                                                    traditional heavy metal. Their sound is a potent blend of blistering guitar riffs, 
+                                                    thunderous bass lines, and relentless drumming, all anchored by Phil Anselmo's 
+                                                    commanding vocals. Each track is a sonic onslaught, characterized by its ferocity, 
+                                                    aggression, and unrelenting intensity. Yet, within this maelstrom of sound, 
+                                                    Pantera also exhibits a remarkable sense of groove and rhythm, 
+                                                    drawing listeners in with infectious hooks and headbanging beats. 
+                                                    From the bone-crushing heaviness of songs like "Domination" and "5 Minutes Alone" 
+                                                    to the melodic complexity of tracks like "Cemetery Gates" and "Hollow," 
+                                                    Pantera's music is a testament to their unparalleled musicianship and 
+                                                    uncompromising attitude. It's a sound that speaks to the primal instincts within us all.</p>
+                                            </div>
+                                            <!-- Band Info. -->
+                                            <div class = "BandInfo">
+                                                <h3>Members</h3>
+                                                <p>Phil Anselmo (Vocals), Darrell Dimebag (Guitar), 
+                                                    <br> Rex Brown (Bass), Vinnie Paul (Drums)</p>
+                                                <h3> Genres</h3>
+                                                <p>Groove Metal, Thrash Metal</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Section for Social Media Links. -->
+                             <div class = "ProjSupport">
+                                <h3>Support Pantera on:</h3>
+                                <a href="https://www.youtube.com/@pantera" class="fa fa-youtube"></a>
+                                <a href="https://soundcloud.com/pantera" class="fa fa-soundcloud"></a>
+                            </div>  
+                        </div> 
+                    </div> 
+                </div> 
+                
+                <br><br>
+
+                <!-- Container for Primus. -->
+                <div class="ProjectContainer">
+                    <div class="ProjectRow">
+
+                        <!-- Column for the Card. -->
+                        <div class="column-60"
+                            id = "MarginAdjust">
+                            <!-- Section for the Card. -->
+                            <div class="card__inner">
+                                <!-- Section for the Front of the Card. -->
+                                <div class="card__face card__face--front">
+                                    <div class = "BandImg">
+                                        <h2>PRIMUS</h2>
+                                        <hr id = "AlbumSep">
+                                        <br>
+                                        <img src = 'images/Project Images/PrimusBand.png'
+                                            class = "ProjImg"
+                                            alt = "Image of Band: Primus."/>  
+                                    </div>
+                                </div>
+                                <!-- Section for the Back of the Card. -->
+                                <div class="card__face card__face--back">
+                                    <div class="card__content">
+                                        <div class="card__header">
+                                            <img src="images/Project Images/PrimusLogo.png" 
+                                            class="BandLogo"
+                                            alt="Primus Logo"/>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class = "BandText">
+                                                <p class = "BandTitle">About the Band</p>
+                                                <p>Primus's music defies categorization, existing in a realm all its own. 
+                                                    With a distinctive blend of funk, alternative rock, and experimental elements, 
+                                                    Primus crafts a sonic experience that is both quirky and captivating. Led by the virtuosic bass playing of Les Claypool, 
+                                                    their sound is characterized by intricate bass lines, unconventional song structures, 
+                                                    and off-kilter lyrics that often explore themes of absurdity and satire. 
+                                                    Claypool's distinct vocal delivery, accompanied by Larry "Ler" LaLonde's unconventional guitar work 
+                                                    and Tim "Herb" Alexander's dynamic drumming, creates a musical landscape that is as unpredictable as it is irresistible. 
+                                                    With their eccentric style and fearless experimentation, 
+                                                    Primus continues to defy expectations and push the boundaries.</p>
+                                            </div>
+                                            <!-- Band Info. -->
+                                            <div class = "BandInfo">
+                                                <h3>Members</h3>
+                                                <p>Les Claypool (Vocals and Bass), Larry LaLonde (Guitar), 
+                                                    <br> Tim Alexander (Drums)</p>
+                                                <h3> Genres</h3>
+                                                <p>Alternative Metal, Funk Metal, Experimental Rock, Progressive Rock</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Section for Social Media Links. -->
+                            <div class = "ProjSupport">
+                                <h3>Support Primus on:</h3>
+                                <a href="https://www.youtube.com/channel/UCfO3MSoheHzZL4GkK_gKfuw" class="fa fa-youtube"></a>
+                                <a href="https://soundcloud.com/primus-official" class="fa fa-soundcloud"></a>
+                            </div>
+                        </div>
+
+                        <!-- Section for Other Band Info. -->
+                        <div class="column-40">
+                            <div class = "SocialMedia">
+                                <h3>Latest Updates: </h3>
+                                <div class="fb-page" 
+                                data-tabs="timeline,events,messages"
+                                data-href="https://www.facebook.com/primusville/?locale=en_GB"
+                                data-width="400" 
+                                data-hide-cover="false"></div>
+                            </div>
+                            <hr class = "ProjDiv">
+                            <!-- Album Description and Sample Track. -->
+                            <div class = "CurrProj">
+                                <h3>Current Project:</h3>
+                                <p>Sailing the Sea of Cheese</p>
+                                <img src="images/Project Images/SailingTheSeaOfCheeseCover.jpg"
+                                    class = "ProjAlbums"
+                                    alt = "Sailing the Sea of Cheese Album Cover"/>
+                                <h3>Sample Track: Tommy the Cat</h3>
+                                <div class = "audio">
+                                    <audio controls>
+                                        <source src = "audio/TommyTheCat.mp3" type = "audio/mpeg">
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <br><br>
+
+                <!-- Container for Dillinger Escape Plan. -->
+                <div class="ProjectContainer">
+                    <div class="ProjectRow">
+
+                        <!-- Section for Other Band Info. -->
+                        <div class="column-40"
+                            id = "PadAdj">
+                            <div class = "SocialMedia">
+                                <h3>Latest Updates: </h3>
+                                <div class="fb-page" 
+                                data-tabs="timeline,events,messages"
+                                data-href="https://www.facebook.com/dillingerescapeplan/?locale=en_GB"
+                                data-width="400" 
+                                data-hide-cover="false"></div>
+                            </div>
+                            <hr class = "ProjDiv">
+                            <!-- Album Description and Sample Track. -->
+                            <div class = "CurrProj">
+                                <h3>Current Project:</h3>
+                                <p>Calculating Infinity</p>
+                                <img src="images/Project Images/CalculatingInfinityCover.jpg"
+                                    class = "ProjAlbums"
+                                    alt = "Calculating Infinity Album Cover"/>
+                                <h3>Sample Track: 43% Burnt</h3>
+                                <div class = "audio">
+                                    <audio controls>
+                                        <source src = "audio/43% Burnt.mp3" type = "audio/mpeg">
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Column for the Card. -->
+                        <div class="column-60"
+                            id = "MargOpp">
+                            <!-- Section for the Card. -->
+                            <div class="card__inner">
+                                <!-- Section for the Front of the Card. -->
+                                <div class="card__face card__face--front">
+                                    <div class = "BandImg">
+                                        <h2>DILLINGER ESCAPE PLAN</h2>
+                                        <hr id = "AlbumSep">
+                                        <br>
+                                        <img src = 'images/Project Images/DillingerBand.jpg'
+                                            class = "ProjImg"
+                                            alt = "Image of Band: Dillinger Escape Plan."/>  
+                                    </div>
+                                </div>
+                                <!-- Section for the Back of the Card. -->
+                                <div class="card__face card__face--back">
+                                    <div class="card__content">
+                                        <div class="card__header">
+                                            <img src="images/Project Images/DillingerLogo.jpg" 
+                                                class="BandLogo"
+                                                alt="Dillinger Escape Plan Logo"/>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class = "BandText">
+                                                <p class = "BandTitle">About the Band</p>
+                                                <p>The Dillinger Escape Plan's music is an electrifying whirlwind of chaos and innovation 
+                                                    that defies conventional boundaries. Formed in the late 1990s, 
+                                                    they pioneered the mathcore genre with their unparalleled technicality, ferocious intensity, 
+                                                    and avant-garde approach. Their sound is characterized by frenetic guitar riffs, complex rhythms, 
+                                                    and unpredictable song structures, creating a sonic experience that is both exhilarating and 
+                                                    disorienting. Frontman Greg Puciato's dynamic vocals range from guttural screams to 
+                                                    haunting melodies, adding another layer of intensity to their music. Tracks like "43% Burnt" 
+                                                    and "Prancer" showcase their ability to seamlessly blend aggression with intricacy. 
+                                                    Their current project, ‘Calculating Infinity’ is full of raw emotion, technical precision, 
+                                                    and uncompromising creativity.</p> 
+                                            </div>
+                                             <!-- Band Info. -->
+                                            <div class = "BandInfo">
+                                                <h3>Members</h3>
+                                                <p>Greg Puciato (Vocals), Ben Weinman (Guitar), 
+                                                    <br> Liam Wilson (Bass), Billy Rymer (Drums)</p>
+                                                <h3> Genre</h3>
+                                                <p>Mathcore, Metalcore, Experimental Metal, Progressive Metal</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Section for Social Media Links. -->
+                            <div class = "ProjSupport">
+                                <h3>Support Dillinger Escape Plan on:</h3>
+                                <a href="https://www.youtube.com/channel/UCdgBrkPQrUgkisX9VXfURTg" class="fa fa-youtube"></a>
+                                <a href="https://soundcloud.com/the-dillinger-escape-plan" class="fa fa-soundcloud"></a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>  
+
+
+                <!-- Script for the Project Cards. -->
+                <script>
+                    // Code for Project Cards.
+                    var base = document.querySelector('#ProjectCards');
+                    var selector = '.card__inner';
+
+                    base.addEventListener('click', function(event) {
+                    let closest = event.target.closest(selector);
+                        if (closest && base.contains(closest)) {
+                            closest.classList.toggle('is-flipped');
+                    }
+                    });
+                </script>   
             </div>
         </main>
-
+        
 
         <footer>
             <hr>
-            <p>Copyright: Jakub Sykes</p>
+            <div class = "footerContainer">
+                <div class = copyRight>
+                    <p><span>&#169</span> 2024 Jakub Sykes <br> RGU Death Metal Society</p>
+                </div>
+                <div class = SocialLinks>
+                    <p>Follow Us On: </p>
+                    <!-- Link to Facebook -->
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <!-- Link to Twitter -->
+                    <a href="https://twitter.com/i/flow/login" class="fa fa-twitter"></a>
+                    <!-- Link to Instagram -->
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                </div>
+            </div>
         </footer>
     </body>    
 </html>
