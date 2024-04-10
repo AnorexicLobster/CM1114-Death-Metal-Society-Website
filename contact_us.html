@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+
         <title>RGU DEATH METAL SOCIETY</title>
         <!-- Link to Favicon. -->
         <link rel="icon" type = "image/jpg" href = "images/Favicon.png">
@@ -8,8 +11,7 @@
         <link  rel = 'stylesheet' href = 'css/main.css'>
 
         <!-- Linking Social Media Icon Library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <type="text/css">            
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">          
     </head>
     
 
@@ -20,16 +22,16 @@
  
         <header>
             <!--Society Logo-->
-            <img src = 'images/Home Page Images/Logo.png' class = "Logo"
-                alt = "Society Logo. A pentagram."/>
+            <img src = 'images/Home%20Page%20Images/Logo.png' class = "Logo"
+                alt = "Society Logo. A pentagram.">
             <h1>
                 RGU DEATH METAL SOCIETY
             </h1>
             <hr>
 
             <!--Background Image (Above the Nav Bar)-->
-            <img src = 'images/Home Page Images/Zombie Background.png' class = "background_img"
-                alt = "Alternative Background. Zombies Eating each other."/>
+            <img src = 'images/Home%20Page%20Images/Zombie%20Background.png' class = "background_img"
+                alt = "Alternative Background. Zombies Eating each other.">
         </header>
         
 
@@ -50,7 +52,7 @@
         <!--Music-->
         <p>Play Music:</p>
         <audio controls>
-            <source src = "audio/Rip & Tear Doom.mp3" type = "audio/mpeg">
+            <source src = "audio/Rip%20&%20Tear%20Doom.mp3" type = "audio/mpeg">
         </audio>
       
 
@@ -77,21 +79,21 @@
                 <div class="FormBlock">
                     <!-- Form. -->
                     <form name = "enquiry_form">
-                        <legend>If you have any enquiries contact our Social Team:</legend>
+                        <p>If you have any enquiries contact our Social Team:</p>
                         <br>
                         <fieldset>
                             <label for = "name">Name:</label>
-                            <input type = "text" name = "name" value = ""/>
+                            <input type = "text" name = "name" id = "name" value = "">
                             
                             <label for = "email">Email:</label>
-                            <input type = "text" name = "email" email = "email" value = ""/>
+                            <input type = "text" name = "email" id = "email" value = "">
 
                             <div>
                                 <br>
                                 <br>
                                 <label for = "comments">Comment: </label> 
                                 <br>
-                                <textarea name = "comments" cols = "60" rows = "10"></textarea>
+                                <textarea name = "comments" cols = "60" rows = "10" id = "comments"></textarea>
 
                                 <button type = "button" onclick = 'enquiry_form_submit()'>Submit</button>
                             </div>
@@ -132,7 +134,7 @@
                     <div id = "Frame">
                         <img src = 'images/ContUsImg.png'
                             alt = "Demons in Fire."
-                            id = "Demons"/>
+                            id = "Demons">
                     </div>
                 </div>
 
@@ -141,7 +143,7 @@
                     <div class = "TwitterFeed"> 
                         <h3 id = "TwitterHeading">Latest Tweets</h3>  
                         <a class="twitter-timeline" href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw">
-                            Tweets by XDevelopers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>   
+                            Tweets by XDevelopers</a> <script async src="https://platform.twitter.com/widgets.js"></script>   
                     </div>
                     <div class = "FacebookFeed">
                         <h3>Metal News</h3>
@@ -161,7 +163,7 @@
             <hr>
             <div class = "footerContainer">
                 <div class = copyRight>
-                    <p><span>&#169</span> 2024 Jakub Sykes <br> RGU Death Metal Society</p>
+                    <p><span>&#169;</span> 2024 Jakub Sykes <br> RGU Death Metal Society</p>
                 </div>
                 <div class = SocialLinks>
                     <p>Follow Us On: </p>

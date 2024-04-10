@@ -13,50 +13,50 @@ Secondary Detail Colour: Yellow - rgb(230, 150, 3).
 
 
 /* Main Webpage Setup Block. */
-body{
+body {
     background-color: black;
     padding: 4px;
     display: flow-root;
     margin: auto;
 }
 
-header{
+header {
     background-color: black; 
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 10px;
 }
 
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6,p {
     color: rgb(204, 8, 8);
     font-family: Arial;
 }
 
-h1{  
+h1 {  
     text-align: center;
     font-weight: bold;
     color: rgb(204, 8, 8);
     font-size: 25pt;
 }
 
-h3{
+h3 {
     font-size: 18pt;
 }
 
-p{
+p {
     font-size: 11pt;
 }
 
-hr{
+hr {
     color: rgb(255, 123, 0);
 }
 
-main{
+main {
     padding: 10px;
     border-radius: 10px;
 }
 
-footer{
+footer {
     padding: 10px;
     border-radius: 10px;
     margin-top: 20px;
@@ -69,27 +69,27 @@ footer{
 /* Adjusting Margins, Fonts, Size, etc. */
 
 /* Page Body. */
-#BootAdjust{
+#BootAdjust {
     margin: auto;
     opacity: 1;
 }
 
 /* Title. */
-#BootHeading{
+#BootHeading {
     margin-top: 21px;
     margin-bottom: 15px;
 }
 
 /* Hr below Title. */
-#BootHr{
-    margin-top: 25px;
+.BootHr {
+    margin-top: 22px;
     margin-bottom: 8px;
     border-width: 1.9px;
     opacity: 1;
 }
 
 /* Main Page Image. */
-#BootImg{
+#BootImg {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -97,39 +97,35 @@ footer{
 }
 
 /* Navigation Bar. */
-.BootProtection{
-    margin-top: 16px;
+.BootProtection {
+    margin-top: 18px;
     position: sticky;
     top: 0px;
     z-index: 1;
     margin-bottom: 12px;
 }
 
-.BootNavProtMarg{
-    padding-bottom: 10px;
-    margin-right: -0.5px;
-    
+.BootNavProtMarg {
+    padding-bottom: 5px;
 }
 
-.BootNavProt{
+.BootNavProt {
     background-color: interactive;
-    padding-bottom: 10px;
-    margin-right: -1px;
-    border-right: 1px solid rgb(255, 123, 0);
+    padding-bottom: 5px;
 }
 
-.BootNavProt a{
+.BootNavProt a {
     -webkit-text-stroke: 1px rgb(143, 7, 7);
     color: rgb(230, 150, 3);
 }
 
 /* Music Section. */
-.BootMusicProt{
+.BootMusicProt {
     margin-bottom: 14px;
 }
 
 /* Page Heading. */
-.BootProtText{
+.BootProtText {
     font-size: 18pt;
     font-weight: bold;
     font-family: Arial;
@@ -140,13 +136,13 @@ footer{
 }
 
 /* Setting the Margins,etc for the Gallery Page message. */
-.BootMsgDiv{
+.BootMsgDiv {
     opacity: 1;
     margin-left: 250px;
     margin-right: 250px;
 }
 
-.BootPageMessage{
+.BootPageMessage {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -158,7 +154,7 @@ footer{
 }
 
 /* Text Adjustments for the Page Message. */
-.BootPageMessage h4{
+.BootPageMessage h4 {
     font-size: 12pt;
     font-family: Arial;
     font-weight: bold;   
@@ -168,14 +164,14 @@ footer{
 /* --------------------------------------------------------------- */
 
 /* Code for Logo and Main Image.*/
-.Logo{
+.Logo {
     display: block;
     margin: auto;
     width: 100px;
     height: 100px;
 }
 
-.background_img{
+.background_img {
     margin-left: auto;
     margin-right: auto;
     bottom: -50;
@@ -191,25 +187,25 @@ footer{
 /* Navigation Bar Code Block*/
 
 /* Setting the Nav Bar so it sticks to the top of the page. */
-.navBar{
+.navBar {
     position: sticky;
     top: 0px;
     z-index: 100;
 }
 
-nav{
+nav {
     background-color: black;
     border-bottom: 1px solid rgb(255, 123, 10);
     text-align: center;   
 }
 
-nav ul{
+nav ul {
     overflow: hidden;  
     display: inline-block;
     list-style-type: none;
 }
 
-nav li{ 
+nav li { 
     border: 5px;
     padding-left: 20px;
     background-color: black;
@@ -218,7 +214,7 @@ nav li{
     float:left;
 }
 
-nav li a{
+nav li a {
     /* Text styling for each of the nav bar headings. */
     margin-top: 20px;
     color: rgb(204, 8, 8);
@@ -242,23 +238,23 @@ nav li a{
     background-color: black;
 }
 
-Nav li :hover{
+Nav li :hover {
     background-color: black;
     color: white;
 }
 
-.active{
+.active {
     background-color: interactive;
     padding-bottom: 10px;
 } 
 
 /* Changing the Colour of the Active page. */
-.active a{
+.active a {
     -webkit-text-stroke: 1px rgb(143, 7, 7);
     color: rgb(230, 150, 3);
 }
 
-Nav>li{
+Nav>li {
     display: inline-block;
 }
 /* Navigation Bar END. */
@@ -267,7 +263,7 @@ Nav>li{
 
 /* Section for Shared Elements. */
 /* Page Heading and Page Message - All Pages. */
-.PageTitle{
+.PageTitle {
     font-size: 18pt;
     font-weight: bold;
     text-align: center;
@@ -275,7 +271,7 @@ Nav>li{
 }
 
 /* Main Container for the Page Message. */
-.MessageCont{
+.MessageCont {
     height: 100px;
     width:100%;
     background-color: black;
@@ -283,7 +279,7 @@ Nav>li{
 }
 
 /* Internal Message Containers. */
-.MessageDec{
+.MessageDec {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -294,7 +290,7 @@ Nav>li{
     margin-bottom: 70px;
 }
 
-.PageMessage{
+.PageMessage {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -306,7 +302,7 @@ Nav>li{
 }
 
 /* Aesthetics. */
-.MsgDiv{
+.MsgDiv {
     margin-left: 250px;
     margin-right: 250px;
 }
@@ -314,7 +310,7 @@ Nav>li{
 
 
 /* Social Media Link Styling.*/
-.fa{
+.fa {
     background-color: rgb(14, 14, 14); 
     border: 2px solid black;
     outline: 1px solid rgb(230, 150, 3); 
@@ -328,7 +324,7 @@ Nav>li{
     color: rgb(143, 7, 7);
 }
 
-.fa:hover{
+.fa:hover {
     opacity: 0.7;
     color: rgb(230, 150, 3);
     background-color: black;
@@ -339,7 +335,7 @@ Nav>li{
 
 /* Styling the Footer. */
 /* Main Footer Container. */
-.footerContainer{
+.footerContainer {
     background-color: rgb(20, 20, 20);
     width: 100%;
     display: inline-block;
@@ -350,7 +346,7 @@ Nav>li{
     padding-right: 20px;
 }
 
-.SocialLinks{
+.SocialLinks {
     padding: 10px;
     width: 80%;
     float: right;
@@ -358,7 +354,7 @@ Nav>li{
     font-weight: bold;
 }
 
-.copyRight{
+.copyRight {
     padding: 10px;
     width: 20%;
     float: left;
@@ -367,7 +363,7 @@ Nav>li{
 /* Footer END. */
 
 /* Audio */
-audio{
+audio {
     cursor: pointer;
 }
 
@@ -377,47 +373,47 @@ audio{
 /* Login and Music Section. */
 
 /* Main  container for Music and Login.*/
-.loginBar{
+.loginBar {
     padding-top: 10px;
     display: inline-block;
     width: 100%; 
 }
 
 /* Positioning the Specific Sections. */
-#loginForm{
+#loginForm {
     float: right;
     text-align: right;
     width: 30%;
     padding-bottom: 10px;
 }
 
-#musicSection{
+#musicSection {
     float: left;
     width: 70%;
     margin-top: -10px;
 }
 
 /* Login Aesthetics. */
-input[type ='password']{
+input[type ='password'] {
     border: 1px solid rgb(204, 8, 8);
     outline: 1px solid rgb(230, 150, 3);
 }
 
-#loginDiv{
+#loginDiv {
     margin-left: 35%;
 }
 
 
 /*Images and Article. */
 /* Container for the Homepage. */
-.HomeRow{
+.HomeRow {
     width: 100%;
     display: flex; 
     justify-content: space-between;
 }
 
 /* Containers for the Home Page Images - Aesthetics. */
-.HmImgContOne{
+.HmImgContOne {
     padding: 10px;
     margin-right: 50px;
     float: left;
@@ -427,7 +423,7 @@ input[type ='password']{
     outline: 1px solid rgb(230, 150, 3);
 }
 
-.HmImgContTwo{
+.HmImgContTwo {
     text-align: center;
     padding: 25px;
     float: left;
@@ -440,7 +436,7 @@ input[type ='password']{
     z-index: -2;
 }
 
-.HmImgContThree{
+.HmImgContThree {
     text-align: center;
     background-color: rgb(14, 14, 14);
     padding-bottom: 60px;
@@ -450,7 +446,7 @@ input[type ='password']{
 }
 
 /* Seperate ID for each image so they can be rotated and overlapped. */
-.Sepultura{
+.Sepultura {
     position: relative;
     z-index: 1;
     height: 250;
@@ -462,7 +458,7 @@ input[type ='password']{
     width: 35%;
 }
 
-.Slayer{
+.Slayer {
     position: relative;
     z-index: 2;
     height: 5%;
@@ -474,7 +470,7 @@ input[type ='password']{
     width: 35%;
 }
 
-.Pantera{  
+.Pantera {  
     position: relative; 
     z-index: 3;
     height: 250;
@@ -486,7 +482,7 @@ input[type ='password']{
     width: 35%;
 }
 
-.Faith{  
+.Faith {  
     position: relative; 
     z-index: 2; 
     height: 250;
@@ -502,11 +498,11 @@ input[type ='password']{
 
 /* Article. */
 /* Main Article Container. */
-.ArticleAside{
+.ArticleAside {
     width: 30px;
 
 }
-.ArtCont{
+.ArtCont {
     width: 30%;
     height: 750px;
     padding: 10px;
@@ -517,7 +513,7 @@ input[type ='password']{
 }
 
 /* Adjustments for the Aside Title. */
-.ArtCont h3{
+.ArtCont h3 {
     text-align: center;
     color: black;
     text-decoration: underline;
@@ -525,7 +521,7 @@ input[type ='password']{
 }
 
 /* Article - Aside Title. */
-#ArtTitle{
+#ArtTitle {
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -535,21 +531,21 @@ input[type ='password']{
 }
 
 /* Main Internal Container for the Articles. */
-.ArticleList{
+.ArticleList {
     overflow: auto;
     height: 600px;
     background-color: rgb(14, 14, 14);
 }
 
 /* Aesthetics for Aside tag. */
-aside{
+aside {
     background-color: black;
     border: 2px solid rgb(20, 20, 20);
     outline: 1px solid rgb(46, 46, 46); 
 }
 
 /* Img Container. */
-.ImgCont{
+.ImgCont {
     width: 40%;
     float: left;
     text-align: center;
@@ -565,7 +561,7 @@ aside{
     color: rgb(143, 7, 7);
 }
 
-.ArtImg{
+.ArtImg {
     position: relative;
     margin: 10px;
     width: 95%;
@@ -577,20 +573,20 @@ aside{
 }
 
 /* Text Container. */
-.TextCont{
+.TextCont {
     width: 95%;
     padding: 3px;
     margin: 10px;
 }
 
-.TextCont h4{
+.TextCont h4 {
     text-align: center;
     text-decoration: underline;
 }
 
 
 /* Aesthetics. */
-.ArtDiv{
+.ArtDiv {
     margin-left: 75px;
     margin-right: 75px;
 }
@@ -602,7 +598,7 @@ aside{
 /* Event Calendar Section. */
 
 /* Main Containers for the Calendar - Mainly Aesthetics.*/
-.EventCont{
+.EventCont {
     width: 100%;
     padding: 10px;
     margin: 10px;
@@ -613,7 +609,7 @@ aside{
     outline: 1px solid rgb(230, 150, 3);
 }
 
-.EventDec{
+.EventDec {
     width: 100%;
     padding: 10px;
     margin: 10px;
@@ -625,7 +621,7 @@ aside{
 }
 
 /* Calendar Layout and Design. */
-table{
+table {
     font-size: 11pt;
     font-family: Arial;
     color: rgb(204, 8, 8);
@@ -633,39 +629,39 @@ table{
     border-collapse: collapse;
 }
 
-table td,table th{
+table td,table th {
     border: 2px solid rgb(230, 150, 3);
     padding: 5px;
     width: 250px;
     height: 50px;
 }
 
-Table tr:nth-child(even){
+Table tr:nth-child(even) {
     background-color: rgb(14, 14, 14);  
 }
-Table tr:nth-child(odd){
+Table tr:nth-child(odd) {
     background-color: rgb(46, 46, 46);  
 }
 
-Table tr:hover{
+Table tr:hover {
     background-color: rgb(255, 123, 0);
     color: black;
 }
 
-Table th{
+Table th {
     background-color: black;
     color: white;
 }
 
 
 /* Section for the Form - Mainly Aesthetics.*/
-.EvFormCont{
+.EvFormCont {
     width: 100%;
     display: flex; 
     justify-content: space-between;
 }
 
-.FormDec{
+.FormDec {
     margin-top: 50px;
     width: 50%;
     background-color: rgb(95, 1, 1);
@@ -673,7 +669,7 @@ Table th{
     outline: 1px solid rgb(230, 150, 3);
 }
 
-.EventForm{
+.EventForm {
     width: 98%;
     color: rgb(204, 8, 8);
     font-family: Arial;
@@ -686,7 +682,7 @@ Table th{
     outline: 3px solid rgb(46, 46, 46);
 }
 
-input[type=date]{
+input[type=date] {
     border: 1px solid rgb(204, 8, 8);
     outline: 1px solid rgb(230, 150, 3);
     padding: 5px;
@@ -698,7 +694,7 @@ input[type=date]{
 
 /* Code Block for Members Page. */
 /* Main Container for the Members. */
-.Members{
+.Members {
     margin: auto;  
     background-color: rgb(95, 1, 1);  
     padding-left: 20px;
@@ -723,7 +719,7 @@ input[type=date]{
 }
 
 /* Bottom Row of the Members. */
-.MemRowTwo{
+.MemRowTwo {
     display: flex; 
     justify-content: space-between;
     margin: auto;
@@ -738,7 +734,7 @@ input[type=date]{
 }
 
 /* Img Container. */
-.ImgBorder{
+.ImgBorder {
     position: relative;
     background-color: black;  
     border: 2px solid rgb(14, 14, 14);
@@ -746,7 +742,7 @@ input[type=date]{
 }
 
 /* Img Layout and Design. */
-.MemberImages{
+.MemberImages {
     border: 4px solid rgb(95, 1, 1);
     outline: 1px solid rgb(230, 150, 3);  
     height: 260px;
@@ -762,8 +758,7 @@ input[type=date]{
 }
 
 /* CSS for the Member Name. */
-#MemName{
-    padding-top: 6px;
+.MemName {
     list-style-type: none;
     font-family: Arial;
     font-size: 12pt;
@@ -773,16 +768,16 @@ input[type=date]{
 }
 
 /* Divider between the Name and Member Role. */
-.RoleDiv{
+.RoleDiv {
     padding: 0.5px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
 /* CSS for the Member Role Description. */
-#MemRole{
+.MemRole {
     position: relative;
-    padding-bottom: 25px;
+    padding-bottom: 5px;
     list-style-type: none;
     font-family: Arial;
     font-size: 10pt;
@@ -805,7 +800,7 @@ input[type=date]{
     z-index: 1;  
 }
 
-.MemText{
+.MemText {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -818,12 +813,12 @@ input[type=date]{
     padding-top: 25%;
 }
 
-.MemText p{
+.MemText p {
     font-size: 9pt;
     color: white;
 }
 
-.MemTextDiv{
+.MemTextDiv {
     color: rgb(20, 20, 20);
     margin-left: 40px;
     margin-right: 40px;
@@ -835,7 +830,7 @@ input[type=date]{
     height: 100%;
 }
 
-#MemFontAd{
+.MemFontAd {
     font-size: 9pt;
 }
 /* Members Page END. */
@@ -845,45 +840,54 @@ input[type=date]{
 /* Projects Page */
 /* Project Body */
 /* Main Project Container. */
-#ProjectCards{
+#ProjectCards {
     background-color: rgb(95, 1, 1);
     border: 4px solid black;
     outline: 1px solid rgb(230, 150, 3);
 }
 
 /* Individual Project Containers - mainly Aesthetics. */
-.ProjectContainer{
+.ProjectContainer {
     padding: 10px;
 }
 
-.ProjectRow{
+.ProjectRow {
     background-color: rgb(14, 14, 14);
     border: 4px solid black;
     outline: 1px solid rgb(230, 150, 3);
     padding-bottom: 5px;
-    padding-top: 5px;
+    padding-top: 50px;
 }
 
 /* ---Section 60--- */
 /* Main Container for the card and Social Links.*/
-.column-60{
+.column-60 {
     text-align: center;
     float: left;
     width: 64%;
     height: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     background-color: black;
     border: 2px solid rgb(20, 20, 20);
     outline: 1px solid rgb(46, 46, 46); 
     padding: 20px; 
     padding-bottom: 30px; 
-      
 }
 
 /* Adjusting the Margin for 'odd' Projects.*/
-#MarginAdjust{
-    margin-left: 30px;
+#MarginAdjustSnot {
+    margin-left: 25px;
+}
+
+#MarginAdjustPrimus {
+    margin-left: 25px;
+}
+
+/* Hr Dec. */
+.AlbumSepProj {
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 /*Card Styling and Function.*/  
@@ -892,7 +896,7 @@ input[type=date]{
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    height: 80%;
+    height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
     cursor: pointer;
@@ -909,7 +913,8 @@ input[type=date]{
 .card__face {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 80%;
+    height: 650px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden;
@@ -933,14 +938,14 @@ input[type=date]{
 }
 
 /* Main Container for band Img. */
-.BandImg{
+.BandImg {
     width: 85%;
     padding: 20px;
     margin: 30px;
 }
 
 /* Style and Layout for the Img. */
-.ProjImg{
+.ProjImg {
     width: 70%;
     border: 2px solid black;
     outline: 2px solid rgb(230, 150, 3);
@@ -1010,7 +1015,7 @@ input[type=date]{
 }
 
 /* Inner Containter for the Text. */
-.BandText{
+.BandText {
     width: 55%;
     float: left;
     background-color: black;
@@ -1019,13 +1024,13 @@ input[type=date]{
 }
 
 /* Aesthetics for the Subheadings. */
-.BandTitle{
+.BandTitle {
     font-weight: bold;
     text-decoration: underline;
 }
 
 /* Info about band - Members/ Genre, etc. */
-.BandInfo{
+.BandInfo {
     float: right;
     width: 40%;
     background-color: black;
@@ -1034,7 +1039,8 @@ input[type=date]{
 }
 
 /* Main Container for Social Links, under the Card. */
-.ProjSupport{
+.ProjSupport {
+    margin-top: 700px;
     width: 50%;
     margin-right: auto;
     margin-left: auto;
@@ -1047,16 +1053,16 @@ input[type=date]{
 
 /* ---Section 40--- */
 /* Main Container for Facebook Feed and Smaple Track. */
-.column-40{
+.column-40 {
     float: left;
     width: 33%;
     padding: 10px;
     text-align: center;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 /* Main Container for Facebook feed. */
-.SocialMedia{
+.SocialMedia {
     background-color: black;
     border: 2px solid rgb(20, 20, 20);
     outline: 1px solid rgb(46, 46, 46); 
@@ -1065,24 +1071,28 @@ input[type=date]{
 }
 
 /* Adjustments for Facebook feed. */
-.fb-page{
+.fb-page {
     width: 100%;
     height: 400px;  
 }
 
 /* Adjusting the Padding for 'even' Projects.*/
-#PadAdj{
-    padding-right: 40px;
+#PadAdjPantera {
+    padding-right: 20px;
+}
+
+#PadAdjDil {
+    padding-right: 20px;
 }
 
 /* Div between FB feed and Sample track. */
-.ProjDiv{
+.ProjDiv {
     margin-right: 50px;
     margin-left: 50px;
 }
 
 /* Main Container for Sample Track. */
-.CurrProj{
+.CurrProj {
     margin-top: 15px;
     margin-bottom: 5px;
     padding-bottom: 10px;
@@ -1092,7 +1102,7 @@ input[type=date]{
 }
 
 /* Album Covers */
-.ProjAlbums{
+.ProjAlbums {
     width: 190px;
     height: 190px;
     border: 2px solid black;
@@ -1100,7 +1110,7 @@ input[type=date]{
 }
 
 /* Audio Section. */
-.audio{
+.audio {
     margin-right: auto;
     margin-left: auto;
     width: 300px;
@@ -1124,7 +1134,7 @@ input[type=date]{
 }
 
 /* Main Container. */
-.albums{
+.albums {
     cursor: pointer;
     padding: 15px;
     width: 100%;
@@ -1137,7 +1147,7 @@ input[type=date]{
 }
 
 /* Button Position and Aesthetics. */
-.albums:after{
+.albums:after {
     content: '\25ba';
     font-size: 10pt;
     color: rgb(204, 8, 8);
@@ -1146,35 +1156,57 @@ input[type=date]{
 }
   
 /* After Pannel is opened. */
-.toggle:after{
+.toggle:after {
     content: '\25bc';
     color: rgb(204, 8, 8);
 }
 
 /* Aesthetics - Alternating Pannel colour and Text Colour. */
-#odd{
+
+
+#ThrashPan, #ProgPan, #IndPan {
     background-color:rgb(14, 14, 14);
     color: rgb(204, 8, 8);
 }
 
-#even{
+#DeathPan, #NuPan, #NewPan {
     background-color:rgb(46, 46, 46);
     color: rgb(204, 8, 8);
 }
   
 /* Changing Pannel and Text Colour on hover. */
-.toggle, .albums, #even:hover{
+.toggle, .albums, #DeathPan:hover {
     background-color: rgb(255, 123, 0);
     color: black;
 }
 
-.toggle, .albums, #odd:hover{
+.toggle, .albums, #NuPan:hover {
+    background-color: rgb(255, 123, 0);
+    color: black;
+}
+
+.toggle, .albums, #NewPan:hover {
+    background-color: rgb(255, 123, 0);
+    color: black;
+}
+
+.toggle, .albums, #ThrashPan:hover {
+    background-color: rgb(255, 123, 0); 
+    color: black;
+}
+
+.toggle, .albums, #ProgPan:hover {
+    background-color: rgb(255, 123, 0); 
+    color: black;
+}
+
+.toggle, .albums, #IndPan:hover {
     background-color: rgb(255, 123, 0); 
     color: black;
 }
 
 /* Styling and Layout for pannel once it's opened.*/
-.panel{
+.panel {
     background-color: rgb(95, 1, 1);
     max-height: 0;
     overflow: hidden;
@@ -1183,12 +1215,12 @@ input[type=date]{
   
 
 /* Main Containter for each Album. */
-.AlbumContainer{
+.AlbumContainer {
     padding: 15px;
 }
 
 /* Internal  Container for the two Columns.*/
-.AlbumRow{
+.AlbumRow {
     background-color: rgb(14, 14, 14);
     border: 4px solid black;
     outline: 1px solid rgb(230, 150, 3);
@@ -1198,7 +1230,7 @@ input[type=date]{
   
 
 /* Text Column. */
-.column-66{
+.column-66 {
     text-align: center;
     float: left;
     width: 65%;
@@ -1213,7 +1245,7 @@ input[type=date]{
 }
 
 /* Aexthetics. */
-.AlbumTxtDec{
+.AlbumTxtDec {
     margin: auto;
     width: 100%;
     padding: 10px;
@@ -1222,13 +1254,13 @@ input[type=date]{
     outline: 2px solid rgb(255, 123, 0); 
 }
 
-#AlbumSep{
+.AlbumSep {
     margin-left: 200px;
     margin-right: 200px;
 }
   
 /* Album Column. */
-.column-33{
+.column-33 {
     float: left;
     width: 32%;
     padding: 15px;
@@ -1238,7 +1270,7 @@ input[type=date]{
 }
 
 /* Aexthetics. */
-.CoverDec{
+.CoverDec {
     margin: auto;
     margin-top: 23px;
     width: 325px;
@@ -1250,7 +1282,7 @@ input[type=date]{
 }
 
 /* Album Img - Layout and Style. */
-.AlbumCover{
+.AlbumCover {
     display: block;
     margin:auto;
     width: 300px;
@@ -1259,12 +1291,12 @@ input[type=date]{
     outline: 1px solid rgb(230, 150, 3);   
 }
 
-.AlbumCover:hover{
+.AlbumCover:hover {
     transform: scale(1.2);  
 }
 
 /* Flipping the Next Row.*/
-.AlbumRow:after{
+.AlbumRow:after {
     content: "";
     display: table;
     clear: both
@@ -1274,7 +1306,7 @@ input[type=date]{
 
 /* Code Block for the Gallery. */
 /* Carousel Styling and Layout adjustments.  */
-#carouselExampleAutoplaying{
+#carouselExampleAutoplaying {
     margin-left: 5px;
     margin-right: 5px;
     padding: 15px;
@@ -1283,7 +1315,7 @@ input[type=date]{
     outline: 1px solid rgb(230, 150, 3);
 }
 
-.CarouselCont{
+.CarouselCont {
     width: 100%;
     padding: 20px;
     background-color: rgb(14, 14, 14);
@@ -1291,7 +1323,7 @@ input[type=date]{
     outline: 3px solid rgb(46, 46, 46);
 }
 
-.carousel-inner{
+.carousel-inner {
     width: 75%;
     height: 90%;
     margin: auto;
@@ -1300,7 +1332,7 @@ input[type=date]{
 }
 
 /* Main Gallery Container. */
-.Gallery{
+.Gallery {
     background-color: rgb(95, 1, 1);
     border: 4px solid black;
     outline: 1px solid rgb(230, 150, 3);
@@ -1308,7 +1340,7 @@ input[type=date]{
 }
 
 /* Styling and Layout for the 3 main inner Gallery Containers. */
-.RowOne, .RowTwo,.RowThree{
+.RowOne, .RowTwo,.RowThree {
     display: flex; 
     justify-content: space-between;
     margin: auto;
@@ -1322,20 +1354,22 @@ input[type=date]{
 }
 
 /* Individual Img Styling and Layout. */
-.GalImgBorder{
+.GalImgBorder {
     background-color: black; 
     border: 4px solid rgb(20, 20, 20);
     outline: 1px solid rgb(46, 46, 46);
     padding: 20px;
     margin-top: 10px;
     margin-bottom: 10px;   
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.ImgFunc{
+.ImgFunc {
     margin-top: 15px;   
 }
 
-.ImgDec{
+.ImgDec {
     color: rgb(14, 14, 14);
     margin-left: 50px;
     margin-right: 50px;
@@ -1343,7 +1377,7 @@ input[type=date]{
     opacity: 0.9;
 }
 
-.GalImg{
+.GalImg {
     width: 300px;
     height: 225px;
     border: 4px solid rgb(95, 1, 1);
@@ -1352,7 +1386,7 @@ input[type=date]{
 }
 
 /* Container for the Img Description. */
-.ImgDes{
+.ImgDes {
     position: relative;
     bottom: 0; 
     right: 0; 
@@ -1368,7 +1402,7 @@ input[type=date]{
 }
 
 /* Divider between each Gallery Row - Mainly Aesthetics. */
-.divider{
+.divider {
     position: relative;
     background: black; 
     border: 1px solid rgb(230, 150, 3);
@@ -1379,7 +1413,7 @@ input[type=date]{
 }
 
 /* Styling and Layout for the Lightbox Gallery Images. */
-.Gallery .pop-up-img{
+.Gallery .pop-up-img {
     position: fixed;
     top: 0;
     left: 0;
@@ -1390,7 +1424,7 @@ input[type=date]{
     display: none;
 }
 
-.Gallery .pop-up-img span{
+.Gallery .pop-up-img span {
     position: absolute;
     top: 0;
     right: 10px;
@@ -1400,7 +1434,7 @@ input[type=date]{
     cursor: pointer;
 }
 
-.Gallery .pop-up-img img{
+.Gallery .pop-up-img img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1416,7 +1450,7 @@ input[type=date]{
 
 /* Contact Us Page */
 /* Main Body and the Two Columns - Social and Form.*/
-.MainBody{
+.MainBody {
     display: flex;
     justify-content: space-between;
     background-color: rgb(95, 1, 1);
@@ -1425,7 +1459,7 @@ input[type=date]{
     outline: 1px solid rgb(230, 150, 3);
 }
 
-.FormBlock{
+.FormBlock {
     width: 50%;
     color: rgb(204, 8, 8);
     font-family: Arial;
@@ -1437,7 +1471,7 @@ input[type=date]{
     padding: 20px;
 }
 
-.SocialBlock{
+.SocialBlock {
     width: 50%;
     padding-right: 20px;
     margin-left: 20px;
@@ -1448,44 +1482,44 @@ input[type=date]{
 }
 
 /* Block for Styling the Form. */
-input[type=text]{
+input[type=text] {
     border: 1px solid rgb(204, 8, 8);
     outline: 1px solid rgb(230, 150, 3);
 }
 
-textarea{
+textarea {
     border: 2px solid rgb(204, 8, 8);
     outline: 1px solid rgb(230, 150, 3);
 }
 
-fieldset{
+fieldset {
     border: 4px solid black;
     outline: 2px solid rgb(230, 150, 3);
     background-color: rgb(20, 20, 20);
     margin-bottom: 10px;
 }
 
-label{
+label {
     color: white;
     font-weight: bold;
 }
 
-legend{
+legend {
     font-size: 15px;
     font-weight: bold;
 }
 
-#form_outcome{
+#form_outcome {
     float: right;
     margin-bottom: 10px;
 }
 
 /* Styling for the Img under the Form. */
-#Frame{
+#Frame {
     padding-top: 40px;
 }
 
-#Demons{
+#Demons {
     width: 100%;
     position: relative;
     border: 4px solid black;
@@ -1493,7 +1527,7 @@ legend{
 }
 
 /* Two columns within the Social Column.  */
-.TwitterFeed{
+.TwitterFeed {
     height: 900px;
     width: 45%;
     overflow: auto;
@@ -1502,12 +1536,12 @@ legend{
     outline: 2px solid rgb(230, 150, 3);
 }
 
-#TwitterHeading{
+#TwitterHeading {
     text-align: center;
     text-decoration: underline;
 }
 
-.FacebookFeed{
+.FacebookFeed {
     text-align: center;
     height: 900px;
     width: 45%;
@@ -1517,7 +1551,7 @@ legend{
     outline: 2px solid rgb(230, 150, 3);
 }
 
-.FacebookFeed h3{
+.FacebookFeed h3 {
     text-decoration: underline;
 }
 /* Contact Us END. */
