@@ -68,6 +68,23 @@ Note: The only thing I used this link for was the regex code,
 
 -----------------------------------------------------------------------------------------------
 
+Radio Input Type</br>
+Reference:</br>
+https://www.w3schools.com/html/html_forms.asp
+
+Note: I used this reference to figure out the name of the radio
+      buttons. 
+
+-----------------------------------------------------------------------------------------------
+
+File Attachment</br>
+Reference:</br>
+https://www.w3schools.com/tags/att_input_type_file.asp
+
+Note: I used this reference to learn how to attack a file in a form. 
+
+-----------------------------------------------------------------------------------------------
+
 Image Slide Overlay</br>
 Reference:</br>
 https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp
@@ -101,3 +118,11 @@ https://stackoverflow.com/questions/2570972/css-font-border
 
 Note: I used this to learn how to change the stroke colour of a font. 
       Used on the active Nav page.
+
+-----------------------------------------------------------------------------------------------
+
+Extending One Row Cell (Event Page)</br>
+Reference:</br>
+https://blog.hubspot.com/website/what-is-colspan-in-html
+
+Note: This example I used to extend the 'Exam Break' cells across all the table rows.

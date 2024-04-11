@@ -65,17 +65,17 @@ footer {
 
 /* --------------------------------------------------------------- */
 
-/* Block for Bootstrap Fixes (Gallery). */
+/* Block for Bootstrap Fixes (Gallery and Members Page). */
 /* Adjusting Margins, Fonts, Size, etc. */
 
 /* Page Body. */
-#BootAdjust {
+.BootAdjust {
     margin: auto;
     opacity: 1;
 }
 
 /* Title. */
-#BootHeading {
+.BootHeading {
     margin-top: 21px;
     margin-bottom: 15px;
 }
@@ -89,7 +89,14 @@ footer {
 }
 
 /* Main Page Image. */
-#BootImg {
+#BootImgGal {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+}
+
+#BootImgMem {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -101,7 +108,7 @@ footer {
     margin-top: 18px;
     position: sticky;
     top: 0px;
-    z-index: 1;
+    z-index: 90;
     margin-bottom: 12px;
 }
 
@@ -158,6 +165,10 @@ footer {
     font-size: 12pt;
     font-family: Arial;
     font-weight: bold;   
+}
+
+#BootProtCoal {
+    font-size: 8pt;
 }
 /* Bootstrap END. */
 
@@ -405,29 +416,31 @@ input[type ='password'] {
 
 
 /*Images and Article. */
-/* Container for the Homepage. */
+/* Container for the Homepage Images. */
 .HomeRow {
-    width: 100%;
+    width: 75%;
     display: flex; 
     justify-content: space-between;
+    float: left;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 /* Containers for the Home Page Images - Aesthetics. */
 .HmImgContOne {
     padding: 10px;
-    margin-right: 50px;
     float: left;
-    width: 70%;
+    width: 90%;
     background-color: rgb(95, 1, 1);
     border: 4px solid black;
     outline: 1px solid rgb(230, 150, 3);
+    margin: auto;
 }
 
 .HmImgContTwo {
     text-align: center;
     padding: 25px;
-    float: left;
-    width: 100%;
+    width: 95%;
     margin: auto;
     margin-top: 5px;
     background-color: black;
@@ -437,12 +450,15 @@ input[type ='password'] {
 }
 
 .HmImgContThree {
+    width: 100%;
     text-align: center;
     background-color: rgb(14, 14, 14);
     padding-bottom: 60px;
     padding-top: 60px;
     border: 4px solid black;
     outline: 1px solid rgb(230, 150, 3);
+    margin: auto;
+
 }
 
 /* Seperate ID for each image so they can be rotated and overlapped. */
@@ -498,18 +514,22 @@ input[type ='password'] {
 
 /* Article. */
 /* Main Article Container. */
-.ArticleAside {
-    width: 30px;
-
+#ArticleAside {
+    width: 25%;
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 50px;
 }
+
 .ArtCont {
-    width: 30%;
-    height: 750px;
+    width: 100%;
+    height: 800px;
     padding: 10px;
-    margin-right: 15px;
     background-color: rgb(14, 14, 14);
     border: 2px solid black;
-    outline: 1px solid rgb(230, 150, 3);    
+    outline: 1px solid rgb(230, 150, 3); 
+    margin-right: 20px;   
 }
 
 /* Adjustments for the Aside Title. */
@@ -533,12 +553,12 @@ input[type ='password'] {
 /* Main Internal Container for the Articles. */
 .ArticleList {
     overflow: auto;
-    height: 600px;
+    height: 650px;
     background-color: rgb(14, 14, 14);
 }
 
 /* Aesthetics for Aside tag. */
-aside {
+.IndArt {
     background-color: black;
     border: 2px solid rgb(20, 20, 20);
     outline: 1px solid rgb(46, 46, 46); 
@@ -546,7 +566,7 @@ aside {
 
 /* Img Container. */
 .ImgCont {
-    width: 40%;
+    width: 50%;
     float: left;
     text-align: center;
     margin: 10px;
@@ -637,7 +657,7 @@ table td,table th {
 }
 
 Table tr:nth-child(even) {
-    background-color: rgb(14, 14, 14);  
+    background-color: rgb(14, 14, 14); 
 }
 Table tr:nth-child(odd) {
     background-color: rgb(46, 46, 46);  
@@ -651,6 +671,12 @@ Table tr:hover {
 Table th {
     background-color: black;
     color: white;
+}
+
+.ExamBreak {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
@@ -694,8 +720,7 @@ input[type=date] {
 
 /* Code Block for Members Page. */
 /* Main Container for the Members. */
-.Members {
-    margin: auto;  
+#Members { 
     background-color: rgb(95, 1, 1);  
     padding-left: 20px;
     padding-right: 20px;
@@ -704,7 +729,7 @@ input[type=date] {
 }
 
 /* Top Row of the Members. */
-.MemRowOne {
+#MemRowOne {
     display: flex; 
     justify-content: space-between;
     margin: auto;
@@ -719,7 +744,7 @@ input[type=date] {
 }
 
 /* Bottom Row of the Members. */
-.MemRowTwo {
+#MemRowTwo {
     display: flex; 
     justify-content: space-between;
     margin: auto;
@@ -739,6 +764,9 @@ input[type=date] {
     background-color: black;  
     border: 2px solid rgb(14, 14, 14);
     outline: 1px solid rgb(46, 46, 46);
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
 }
 
 /* Img Layout and Design. */
@@ -754,7 +782,8 @@ input[type=date] {
     text-align: center;   
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 10px
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* CSS for the Member Name. */
@@ -795,7 +824,7 @@ input[type=date] {
     background-color: black;
     overflow: hidden;
     width: 100%;
-    height:0;
+    height: 0;
     transition: .2s ease;
     z-index: 1;  
 }
@@ -810,7 +839,7 @@ input[type=date] {
     text-align: center;
     border: 1px solid rgb(230, 150, 3);
     padding: 30%;
-    padding-top: 25%;
+    padding-top: 35%;
 }
 
 .MemText p {
@@ -1213,7 +1242,6 @@ input[type=date] {
     transition: max-height 0.2s ease-out;
 }
   
-
 /* Main Containter for each Album. */
 .AlbumContainer {
     padding: 15px;
@@ -1327,8 +1355,21 @@ input[type=date] {
     width: 75%;
     height: 90%;
     margin: auto;
+    background-color: black;
     border: 4px solid rgb(95, 1, 1);
     outline: 1px solid rgb(230, 150, 3);
+}
+
+.CarText {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(14, 14, 14);
+    border: 2px solid rgb(95, 1, 1);
+    outline: 1px solid rgb(230, 150, 3);
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 15px;
 }
 
 /* Main Gallery Container. */
@@ -1340,7 +1381,7 @@ input[type=date] {
 }
 
 /* Styling and Layout for the 3 main inner Gallery Containers. */
-.RowOne, .RowTwo,.RowThree {
+#GalRowOne, #GalRowTwo, #GalRowThree {
     display: flex; 
     justify-content: space-between;
     margin: auto;
@@ -1363,6 +1404,16 @@ input[type=date] {
     margin-bottom: 10px;   
     padding-left: 10px;
     padding-right: 10px;
+    text-align: center;
+    height: 95%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.GalImgCont {
+    width: 100%;
+    height: 225px;
+    margin: auto;
 }
 
 .ImgFunc {
@@ -1420,7 +1471,7 @@ input[type=date] {
     background: rgba(0, 0, 0, 0.9);
     height: 100%;
     width: 100%;
-    z-index: 1;
+    z-index: 100;
     display: none;
 }
 
@@ -1528,7 +1579,7 @@ legend {
 
 /* Two columns within the Social Column.  */
 .TwitterFeed {
-    height: 900px;
+    height: 950px;
     width: 45%;
     overflow: auto;
     float: right;
@@ -1543,7 +1594,7 @@ legend {
 
 .FacebookFeed {
     text-align: center;
-    height: 900px;
+    height: 950px;
     width: 45%;
     overflow: auto;
     float: left;

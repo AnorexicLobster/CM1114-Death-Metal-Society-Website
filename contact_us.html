@@ -87,13 +87,25 @@
                             
                             <label for = "email">Email:</label>
                             <input type = "text" name = "email" id = "email" value = "">
+                            <br><br>
+
+                            <p>Membership Status:</p>
+                            <input type="radio" id="member" name="member_status" value="">
+                            <label for="member">Member</label>
+
+                            <input type="radio" id="non-member" name="member_status" value="">
+                            <label for="non-member">Non-Member</label><br>
 
                             <div>
-                                <br>
                                 <br>
                                 <label for = "comments">Comment: </label> 
                                 <br>
                                 <textarea name = "comments" cols = "60" rows = "10" id = "comments"></textarea>
+                                <br><br>
+
+                                <label for="myfile">Select files:</label>
+                                <input type="file" id="myfile" name="myfile" multiple>
+                                <br><br>
 
                                 <button type = "button" onclick = 'enquiry_form_submit()'>Submit</button>
                             </div>
@@ -112,16 +124,26 @@
 
                             var validCheck = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
+                            // Checking for name Input.
                             if (name == "") {
                                 alert("Please Enter a Name.");
-                                
+                            
+                            // Checking the email input.
                             } else {
                                 if (!(email.match(validCheck))) {
                                     alert("Please Enter a Valid Email.");
 
+                                // Checking to see if either one of the membership boxes were checked.
+                                } else if (!(document.getElementById('member').checked) 
+                                            && !(document.getElementById('non-member').checked)){
+                                    alert("Please tell us about your Membership Status.");
+                                 
+                                // Checking to see if a comment was added. 
                                 } else if (comments == ""){
                                     alert("Please tells us about your Query.");
-                                    
+
+                                // If all the above criteria were met the message will be sent.
+                                // And the form will be reset. 
                                 } else {
                                     document.getElementById("form_outcome").innerHTML="The Form has been Successfully Sent!";
                                     enquiry_form.reset();
@@ -162,10 +184,10 @@
         <footer>
             <hr>
             <div class = "footerContainer">
-                <div class = copyRight>
+                <div class = "copyRight">
                     <p><span>&#169;</span> 2024 Jakub Sykes <br> RGU Death Metal Society</p>
                 </div>
-                <div class = SocialLinks>
+                <div class = "SocialLinks">
                     <p>Follow Us On: </p>
                     <!-- Link to Facebook -->
                     <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
