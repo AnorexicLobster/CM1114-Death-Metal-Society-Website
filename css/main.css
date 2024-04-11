@@ -856,13 +856,6 @@ input[type=date] {
     color: white;
 }
 
-.MemTextDiv {
-    color: violet;
-    margin-left: 40px;
-    margin-right: 40px;
-    opacity: 100;
-}
-
 .MemTextDiv_BootProt {
     color: rgb(20, 20, 20);
     margin-left: 20px;
